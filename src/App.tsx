@@ -1,7 +1,8 @@
 import { NavBar } from "./components/layout/NavBar";
 import { GrobalStyles } from "./components/styles/Globals.styled";
 
-function App() {
+const App = () => {
+
   return (
     <>
     <GrobalStyles />
