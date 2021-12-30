@@ -8,9 +8,15 @@ export const GrobalStyles = createGlobalStyle`
         padding:0;
         box-sizing: border-box;
     }
+    html{
+        font-size: 12px;
+    }
     
     #root{
         margin:0 auto;
+    }
+    li {
+        list-style: none;
     }
 
     a {
@@ -29,5 +35,6 @@ export const theme = {
       light_pink: '#ffc6c7',
       head_text: '#33272a',
       sub_text: '#594a4e'
-      }
+      },
+    mobile : "768px",
   }

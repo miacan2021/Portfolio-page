@@ -8,7 +8,8 @@ export interface Theme {
         light_pink: string,
         head_text: string,
         sub_text: string,
-        }
+        },
+    mobile: string
   }
 
 declare module "styled-components" {
