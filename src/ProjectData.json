@@ -1,0 +1,19 @@
+{
+    "featured": [
+        {
+            "title": "WORK FRIENDLY CAFE VAN",
+            "gif":"../../ProjectData.json",
+            "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"]
+        },
+       {
+            "title": "FocusTube",
+            "gif":"../../ProjectData.json",
+            "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"]
+        },
+       {
+            "title": "Weather APP",
+            "gif":"../../ProjectData.json",
+            "skills":["React", "Weather API", "Tailwind CSS"]
+        }
+    ]
+}
