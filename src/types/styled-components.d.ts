@@ -6,6 +6,7 @@ export interface Theme {
         beige: string,
         pink: string,
         light_pink: string,
+        green: string,
         head_text: string,
         sub_text: string,
         },

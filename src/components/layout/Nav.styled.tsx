@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     height: 80px;
     width: 100%;
-    padding: 0 20px;
     background:${({theme}) =>  theme.palette.white };
     display: flex;
     align-items: center;
@@ -21,6 +20,7 @@ export const LogoSet = styled.div`
     gap: 10px;
     cursor: pointer;
     z-index: 99;
+    padding-left: 20px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         justify-content: center;
     }
@@ -61,7 +61,6 @@ export const Line = styled.div`
     height: 20px;
     background-color: ${({theme}) =>  theme.palette.head_text };
     margin-left: 10px;
-    
 `
 
 
@@ -70,6 +69,7 @@ export const MenuIcon = styled.div`
     font-family: 'Abel', sans-serif;
     margin-left: 20px;
     font-weight: bold;
+    text-shadow: ${({theme}) => `0px 0px 1px ${theme.palette.head_text}` };
     letter-spacing: 3px;
     font-size: 14px;
     cursor: pointer;
@@ -89,8 +89,10 @@ export const MenuIcon = styled.div`
 `
 
 export const NavList = styled.ul<{open: boolean}>`
+    background:${({theme}) => `linear-gradient(-135deg, ${theme.palette.beige}, transparent)`};
     width: 100%;
     height: 80px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -115,7 +117,8 @@ export const NavList = styled.ul<{open: boolean}>`
     }
 `
 
-export const NavItem = styled.li <{open: boolean}>`
+export const NavItem = styled.li <{open: boolean}>` 
+    width: 70px;
     margin-left: 20px;
     transition: all ease 0.5s;
     &:hover{
@@ -128,9 +131,8 @@ export const NavItem = styled.li <{open: boolean}>`
 
 export const Resume = styled.div`
     cursor: pointer;
-    background:${({theme}) =>  theme.palette.beige };
-    width: 90px;
-    height: 30px;
+    background:${({theme}) =>  theme.palette.light_pink };
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
