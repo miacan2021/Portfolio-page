@@ -8,12 +8,15 @@ export const ButtonPink = styled.button`
     position: relative;
     z-index: 1;
     display: inline-block;
-    padding: .65em 4em;
     color: ${({theme}) => theme.palette.head_text};
     text-align: center;
     transition: .3s ease-in-out;
     cursor: pointer;
     margin-top: 50px;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+      height: 40px;
+      width: 170px;
+    }
     &::before {
     position: absolute;
     top: 0;
@@ -51,6 +54,10 @@ export const ButtonSpan = styled.span`
     z-index: 2;
     font-size: 16px;
     letter-spacing: 4px;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
 `
 
 
