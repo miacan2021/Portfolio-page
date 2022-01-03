@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     height: 80px;
     width: 100%;
-    background:${({theme}) =>  theme.palette.white };
+    background-color: transparent;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -89,7 +89,7 @@ export const MenuIcon = styled.div`
 `
 
 export const NavList = styled.ul<{open: boolean}>`
-    background:${({theme}) => `linear-gradient(-135deg, ${theme.palette.beige}, transparent)`};
+    background:${({theme}) => `linear-gradient(-135deg, ${theme.palette.white}, ${theme.palette.beige})`};
     width: 100%;
     height: 80px;
     padding-right: 20px;

@@ -13,7 +13,7 @@ export const Featured = () => {
             </FeatureContainer>
             <Cards>
              {ProjectData.featured.map((data) => (
-                <Card data={data} />
+                <Card key={data.title} data={data} />
              ))}
             </Cards>
         </FeaturedWrapper>

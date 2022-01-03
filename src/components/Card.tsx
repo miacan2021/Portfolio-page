@@ -1,4 +1,4 @@
-import { CardWrapper } from "./Card.styled"
+import { CardTitle, CardWrapper } from "./Card.styled"
 
 type DataItem = {
     data:{
@@ -11,7 +11,7 @@ type DataItem = {
 export const Card = (props: DataItem) => {
     return(
        <CardWrapper>
-           <h1>{props.data.title}</h1>
+           <CardTitle>{props.data.title}</CardTitle>
        </CardWrapper>
     )
 }
