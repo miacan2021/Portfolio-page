@@ -2,17 +2,17 @@
     "featured": [
         {
             "title": "WORK FRIENDLY CAFE VAN",
-            "gif":"../../ProjectData.json",
+            "gif":"../img/weather.png",
             "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"]
         },
        {
             "title": "FocusTube",
-            "gif":"../../ProjectData.json",
+            "gif":"../img/weather.png",
             "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"]
         },
        {
             "title": "Weather APP",
-            "gif":"../../ProjectData.json",
+            "gif":"../img/weather.png",
             "skills":["React", "Weather API", "Tailwind CSS"]
         }
     ]

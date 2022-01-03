@@ -8,9 +8,7 @@ export const Featured = () => {
     return(
         <ThemeProvider theme={theme}>
         <FeaturedWrapper>
-            <FeatureContainer>
-              FEATURED PROJECTS
-            </FeatureContainer>
+            <FeatureContainer />
             <Cards>
              {ProjectData.featured.map((data) => (
                 <Card key={data.title} data={data} />

@@ -3,12 +3,11 @@ import styled from "styled-components";
 export const FeaturedWrapper = styled.div`
      position: relative;
      background: ${({theme}) => theme.palette.beige };
-     width: 100%;
-     height: 400px;
+     width: 100vw;
      text-align: center;
      margin: 90px auto;
      @media (max-width: ${({theme}) => theme.mobile}) {
-          margin-top: 200px;
+          margin-top: 280px;
      }
 `
 export const FeatureContainer = styled.div`
@@ -22,13 +21,22 @@ export const FeatureContainer = styled.div`
      transform: scale(1.2, 3.8);
      white-space: nowrap;
      letter-spacing: 10px;
+     &::before{
+          content: 'FEATURED PROJECTS';
+     }
      @media (max-width: ${({theme}) => theme.mobile}) {
-          white-space: pre-wrap;
-          font-size: 50px;
+          white-space: normal;
+          font-size: 40px;
+          width: 95%;
+          margin: 0 auto;
+          &::before{
+          content: 'FEATURED PROJECTS FEATURED PROJECTS';
+     }
      }
 `
 export const Cards = styled.div`
     position: absolute;
+    height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -38,10 +46,13 @@ export const Cards = styled.div`
     transform: translateX(-50%);
     width: 90%;
     overflow-x: scroll;
+    overflow-y: hidden;
     @media (max-width: ${({theme}) => theme.mobile}) {
       flex-direction: column;
       gap: 25px;
-      top: -100px;
+      top: -220px;
       overflow-x: hidden;
+      justify-content: center;
+      height: 600px;
      }
 `
