@@ -56,3 +56,11 @@ export const Cards = styled.div`
       height: 600px;
      }
 `
+
+
+export const ButtonStyle= styled.div`
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     padding: 50px 5px;
+`
