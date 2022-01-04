@@ -15,7 +15,7 @@ export const AboutH1 = styled.h1`
     color: ${({theme}) =>  theme.palette.head_text };
     font-family: 'Abel', sans-serif;
     letter-spacing: 5px;
-    padding: 20px 0;
+    padding: 40px 0px 0px 0px;
     text-align: center;
     @media (max-width: ${({theme}) => theme.mobile}) {
         font-size: 20px;
