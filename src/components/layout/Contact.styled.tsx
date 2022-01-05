@@ -31,19 +31,20 @@ export const Links = styled.div`
     justify-content: space-around;
     margin: 0 auto;
     padding-top: 35px;
+    gap: 10px;
 `
 
 export const Link = styled.a`
     width: 40px;
     height: 40px;
     background: ${({theme}) => theme.palette.light_pink};
-    border: ${({theme}) =>`1px solid ${theme.palette.sub_text}`};
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all ease .4s;
     &:hover{
         background: ${({theme}) => theme.palette.pink};
-        border: none;
+        transform: scale(1.1, 1.1)
     }
 `

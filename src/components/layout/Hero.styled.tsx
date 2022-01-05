@@ -7,9 +7,9 @@ export const HeroWrapper = styled.div`
         height: auto;
         font-family: 'Abel', sans-serif;
         color:${({theme}) =>  theme.palette.head_text };
-        padding: 80px 20px;
+        padding: 130px 20px 80px 20px;
         @media (max-width: ${({theme}) => theme.mobile}) {
-              padding: 50px 5px;
+              padding: 100px 5px 50px 5px;
               overflow: hidden;
        }
 `

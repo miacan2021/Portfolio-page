@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
-export const Nav = styled.nav`
-    height: 80px;
+export const Nav = styled.nav<{open: boolean}>`
+    height: 110px;
     width: 100%;
-    background-color: transparent;
+    background: ${({ open }) => open ? '#fffffe' : 'transparent'};
     display: flex;
     align-items: center;
     gap: 5px;
     z-index: 98;
+    position: fixed;
+    transition: all ease .8s;
     @media (max-width: ${({theme}) => theme.mobile}) {
-        width: 24rem;
+        width: 80vw;
         justify-content: center;
     }
 `
 export const LogoSet = styled.div`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 10px;
     cursor: pointer;
     z-index: 99;
@@ -89,13 +90,13 @@ export const MenuIcon = styled.div`
 `
 
 export const NavList = styled.ul<{open: boolean}>`
-    background:${({theme}) => `linear-gradient(-135deg, ${theme.palette.white}, ${theme.palette.beige})`};
+    background: ${({ open }) => open ? '#fffffe' : 'transparent'};
     width: 100%;
     height: 80px;
     padding-right: 20px;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: space-around;
     color: ${({theme}) =>  theme.palette.head_text };
     font-family: 'Abel', sans-serif;
     cursor: pointer;
@@ -104,8 +105,9 @@ export const NavList = styled.ul<{open: boolean}>`
     transform: ${({ open }) => open ? 'translateX(0px)' : 'translateX(-400px)'} translateX(0px);
     opacity: ${({ open }) => (open ? 1 : 0)};
     transition: all ease 0.5s;
+    z-index: 97;
     @media (max-width: ${({theme}) => theme.mobile}) {
-        width: 24rem;
+        width: 80vw;
         height: 100vh;
         flex-direction: column;
         justify-content: space-around;
@@ -113,7 +115,9 @@ export const NavList = styled.ul<{open: boolean}>`
         position: fixed;
         top: 0;
         left: 0;
-        padding-top: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        align-items: center;
     }
 `
 
@@ -125,6 +129,7 @@ export const NavItem = styled.li <{open: boolean}>`
       letter-spacing: 1px;
     }
     @media (max-width: ${({theme}) => theme.mobile}) {
+        width: auto;
         margin-left: 0px;
     }
 `
@@ -132,8 +137,29 @@ export const NavItem = styled.li <{open: boolean}>`
 export const Resume = styled.div`
     cursor: pointer;
     background:${({theme}) =>  theme.palette.light_pink };
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+`
+
+export const LinkLi = styled.li`
+    transition: all ease .4s;
+    &:hover{
+        transform: scale(1.1, 1.1)
+    }
+`
+
+export const LinkUl = styled.ul`
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 10px;
+@media (max-width: ${({theme}) => theme.mobile}) {
+    width: 80%;
+    margin: 0 auto;
+    justify-content:center;
+    }
+   
 `
