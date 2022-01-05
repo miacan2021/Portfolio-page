@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const ButtonPink = styled.button`
     height: 50px;
     width: 250px;
-    background:${({theme}) =>  theme.palette.pink};
+    background: ${({theme}) => theme.palette.pink};
     border: ${({theme}) => `2px solid ${theme.palette.green}`};
     position: relative;
     z-index: 1;
     display: inline-block;
-    color: ${({theme}) => theme.palette.head_text};
+    color: ${({theme}) => theme.palette.sub_text};
     text-align: center;
     transition: .3s ease-in-out;
     cursor: pointer;
@@ -25,7 +25,7 @@ export const ButtonPink = styled.button`
     content: '';
     width: 100%;
     height: 100%;
-    border: ${({theme}) => `2px solid ${theme.palette.head_text}`};
+    border: ${({theme}) =>`1px solid ${theme.palette.sub_text}`};
   }
  &::after {
     position: absolute;

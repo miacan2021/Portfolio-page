@@ -65,7 +65,7 @@ export const Title= styled.h1`
 export const TitleBorder= styled.span`
        background-color: ${({theme}) => theme.palette.pink};
        padding: 0 5px;
-       border: ${({theme}) => `2px solid ${theme.palette.head_text}`};
+       border: ${({theme}) => `1px solid ${theme.palette.sub_text}`};
 ` 
 export const Img= styled.div`
       position: absolute;
