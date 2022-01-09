@@ -10,7 +10,8 @@ export interface Theme {
         head_text: string,
         sub_text: string,
         },
-    mobile: string
+    mobile: string,
+    tablet: string
   }
 
 declare module "styled-components" {

@@ -20,22 +20,21 @@ export const CardWrapper = styled.button`
     &:hover{
         transform: translateY(-10px);
     }
-    @media (max-width: ${({theme}) => theme.mobile}) {
-        width: 180px;
-        height: 200px;
+    @media (max-width: ${({theme}) => theme.tablet}) {
+        width: 90vw;
+        max-width:300px;
+        min-width: 150px;
      }
 `
 
 export const CardFlex = styled.div`
-    padding: 5px;
     width: 40%;
-    
 `
 
 export const CardTitle = styled.h1`
      font-size: 18px;
      font-family: 'Abel', sans-serif;
-     @media (max-width: ${({theme}) => theme.mobile}) {
+     @media (max-width: ${({theme}) => theme.tablet}) {
         font-size: 12px;
      }
 `
@@ -50,7 +49,7 @@ export const CardUl= styled.ul`
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
+    gap: 2px;
     justify-content: center;
     align-items: center;
 `
@@ -60,5 +59,7 @@ export const CardLi= styled.li`
     background-color: ${({theme}) => theme.palette.light_pink};
     color: ${({theme}) => theme.palette.sub_text};
     font-family: 'Abel', sans-serif;
-    padding: 2px;
+    @media (max-width: ${({theme}) => theme.tablet}) {
+        font-size: 10px;
+     }
 `
