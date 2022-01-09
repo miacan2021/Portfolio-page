@@ -15,13 +15,13 @@ export const Contact = () => {
                 <ContactP>I am looking forward to joining as a creative developer!<br />Please contact me if I capture your interest. I can not wait to talk to you.</ContactP>
                 <a href="mailto:mia.can2021@gmail.com"><Button title={'Email Me!'}></Button></a>
                 <Links>
-                    <Link href="https://github.com/miacan2021" target="_blank"><TiDocument size={'30px'} color={"#594a4e"} /></Link>
-                    <Link href="https://github.com/miacan2021" target="_blank"><TiDeviceLaptop size={'30px'} color={"#594a4e"} /></Link>
-                    <Link href="https://github.com/miacan2021" target="_blank"><GoMarkGithub size={'30px'} color={"#594a4e"} /></Link>
-                    <Link href="https://github.com/miacan2021" target="_blank"><TiSocialLinkedinCircular size={'40px'} color={"#594a4e"} /></Link>
-                    <Link href="https://twitter.com/shiho_kazama" target="_blank"><TiSocialTwitterCircular size={'40px'} color={"#594a4e"} /></Link>
-                    <Link href="https://dev.to/miacan2021" target="_blank"><SiDevdotto size={'40px'} color={"#594a4e"} /></Link>
-                    <Link href="mailto:mia.can2021@gmail.com"><TiMail size={'40px'} color={"#594a4e"} /></Link>
+                    <Link href="https://github.com/miacan2021" target="_blank" title={'Resume'}><TiDocument size={'30px'} color={"#594a4e"} /></Link>
+                    <Link href="https://github.com/miacan2021" target="_blank" title={'Work'}><TiDeviceLaptop size={'30px'} color={"#594a4e"} /></Link>
+                    <Link href="https://github.com/miacan2021" target="_blank" title={'GitHub'}><GoMarkGithub size={'30px'} color={"#594a4e"} /></Link>
+                    <Link href="https://github.com/miacan2021" target="_blank" title={'LinkedIn'}><TiSocialLinkedinCircular size={'40px'} color={"#594a4e"} /></Link>
+                    <Link href="https://twitter.com/shiho_kazama" target="_blank" title={'Twitter'}><TiSocialTwitterCircular size={'40px'} color={"#594a4e"} /></Link>
+                    <Link href="https://dev.to/miacan2021" target="_blank" title={'DEV'}><SiDevdotto size={'40px'} color={"#594a4e"} /></Link>
+                    <Link href="mailto:mia.can2021@gmail.com" title={'Mail'}><TiMail size={'40px'} color={"#594a4e"} /></Link>
                 </Links>
             </ContactWrapper>
         </ThemeProvider>

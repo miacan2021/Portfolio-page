@@ -34,17 +34,21 @@ export const Links = styled.div`
     gap: 10px;
 `
 
-export const Link = styled.a`
-    width: 40px;
-    height: 40px;
-    background: ${({theme}) => theme.palette.light_pink};
+export const Link = styled.a<{title:string}>`
+    width: 50px;
+    height: 50px;
+    padding: 3px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all ease .4s;
+    transition: all ease .6s;
+    color: ${({theme}) => theme.palette.head_text};
+    font-family: 'Montserrat', sans-serif;
     &:hover{
-        background: ${({theme}) => theme.palette.pink};
-        transform: scale(1.1, 1.1)
+        flex-direction: column;
+    }
+    &:hover::after{
+        content: '${({ title }) => title }';
     }
 `
