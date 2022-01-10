@@ -1,10 +1,10 @@
 import { Contact } from "../layout/Contact"
 import { GrobalStyles } from "../styles/Globals.styled";
 import { NavBar } from "../layout/NavBar"
-import { AboutPageWrapper, AboutTitle } from "./AboutPage.styled";
+import { AboutImg, AboutPageWrapper, AboutTitle } from "./AboutPage.styled";
 import { ThemeProvider } from "styled-components"
 import { theme } from "../styles/Globals.styled"
-import { AboutLi, AboutLiSpan, AboutUl} from "../layout/About.styled"
+import { AboutH1 } from "../layout/About.styled"
 
 
 export const AboutPage = () => {
@@ -15,25 +15,11 @@ export const AboutPage = () => {
         <ThemeProvider theme={theme}>
         <AboutPageWrapper>
         <AboutTitle>About Me</AboutTitle>
-        <h1>Shiho Kazama</h1>
-        <p>Hello! I'm Shiho Kazama. I'm a front-end developer based in Vancouver.</p>
+        <AboutH1>Shiho Kazama</AboutH1>
+        <p>Hello! My name is Shiho and I enjoy creating things that live on the internet. 
+            I'm a front-end developer based in Vancouver.</p>
+        <AboutImg src="/img/about.jpg" alt="myphoto" />
         </AboutPageWrapper>
-        <h1>My Policy</h1>
-        <h2>No goal in learning. I'll never stop learning.</h2>
-        <AboutUl>
-            <AboutLi>
-            <AboutLiSpan>Passionate about web development</AboutLiSpan>
-            <br/>I am a front-end developer who is eager to learn about new technologies.
-            </AboutLi>
-            <AboutLi>
-            <AboutLiSpan>High potential as a developer</AboutLiSpan>
-            <br/>I'm pleased to code, design, google about new things, solve problems. 
-            </AboutLi>
-            <AboutLi>
-            <AboutLiSpan>Bachelor of multi-media</AboutLiSpan>
-            <br />I've had a bachelor of multi-media 6 years ago in Japan. I have knowledge about not only web development but also editing videos, photos, graphics, so on and so forth. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I’m looking for a job as a front-end developer.
-            </AboutLi>
-        </AboutUl>
         <Contact />
         </ThemeProvider>
         </>

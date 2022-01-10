@@ -15,3 +15,11 @@ export const AboutTitle = styled.h1`
     letter-spacing: 3px;
     color: ${({theme}) =>  theme.palette.pink };
 `
+
+
+
+export const AboutImg = styled.img`
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+`
