@@ -7,7 +7,7 @@ export const Nav = styled.nav<{open: boolean}>`
     display: flex;
     align-items: center;
     gap: 5px;
-    z-index: 98;
+    z-index: 90;
     position: fixed;
     transition: all ease .8s;
     @media (max-width: ${({theme}) => theme.mobile}) {
@@ -20,7 +20,7 @@ export const LogoSet = styled.div`
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    z-index: 99;
+    z-index: 100;
     padding-left: 20px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         justify-content: center;

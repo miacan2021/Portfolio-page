@@ -17,7 +17,7 @@ export const Hero = () => {
                 <TopImg src='../img/photo.jpg' alt="profile-image" />
                 </Img>
                 </HeroTitle>
-            <Button title={'GET IN TOUCH'} />
+            <a href="#contact"><Button title={'GET IN TOUCH'} /></a>
             </HeroContainer>
             </HeroWrapper>
         </ThemeProvider>
