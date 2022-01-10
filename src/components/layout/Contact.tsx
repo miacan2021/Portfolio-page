@@ -10,7 +10,7 @@ import { SiDevdotto } from "react-icons/si";
 export const Contact = () => {
     return(
         <ThemeProvider theme={theme}>
-            <ContactWrapper>
+            <ContactWrapper id="contact">
                 <ContactTitle>Get in Touch.</ContactTitle>
                 <ContactP>I am looking forward to joining as a creative developer!<br />Please contact me if I capture your interest. I can not wait to talk to you.</ContactP>
                 <a href="mailto:mia.can2021@gmail.com"><Button title={'Email Me!'}></Button></a>

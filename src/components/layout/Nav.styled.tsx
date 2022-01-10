@@ -125,6 +125,9 @@ export const NavItem = styled.li <{open: boolean}>`
     width: 70px;
     margin-left: 20px;
     transition: all ease 0.5s;
+    & a{
+        color: ${({theme}) =>  theme.palette.head_text };
+    }
     &:hover{
       letter-spacing: 1px;
     }
