@@ -78,12 +78,12 @@ export const Img= styled.div`
 
 `   
 export const TopImg= styled.img`
-      width: 250px;
-      height: 250px;
+      width: 230px;
+      height: 230px;
       border-radius: 50%;
       object-fit: cover;
-      object-position: 0% 0%;
-      box-shadow: ${({theme}) => `40px 5px 0px 0 ${theme.palette.pink}`}; 
+      object-position: 100% 0%;
+      box-shadow: ${({theme}) => `30px 5px 0px 0 ${theme.palette.pink}`}; 
       border: ${({theme}) => `2px solid ${theme.palette.head_text}`};
       @media (max-width: ${({theme}) => theme.mobile}) {
        width: 100px;
