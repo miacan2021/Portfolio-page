@@ -1,10 +1,10 @@
-import { Contact } from "../layout/Contact"
-import { GrobalStyles } from "../styles/Globals.styled";
-import { NavBar } from "../layout/NavBar"
+import { Contact } from "../pattern/Contact"
+import { GrobalStyles } from "../../styles/Globals.styled";
+import { NavBar } from "../pattern/NavBar"
 import { AboutImg, AboutImgArea, AboutMessage, AboutPageWrapper, AboutTitle, Introduce, Myself } from "./AboutPage.styled";
 import { ThemeProvider } from "styled-components"
-import { theme } from "../styles/Globals.styled"
-import { AboutH1 } from "../layout/About.styled"
+import { theme } from "../../styles/Globals.styled"
+import { AboutH1 } from "../Home/About.styled"
 
 
 export const AboutPage = () => {

@@ -1,6 +1,6 @@
-import { Contact } from "../layout/Contact"
+import { Contact } from "../layout/pattern/Contact"
 import { GrobalStyles } from "../styles/Globals.styled";
-import { NavBar } from "../layout/NavBar"
+import { NavBar } from "../layout/pattern/NavBar"
 
 export const WorkPage = () => {
     return(

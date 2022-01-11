@@ -15,6 +15,11 @@ export const Introduce = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: ${({theme}) =>  theme.palette.pink };
+
+    @media (max-width: ${({theme}) => theme.mobile}) {
+       flex-direction: column;
+       }
 
 `
 export const Myself = styled.div`
@@ -25,15 +30,19 @@ export const AboutTitle = styled.h1`
     font-family: 'Josefin Slab', serif;
     font-size: 48px;
     letter-spacing: 3px;
-    color: ${({theme}) =>  theme.palette.pink };
+    color: ${({theme}) =>  theme.palette.pink};
 `
 
 export const AboutImg = styled.img`
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     object-fit: cover;
     box-shadow: 10px 10px 0px ${({theme}) =>  theme.palette.pink };
     transition: all 0.8s;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        width: 150px;
+        height: 150px;
+       }
 `
 
 export const AboutMessage = styled.div`

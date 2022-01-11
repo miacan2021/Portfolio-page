@@ -15,5 +15,31 @@
             "gif":"../img/weather.png",
             "skills":["React", "Weather API", "Tailwind CSS"]
         }
-    ]
+    ],
+    "projects": [ 
+    {
+        "title": "WORK FRIENDLY CAFE VAN",
+        "gif":"../img/weather.png",
+        "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
+        "category":"featured"
+    },
+   {
+        "title": "FocusTube",
+        "gif":"../img/weather.png",
+        "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
+        "category":"featured"
+    },
+   {
+        "title": "Weather APP",
+        "gif":"../img/weather.png",
+        "skills":["React", "Weather API", "Tailwind CSS"],
+        "category":"featured"
+    },
+    {
+        "title": "My portfolio",
+        "gif":"../img/weather.png",
+        "skills":["React", "Weather API", "Tailwind CSS"],
+        "category":"featured"
+    }
+]
 }

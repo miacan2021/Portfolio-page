@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components"
-import { Button } from "../Button"
-import { theme } from "../styles/Globals.styled"
+import { Button } from "../pattern/Button"
+import { theme } from "../../styles/Globals.styled"
 import { ContactP, ContactTitle, ContactWrapper, Links, Link} from "./Contact.styled"
 import { GoMarkGithub } from "react-icons/go";
 import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiMail, TiDocument, TiDeviceLaptop } from "react-icons/ti";

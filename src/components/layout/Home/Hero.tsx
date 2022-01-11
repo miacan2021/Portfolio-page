@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components"
-import { Button } from "../Button"
-import { theme } from "../styles/Globals.styled"
+import { Button } from "../pattern/Button"
+import { theme } from "../../styles/Globals.styled"
 import { HeroWrapper, HeroContainer, Hello, Name, FamilyName, Title, HeroTitle, Img, TopImg, TitleBorder } from "./Hero.styled"
 
 export const Hero = () => {

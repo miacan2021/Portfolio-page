@@ -14,6 +14,9 @@ export const ContactTitle = styled.h1`
     font-size: 38px;
     letter-spacing: 4px;
     color: ${({theme}) => theme.palette.head_text};
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        font-size: 28px;
+       }
 `
 export const ContactP = styled.p`
     font-family: 'Montserrat', sans-serif;
@@ -21,6 +24,10 @@ export const ContactP = styled.p`
     margin-top: 40px;
     white-space: wrap;
     color: ${({theme}) => theme.palette.sub_text};;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        font-size: 14px;
+        margin-top: 20px;
+       }
 `
 
 export const Links = styled.div`
@@ -50,4 +57,9 @@ export const Link = styled.a<{title:string}>`
     &:hover::after{
         content: '${({ title }) => title }';
     }
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        width: 40px;
+        height: 40px;
+       }
+    
 `

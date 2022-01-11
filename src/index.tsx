@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { AboutPage } from './components/aboutPageLayout/AboutPage';
+import { AboutPage } from './components/layout/About/AboutPage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { WorkPage } from './components/WorkPageLayout/WorkPage';
 

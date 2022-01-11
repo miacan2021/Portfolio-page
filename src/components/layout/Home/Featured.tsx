@@ -1,9 +1,9 @@
 import { FeatureContainer, FeaturedWrapper, Cards, ButtonStyle } from "./Featured.styled"
 import { ThemeProvider } from "styled-components"
-import { theme } from "../styles/Globals.styled"
-import { Card } from "../Card"
-import ProjectData from '../../ProjectData.json'  
-import { Button } from "../Button"
+import { theme } from "../../styles/Globals.styled"
+import { Card } from "../pattern/Card"
+import ProjectData from '../../../ProjectData.json'  
+import { Button } from "../pattern/Button"
 
 export const Featured = () => {
     return(

@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components"
-import { Button } from "../Button"
-import { theme } from "../styles/Globals.styled"
+import { Button } from "../pattern/Button"
+import { theme } from "../../styles/Globals.styled"
 import { AboutH1, AboutLi, AboutLiSpan, AboutUl, AboutWrapper, ButtonCeter } from "./About.styled"
 
 export const About = () => {
