@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav<{open: boolean}>`
     height: 110px;
     width: 100%;
+
     background: ${({ open }) => open ? '#fffffe' : 'transparent'};
     display: flex;
     align-items: center;
@@ -21,7 +22,7 @@ export const LogoSet = styled.div`
     gap: 10px;
     cursor: pointer;
     z-index: 100;
-    padding-left: 20px;
+    padding-left: 25px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         justify-content: center;
     }
@@ -100,7 +101,8 @@ export const NavList = styled.ul<{open: boolean}>`
     color: ${({theme}) =>  theme.palette.head_text };
     font-family: 'Abel', sans-serif;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
     flex-wrap: wrap;
     transform: ${({ open }) => open ? 'translateX(0px)' : 'translateX(-400px)'} translateX(0px);
     opacity: ${({ open }) => (open ? 1 : 0)};
@@ -158,7 +160,7 @@ export const LinkUl = styled.ul`
     display: flex;
     align-items: center;
     justify-content:flex-end;
-    gap: 10px;
+    gap: 20px;
 @media (max-width: ${({theme}) => theme.mobile}) {
     width: 80%;
     margin: 0 auto;

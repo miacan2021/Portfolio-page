@@ -13,15 +13,14 @@ export const ContactTitle = styled.h1`
     font-family: 'Abel', sans-serif;
     font-size: 38px;
     letter-spacing: 4px;
-
+    color: ${({theme}) => theme.palette.head_text};
 `
 export const ContactP = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    letter-spacing: 4px;
     margin-top: 40px;
     white-space: wrap;
-
+    color: ${({theme}) => theme.palette.sub_text};;
 `
 
 export const Links = styled.div`
