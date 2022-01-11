@@ -38,8 +38,20 @@
     {
         "title": "My portfolio",
         "gif":"../img/weather.png",
-        "skills":["React", "Weather API", "Tailwind CSS"],
+        "skills":["React", "styled-components"],
         "category":"featured"
+    },
+    {
+        "title": "Find Blog",
+        "gif":"../img/weather.png",
+        "skills":["React", "Weather API", "Tailwind CSS"],
+        "category":"fun"
+    },
+    {
+        "title": "My portfolio",
+        "gif":"../img/weather.png",
+        "skills":["React", "Weather API", "Tailwind CSS"],
+        "category":"fun"
     }
 ]
 }

@@ -3,15 +3,19 @@ import styled from "styled-components";
 export const FeaturedWrapper = styled.div`
      position: relative;
      background: ${({theme}) => theme.palette.beige };
-     width: 100vw;
+     width: 100%;
+     max-width: 1200px;
      height: auto;
      margin-top: 130px;
+     left: 50%;
+     transform: translateX(-50%);
      @media (max-width: ${({theme}) => theme.tablet}) {
       margin-top: 280px;
       margin-bottom: 40px;
      }
 `
 export const FeatureContainer = styled.div`
+     width: 100%;
      background: ${({theme}) =>  theme.palette.beige };
      font-family: 'Josefin Slab', serif;
      color: ${({theme}) =>  theme.palette.green };
@@ -31,26 +35,24 @@ export const FeatureContainer = styled.div`
      @media (max-width: ${({theme}) => theme.tablet}) {
           white-space: normal;
           font-size: 40px;
-          width: 100%;
           &::before{
           content: 'FEATURED PROJECTS FEATURED PROJECTS';
      }
      }
 `
+
 export const Cards = styled.div`
     position: absolute;
     height: 300px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    align-items: center; 
     gap: 15px;
     top: -80px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-     margin-bottom: 100px;
+    margin-bottom: 100px;
+    overflow-x: auto;
     @media (max-width: ${({theme}) => theme.tablet}) {
       flex-direction: column;
       gap: 25px;
@@ -62,7 +64,6 @@ export const Cards = styled.div`
       padding-bottom: 40px;
      }
 `
-
 
 export const ButtonStyle= styled.div`
      width: 100vw;

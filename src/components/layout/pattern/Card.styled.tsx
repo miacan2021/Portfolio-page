@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.button`
     z-index: 20;
-    width: 450px;
+    width: 400px;
     min-width: 350px;
     height: 250px;
     background: rgba( 255, 255, 255, 0.5 );
@@ -21,7 +21,7 @@ export const CardWrapper = styled.button`
         transform: translateY(-10px);
     }
     @media (max-width: ${({theme}) => theme.tablet}) {
-        width: 90vw;
+        width: 90%;
         max-width:300px;
         min-width: 150px;
      }
