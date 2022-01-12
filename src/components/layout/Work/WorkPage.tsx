@@ -5,7 +5,6 @@ import { ThemeProvider } from "styled-components"
 import { theme } from "../../styles/Globals.styled"
 import ProjectData from '../../../ProjectData.json'
 import { WorkPageWrapper } from "./WorkPage.styled";
-import { idText } from "typescript";
 
 interface Params {
         title: string,
@@ -41,7 +40,12 @@ export const WorkPage = () => {
         {datas.map((data: Params, i) => {
            let color =  pickColor(i)
             return(
-            <WorkPageWrapper key={data.title} bg={`${color}`}>{data.title}</WorkPageWrapper>
+            <WorkPageWrapper key={data.title} bg={`${color}`}>
+                <h1>
+                {data.title}
+                </h1>
+                
+                </WorkPageWrapper>
             )
         })}
         <Contact />
