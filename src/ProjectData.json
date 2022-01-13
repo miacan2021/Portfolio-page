@@ -21,7 +21,11 @@
         "title": "WORK FRIENDLY CAFE VAN",
         "gif":"../img/weather.png",
         "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
-        "category":"featured"
+        "category":"featured",
+        "github":"https://github.com/",
+        "url":"https://",
+        "slug":"work_friendly_cafe-van",
+        "description":"Find cafe in Van..."
     },
    {
         "title": "FocusTube",
