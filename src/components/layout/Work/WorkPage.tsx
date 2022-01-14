@@ -21,17 +21,19 @@ export const WorkPage = () => {
     const datas = ProjectData.projects
 
     const colors :string[] = [
+       '#ffc6c7',
        '#fffffe',
        '#c3f0ca',
-       '#ffc6c7',
        '#faeee7',
        '#ff8ba7',
     ]
 
     const pickColor = (i: number) => {
-       if(i >= 5){
+       if(i >= 10){
+            return colors[i-10]
+       }else if(i >= 5){
             return colors[i-5]
-        }else{
+       }else{
             return colors[i]
         }
     }

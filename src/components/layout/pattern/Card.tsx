@@ -4,7 +4,8 @@ type DataItem = {
     data:{
     title: string,
     gif: string,
-    skills: string[]
+    skills: string[],
+    slug: string,
     }
 }
 

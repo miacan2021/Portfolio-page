@@ -1,73 +1,104 @@
 {
     "featured": [
         {
-            "title": "WORK FRIENDLY CAFE VAN",
-            "gif":"../img/weather.png",
-            "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"]
+            "title": "WORK FRIENDLY CAFE - VAN",
+            "gif":"../img/van-cafe/vancafe.gif",
+            "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
+            "slug":"work-friendly-cafe-van"
         },
        {
             "title": "FocusTube",
-            "gif":"../img/weather.png",
-            "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"]
+            "gif":"../img/focustube/focus.gif",
+            "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
+            "slug":"focustube"
         },
        {
-            "title": "Weather APP",
-            "gif":"../img/weather.png",
-            "skills":["React", "Weather API", "Tailwind CSS"]
+            "title": "Weather APP with DARK MODE",
+            "gif":"../img/weather/weather.gif",
+            "skills":["React", "Weather API", "Tailwind CSS"],
+            "slug":"weather-app"
         }
     ],
     "projects": [ 
     {
-        "title": "WORK FRIENDLY CAFE VAN",
-        "gif":"../img/weather.png",
+        "title": "WORK FRIENDLY CAFE - VAN",
+        "gif":"../img/van-cafe/vancafe.gif",
         "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
         "category":"featured",
-        "github":"https://github.com/",
-        "url":"https://",
-        "slug":"work_friendly_cafe-van",
+        "github":"https://github.com/miacan2021/VanCafe.git",
+        "url":"https://work-friendly-cafe-van.vercel.app/",
+        "slug":"work-friendly-cafe-van",
         "description":"Find cafe in Van..."
     },
    {
         "title": "FocusTube",
-        "gif":"../img/weather.png",
+        "gif":"../img/focustube/focus.gif",
         "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
-        "category":"featured"
+        "category":"featured",
+        "github":"https://github.com/miacan2021/React-Final.git",
+        "url":"https://focustube.vercel.app/",
+        "slug":"focustube",
+        "description":"Find cafe in Van..."
     },
    {
-        "title": "Weather APP",
-        "gif":"../img/weather.png",
+        "title": "Weather APP with DARK MODE",
+        "gif":"../img/weather/weather.gif",
         "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"featured"
+        "category":"featured",
+        "github":"https://github.com/miacan2021/weather-app.git",
+        "url":"https://happy-hawking-f6969d.netlify.app/",
+        "slug":"weather-app",
+        "description":"Find cafe in Van..."
     },
     {
         "title": "My portfolio",
         "gif":"../img/weather.png",
-        "skills":["React", "styled-components"],
-        "category":"featured"
+        "skills":["React"],
+        "category":"featured",
+        "github":"https://github.com/",
+        "url":"https://",
+        "slug":"portfolio",
+        "description":"Find cafe in Van..."
     },
     {
         "title": "Find Blog",
         "gif":"../img/weather.png",
         "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"fun"
+        "category":"fun",
+        "github":"https://github.com/",
+        "url":"https://",
+        "slug":"work_friendly_cafe-van",
+        "description":"Find cafe in Van..."
     },
     {
         "title": "My portfolio",
         "gif":"../img/weather.png",
         "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"fun"
+        "category":"fun",
+        "github":"https://github.com/",
+        "url":"https://",
+        "slug":"work_friendly_cafe-van",
+        "description":"Find cafe in Van..."
     },
     {
         "title": "My portfolio",
         "gif":"../img/weather.png",
         "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"fun"
+        "category":"fun",
+        "github":"https://github.com/",
+        "url":"https://",
+        "slug":"work_friendly_cafe-van",
+        "description":"Find cafe in Van..."
     },
     {
         "title": "My portfolio",
         "gif":"../img/weather.png",
         "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"fun"
+        "category":"fun",
+         "github":"https://github.com/",
+        "url":"https://",
+        "slug":"work_friendly_cafe-van",
+        "description":"Find cafe in Van..."
     }
 ]
 }
