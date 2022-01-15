@@ -9,7 +9,6 @@ export const Featured = () => {
     return(
         <ThemeProvider theme={theme}>
         <FeaturedWrapper>
-            
             <FeatureContainer />
             <Cards>
              {ProjectData.featured.map((data) => (

@@ -3,18 +3,21 @@
         {
             "title": "WORK FRIENDLY CAFE - VAN",
             "gif":"../img/van-cafe/vancafe.gif",
+            "thumbnail":"../img/van-cafe/top.jpg",
             "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
             "slug":"work-friendly-cafe-van"
         },
        {
             "title": "FocusTube",
             "gif":"../img/focustube/focus.gif",
+            "thumbnail":"../img/focustube/top.jpg",
             "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
             "slug":"focustube"
         },
        {
             "title": "Weather APP with DARK MODE",
             "gif":"../img/weather/weather.gif",
+            "thumbnail":"../img/weather/top.jpg",
             "skills":["React", "Weather API", "Tailwind CSS"],
             "slug":"weather-app"
         }
@@ -23,6 +26,7 @@
     {
         "title": "WORK FRIENDLY CAFE - VAN",
         "gif":"../img/van-cafe/vancafe.gif",
+        "thumbnail":"../img/van-cafe/top.jpg",
         "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
         "category":"featured",
         "github":"https://github.com/miacan2021/VanCafe.git",
@@ -33,6 +37,7 @@
    {
         "title": "FocusTube",
         "gif":"../img/focustube/focus.gif",
+        "thumbnail":"../img/focustube/top.jpg",
         "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
         "category":"featured",
         "github":"https://github.com/miacan2021/React-Final.git",
@@ -43,6 +48,7 @@
    {
         "title": "Weather APP with DARK MODE",
         "gif":"../img/weather/weather.gif",
+        "thumbnail":"../img/weather/top.jpg",
         "skills":["React", "Weather API", "Tailwind CSS"],
         "category":"featured",
         "github":"https://github.com/miacan2021/weather-app.git",
@@ -53,6 +59,7 @@
     {
         "title": "My portfolio",
         "gif":"../img/weather.png",
+        "thumbnail":"../img/focusube/top.jpg",
         "skills":["React"],
         "category":"featured",
         "github":"https://github.com/",
@@ -63,39 +70,10 @@
     {
         "title": "Find Blog",
         "gif":"../img/weather.png",
+        "thumbnail":"../img/focusube/top.jpg",
         "skills":["React", "Weather API", "Tailwind CSS"],
         "category":"fun",
         "github":"https://github.com/",
-        "url":"https://",
-        "slug":"work_friendly_cafe-van",
-        "description":"Find cafe in Van..."
-    },
-    {
-        "title": "My portfolio",
-        "gif":"../img/weather.png",
-        "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"fun",
-        "github":"https://github.com/",
-        "url":"https://",
-        "slug":"work_friendly_cafe-van",
-        "description":"Find cafe in Van..."
-    },
-    {
-        "title": "My portfolio",
-        "gif":"../img/weather.png",
-        "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"fun",
-        "github":"https://github.com/",
-        "url":"https://",
-        "slug":"work_friendly_cafe-van",
-        "description":"Find cafe in Van..."
-    },
-    {
-        "title": "My portfolio",
-        "gif":"../img/weather.png",
-        "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"fun",
-         "github":"https://github.com/",
         "url":"https://",
         "slug":"work_friendly_cafe-van",
         "description":"Find cafe in Van..."

@@ -4,22 +4,11 @@ import { NavBar } from "../pattern/NavBar"
 import { ThemeProvider } from "styled-components"
 import { theme } from "../../styles/Globals.styled"
 import ProjectData from '../../../ProjectData.json'
-import { WorkImg, WorkPageWrapper, WorkCard } from "./WorkPage.styled";
+import {WorkPageWrapper} from "./WorkPage.styled";
+import { WorkCardWrapper } from "./WorkCard";
 
-interface Params {
-        title: string,
-        gif: string,
-        skills: string[],
-        category: string,
-        github: string,
-        url: string,
-        slug: string,
-        description: string
-    }
 
 export const WorkPage = () => {
-    const datas = ProjectData.projects
-
     const colors :string[] = [
        '#ffc6c7',
        '#fffffe',
@@ -37,6 +26,7 @@ export const WorkPage = () => {
             return colors[i]
         }
     }
+  
 
     return(
         <>
@@ -44,23 +34,9 @@ export const WorkPage = () => {
         <NavBar/>
         <ThemeProvider theme={theme}>
         <WorkPageWrapper>
-        {datas.map((data: Params, i) => {
-           let color =  pickColor(i)
-            return(
-            <WorkCard key={data.title} bg={`${color}`}>
-                <h1>{data.title}</h1>
-            {data.skills.map((skill)=>(
-                <ul>
-                    <li>{skill}</li>
-                </ul>
-                ))}
-                <p>#{data.category}</p>
-                <WorkImg src={data.gif} alt="project_featured_image" />
-                
-            </WorkCard>
-            )
-            
-        })}
+        {ProjectData.projects.map((data) => (
+            <WorkCardWrapper key={data.title} color='pink' data={data} />
+        ))}
         <Contact />
         </WorkPageWrapper>
         </ThemeProvider>

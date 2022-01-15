@@ -21,6 +21,16 @@ export const WorkImg = styled.img`
    width: 200px;
    height: 200px;
    object-fit: cover;
+`
 
 
+export const CardContent = styled.div`
+   display: flex;
+`
+export const CardDescription = styled.div`
+   width: 50%;
+`
+
+export const CardImage= styled.div`
+   width: 50% ;
 `
