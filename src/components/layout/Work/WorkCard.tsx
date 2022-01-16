@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react"
-import { WorkImg, WorkCard, CardDescription, CardImage, CardContent } from "./WorkPage.styled";
-
+import { WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks } from "./WorkCard.styled";
+import { GoMarkGithub, GoBrowser } from "react-icons/go";
 type Params = {
     data:{
         title: string,
@@ -14,6 +14,7 @@ type Params = {
         description: string,
     }
     color: string,
+    direction: string
 }
 
 
@@ -25,11 +26,12 @@ export const WorkCardWrapper = (props: Params) => {
         },
         []
         )
+  
 
 return(
 <WorkCard bg={`${props.color}`} onMouseEnter={handleHover} onMouseLeave={handleHover}>
-                <h1>{props.data.title}</h1>
-            <CardContent>
+                <WorkTitle>{props.data.title}</WorkTitle>
+            <CardContent direction={props.direction}>
             <CardImage>
                 { hover ?
                     <WorkImg src={props.data.gif} alt="project_featured_image" />
@@ -38,12 +40,17 @@ return(
                 }
             </CardImage>
             <CardDescription>
+            <Skills>
             {props.data.skills.map((skill)=>(
-                <ul>
-                    <li>{skill}</li>
-                </ul>
+                    <Skill>{skill}</Skill>
                 ))}
-                <p>#{props.data.category}</p>
+                 </Skills>
+                <p>{props.data.description}</p>
+                <ProjectLinks>
+                <a href={props.data.github} target="blank"><GoMarkGithub size={'30px'} color={"#594a4e"} /></a>
+                <a href={props.data.url} target="blank"><GoBrowser size={'30px'} color={"#594a4e"} /></a>
+                </ProjectLinks>
+                <a href={props.data.slug}>MORE...</a>
             </CardDescription>
             </CardContent>  
             </WorkCard>

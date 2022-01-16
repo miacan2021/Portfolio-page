@@ -15,40 +15,34 @@ export const CategoryWrapper = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-   background: ${({theme}) => theme.palette.white};
+   background: ${({theme}) => theme.palette.beige};
 `
 
 export const CategoryBtn = styled.button<{bg: string}>`
    color: ${({theme}) => theme.palette.head_text};
    background: ${({bg}) => bg};
-   width: 150px;
-   height: 40px;
-   padding: 10px;
-   font-size: 18px;
-   border: none;
+   width: 180px;
+   height: 50px;
+   font-size: 16px;
+   padding: 5px;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 3px;
    cursor: pointer;
+   transition: all 0.5s;
+   border: none;
+   border-top:${({theme}) => `1px solid ${theme.palette.sub_text}`};
+   border-left: ${({theme}) => `1px solid ${theme.palette.sub_text}`};
+   border-right: ${({theme}) => `1px solid ${theme.palette.sub_text}`};
+   @media (max-width: ${({theme}) => theme.mobile}) {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 2px;
+       }
 `
 
-export const WorkCard = styled.div<{bg: string}>`
-   color: ${({theme}) => theme.palette.head_text};
-   background-color: ${({bg}) => bg};
-`
 
-
-export const WorkImg = styled.img`
-   width: 200px;
-   height: 200px;
-   object-fit: cover;
-`
-
-
-export const CardContent = styled.div`
-   display: flex;
-`
-export const CardDescription = styled.div`
-   width: 50%;
-`
-
-export const CardImage= styled.div`
-   width: 50% ;
+export const WorkCards = styled.div`
+ border: ${({theme}) => `1px solid ${theme.palette.sub_text}`};
 `
