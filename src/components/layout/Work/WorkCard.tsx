@@ -27,7 +27,7 @@ export const WorkCardWrapper = (props: Params) => {
         )
 
 return(
-<WorkCard bg={'pink'} onMouseEnter={handleHover} onMouseLeave={handleHover}>
+<WorkCard bg={`${props.color}`} onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <h1>{props.data.title}</h1>
             <CardContent>
             <CardImage>

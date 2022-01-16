@@ -11,6 +11,24 @@ export const WorkPageWrapper = styled.div`
        }
 `
 
+export const CategoryWrapper = styled.div`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: ${({theme}) => theme.palette.white};
+`
+
+export const CategoryBtn = styled.button<{bg: string}>`
+   color: ${({theme}) => theme.palette.head_text};
+   background: ${({bg}) => bg};
+   width: 150px;
+   height: 40px;
+   padding: 10px;
+   font-size: 18px;
+   border: none;
+   cursor: pointer;
+`
+
 export const WorkCard = styled.div<{bg: string}>`
    color: ${({theme}) => theme.palette.head_text};
    background-color: ${({bg}) => bg};
