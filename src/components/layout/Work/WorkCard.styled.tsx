@@ -6,7 +6,6 @@ export const WorkCard = styled.div<{bg: string}>`
    width: 100%;
 `
 
-
 export const WorkTitle = styled.h1`
    letter-spacing: 2px;
    color: ${({theme}) => theme.palette.head_text};
@@ -34,7 +33,7 @@ export const CardDescription = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
    font-family: 'Open Sans', sans-serif; 
    @media (max-width: ${({theme}) => theme.mobile}) {
       width: 100%;
@@ -54,6 +53,7 @@ export const Skills = styled.ul`
   color: ${({theme}) => theme.palette.sub_text};
   font-size: 12px;
   gap: 3px;
+  padding: 10px;
 `
 
 export const Skill = styled.li`
@@ -67,4 +67,22 @@ export const Skill = styled.li`
 export const ProjectLinks= styled.div`
    display: flex;
    justify-content: center;
+   gap: 10px;
+   padding: 10px;
+`
+
+
+
+export const Description= styled.p`
+   padding: 10px;
+   color: ${({theme}) => theme.palette.sub_text};
+   font-size: 16px;
+`
+
+
+export const MoreBtn= styled.a`
+   color: ${({theme}) => theme.palette.sub_text};
+   background: ${({theme}) => theme.palette.beige};
+   border:${({theme}) => `1px solid ${theme.palette.sub_text}`};
+   padding: 10px 20px;
 `

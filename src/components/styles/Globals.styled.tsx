@@ -39,6 +39,23 @@ export const theme = {
       head_text: '#33272a',
       sub_text: '#594a4e'
       },
+      
     mobile : "768px",
     tablet: "767px"
   }
+
+  export const darkTheme = {
+    palette: {
+      white: '#fffffe',
+      beige: '#d4d8f0',
+      pink: '#eebbc3',
+      light_pink: '#d4939d',
+      green: '#121629',
+      head_text: '#232946',
+      sub_text: '#232946'
+      },
+      
+    mobile : "768px",
+    tablet: "767px"
+  }
+

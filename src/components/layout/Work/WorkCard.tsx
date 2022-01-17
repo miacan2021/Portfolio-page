@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react"
-import { WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks } from "./WorkCard.styled";
+import { WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks, Description, MoreBtn } from "./WorkCard.styled";
 import { GoMarkGithub, GoBrowser } from "react-icons/go";
 type Params = {
     data:{
@@ -44,13 +44,13 @@ return(
             {props.data.skills.map((skill)=>(
                     <Skill>{skill}</Skill>
                 ))}
-                 </Skills>
-                <p>{props.data.description}</p>
-                <ProjectLinks>
+            </Skills>
+            <Description>{props.data.description}</Description>
+            <ProjectLinks>
                 <a href={props.data.github} target="blank"><GoMarkGithub size={'30px'} color={"#594a4e"} /></a>
                 <a href={props.data.url} target="blank"><GoBrowser size={'30px'} color={"#594a4e"} /></a>
-                </ProjectLinks>
-                <a href={props.data.slug}>MORE...</a>
+            </ProjectLinks>
+            <MoreBtn href={props.data.slug}>MORE DETAIL</MoreBtn>
             </CardDescription>
             </CardContent>  
             </WorkCard>
