@@ -1,22 +1,37 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ModeContext } from "../../..";
 import { Contact } from "../pattern/Contact"
 import { GrobalStyles } from "../../styles/Globals.styled";
 import { NavBar } from "../pattern/NavBar"
 import { ThemeProvider } from "styled-components"
-import { theme } from "../../styles/Globals.styled"
+import { theme, darkTheme } from "../../styles/Globals.styled"
 import ProjectData from '../../../ProjectData.json'
 import {CategoryBtn, CategoryWrapper, WorkPageWrapper, WorkCards} from "./WorkPage.styled";
 import { WorkCardWrapper } from "./WorkCard";
 
 
 export const WorkPage = () => {
-    const colors :string[] = [
-       '#ffc6c7',
-       '#fffffe',
-       '#c3f0ca',
-       '#faeee7',
-       '#ff8ba7',
-    ]
+    const mode = useContext(ModeContext)
+
+    const colors :string[] = 
+    mode === 'light' ?
+        [
+            '#ffc6c7',
+            '#fffffe',
+            '#c3f0ca',
+            '#faeee7',
+            '#ff8ba7',
+         ]
+         :
+         [
+            '#d4d8f0',
+            '#fffffe',
+            '#eebbc3',
+            '#d4d8f0',
+            '#d4939d',
+         ]
+    
+
 
     const pickColor = (i: number) => {
        if(i >= 10){
@@ -34,6 +49,7 @@ export const WorkPage = () => {
         featured: colors[3],
         fun: colors[3],
     })
+    
     const handleCategory = (value: string) => {
         if(value === 'all'){
             setDatas(ProjectData.projects)
@@ -74,7 +90,7 @@ export const WorkPage = () => {
         <>
         <GrobalStyles />
         <NavBar/>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider  theme={ mode === 'light' ? theme : darkTheme}>
         <WorkPageWrapper>
         <CategoryWrapper>
         <CategoryBtn bg={btnBg.all} onClick={() => handleCategory('all')}>ALL</CategoryBtn>
@@ -90,8 +106,8 @@ export const WorkPage = () => {
         )}
         )}
         </WorkCards>
-        <Contact />
         </WorkPageWrapper>
+        <Contact />
         </ThemeProvider>
         </>
     )

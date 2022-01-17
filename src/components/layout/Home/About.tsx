@@ -1,11 +1,14 @@
+import { useContext } from "react"
+import { ModeContext } from "../../..";
 import { ThemeProvider } from "styled-components"
 import { Button } from "../pattern/Button"
-import { theme } from "../../styles/Globals.styled"
+import { theme, darkTheme } from "../../styles/Globals.styled"
 import { AboutH1, AboutLi, AboutLiSpan, AboutUl, AboutWrapper, ButtonCeter } from "./About.styled"
 
 export const About = () => {
+    const mode = useContext(ModeContext)
     return(
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={ mode === 'light' ? theme : darkTheme}>
         <AboutWrapper>
         <AboutH1>No goal in learning. I'll never stop learning.</AboutH1>
         <AboutUl>

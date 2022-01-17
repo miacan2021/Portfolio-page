@@ -1,18 +1,22 @@
+import { useContext } from "react"
+import { ModeContext } from "../../..";
 import { Contact } from "../pattern/Contact"
 import { GrobalStyles } from "../../styles/Globals.styled";
 import { NavBar } from "../pattern/NavBar"
 import { AboutImg, AboutImgArea, AboutMessage, AboutPageWrapper, AboutTitle, Introduce, Myself } from "./AboutPage.styled";
 import { ThemeProvider } from "styled-components"
-import { theme } from "../../styles/Globals.styled"
+import { theme, darkTheme } from "../../styles/Globals.styled"
 import { AboutH1 } from "../Home/About.styled"
 
 
 export const AboutPage = () => {
+    const mode = useContext(ModeContext)
+
     return(
         <>
         <GrobalStyles />
         <NavBar/>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={ mode === 'light' ? theme : darkTheme}>
         <AboutPageWrapper>
         <AboutTitle>About Me</AboutTitle>
         <Introduce>

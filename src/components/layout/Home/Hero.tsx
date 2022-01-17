@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { ModeContext } from "../../../App"
+import { ModeContext } from "../../..";
 import { ThemeProvider } from "styled-components"
 import { Button } from "../pattern/Button"
 import { theme, darkTheme } from "../../styles/Globals.styled"

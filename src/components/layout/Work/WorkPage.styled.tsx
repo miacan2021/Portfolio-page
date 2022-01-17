@@ -15,7 +15,6 @@ export const CategoryWrapper = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-   background: ${({theme}) => theme.palette.beige};
 `
 
 export const CategoryBtn = styled.button<{bg: string}>`

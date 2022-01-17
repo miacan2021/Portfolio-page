@@ -10,7 +10,6 @@ export const GrobalStyles = createGlobalStyle`
     }
     html{
         font-size: 12px;
-        background-color: #faeee7;
         font-family: 'Abel', sans-serif;
     }
     

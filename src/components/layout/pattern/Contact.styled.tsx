@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
+
+export const ContactBg = styled.div`
+  background: ${({theme}) => theme.palette.beige};
+  width: 100vw;
+`
+
 export const ContactWrapper = styled.div`
-    background: ${({theme}) => theme.palette.beige};
-    width: 80vw;
+    width: 80%;
     height: auto;
     text-align: center;
     padding: 60px 0;

@@ -1,15 +1,19 @@
+import { useContext } from "react"
+import { ModeContext } from "../../..";
 import { ThemeProvider } from "styled-components"
 import { Button } from "../pattern/Button"
-import { theme } from "../../styles/Globals.styled"
-import { ContactP, ContactTitle, ContactWrapper, Links, Link} from "./Contact.styled"
+import { theme, darkTheme } from "../../styles/Globals.styled"
+import { ContactP, ContactTitle, ContactWrapper, Links, Link, ContactBg} from "./Contact.styled"
 import { GoMarkGithub } from "react-icons/go";
 import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiMail, TiDocument, TiDeviceLaptop } from "react-icons/ti";
 import { SiDevdotto } from "react-icons/si";
 
 
 export const Contact = () => {
+    const mode = useContext(ModeContext)
     return(
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={ mode === 'light' ? theme : darkTheme}>
+            <ContactBg>
             <ContactWrapper id="contact">
                 <ContactTitle>Get in Touch.</ContactTitle>
                 <ContactP>I am looking forward to joining as a creative developer!<br />Please contact me if I capture your interest. I can not wait to talk to you.</ContactP>
@@ -24,6 +28,7 @@ export const Contact = () => {
                     <Link href="mailto:mia.can2021@gmail.com" title={'Mail'}><TiMail size={'40px'} color={"#594a4e"} /></Link>
                 </Links>
             </ContactWrapper>
+            </ContactBg>
         </ThemeProvider>
     )
     }
