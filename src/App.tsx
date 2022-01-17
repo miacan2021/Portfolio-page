@@ -23,12 +23,13 @@ const App = () => {
             {modeTheme === 'light' ?
               <MdModeNight size={'25px'} color={"#594a4e"} />
               :
-              <MdWbSunny size={'25px'} color={"#232946"} />}
+              <MdWbSunny size={'25px'} color={"#fffffe"} />
+              }
           </ModeBtn>
           <Hero />
           <Featured />
           <About />
-          <Contact />
+          <Contact modeTheme={modeTheme} />
           </Home>
       </ThemeProvider>
     </>

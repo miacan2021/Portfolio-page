@@ -41,8 +41,8 @@ return(
             </CardImage>
             <CardDescription>
             <Skills>
-            {props.data.skills.map((skill)=>(
-                    <Skill>{skill}</Skill>
+            {props.data.skills.map((skill,i)=>(
+                    <Skill key={i}>{skill}</Skill>
                 ))}
             </Skills>
             <Description>{props.data.description}</Description>

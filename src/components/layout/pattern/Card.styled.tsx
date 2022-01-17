@@ -5,7 +5,7 @@ export const CardWrapper = styled.button`
     width: 400px;
     min-width: 350px;
     height: 250px;
-    background: rgba( 255, 255, 255, 0.5 );
+    background: rgba( 255, 255, 255, 0.8 );
     border: none;
     box-shadow: 8px 8px 10px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 2px );

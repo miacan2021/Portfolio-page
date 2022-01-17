@@ -1,22 +1,29 @@
 import { useCallback, useState } from 'react';
 
 type Value = {
-    modeTheme: string;
-    setModeTheme: React.Dispatch<React.SetStateAction<string>>;
-    setNextMode: (current: string) => void;
+    modeTheme: string|null;
+    setModeTheme: React.Dispatch<React.SetStateAction<string|null>>;
+    setNextMode: (current: string|null) => void;
 }
 
 export const useSetTheme = (): Value => {
-  const mode: string| null = localStorage.getItem('mode')
-  const [modeTheme, setModeTheme] = useState<string>(mode || 'light')
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const mode = isDarkMode ? "dark" : "light"
+  const [modeTheme, setModeTheme] = useState<string|null>(localStorage.getItem('mode') === null ? mode : localStorage.getItem('mode'))
 
-  const setNextMode = useCallback((current: string): void => {
+  const setNextMode = useCallback((current: string|null): void => {
+      let modeLight: string|null;
+      let modeDark: string|null;
       if(current === 'light'){
         localStorage.setItem('mode', 'dark')
-        return setModeTheme('dark')
+        modeLight = localStorage.getItem('mode')
+        console.log(modeLight)
+        return setModeTheme(modeLight)
       }else if(current === 'dark'){
         localStorage.setItem('mode', 'light');
-        return setModeTheme('light')
+         modeDark = localStorage.getItem('mode')
+         console.log(modeDark)
+        return setModeTheme(modeDark)
       }else{
         console.log('theme err:', current)
       }

@@ -12,7 +12,7 @@ export const AboutWrapper = styled.div`
 `
 export const AboutH1 = styled.h1`
     font-size: 36px;
-    color: ${({theme}) =>  theme.palette.head_text };
+    color: ${({theme}) =>  theme.palette.sub_text};
     font-family: 'Abel', sans-serif;
     letter-spacing: 5px;
     padding: 40px 0px 0px 0px;

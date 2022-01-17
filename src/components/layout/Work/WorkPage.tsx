@@ -10,7 +10,6 @@ import { WorkCardWrapper } from "./WorkCard";
 import { useSetTheme } from "../../../hooks/useSetTheme";
 
 
-
 export const WorkPage = () => {
     const {modeTheme} = useSetTheme()
 
@@ -90,8 +89,8 @@ export const WorkPage = () => {
     return(
         <>
         <GrobalStyles />
+        <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme}>
         <NavBar/>
-        <ThemeProvider  theme={ modeTheme === 'light' ? theme : darkTheme}>
         <WorkPageWrapper>
         <CategoryWrapper>
         <CategoryBtn bg={btnBg.all} onClick={() => handleCategory('all')}>ALL</CategoryBtn>
@@ -108,7 +107,7 @@ export const WorkPage = () => {
         )}
         </WorkCards>
         </WorkPageWrapper>
-        <Contact />
+        <Contact modeTheme={modeTheme} />
         </ThemeProvider>
         </>
     )

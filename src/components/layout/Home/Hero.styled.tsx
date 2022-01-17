@@ -107,15 +107,18 @@ export const ModeBtn = styled.button`
        justify-content: center;
        width: 40px;
        height: 40px;
-       top: 17px;
-       right: 15px;
+       top: 130px;
+       right: 40px;
        background:${({theme}) =>  theme.palette.beige};
-       z-index: 1000;
+       z-index: 80;
        border: ${({theme}) => `1px solid ${theme.palette.head_text}`};
        box-shadow: ${({theme}) => `5px 5px 0px 0 ${theme.palette.pink}`}; 
        cursor: pointer;
+       transition: all 0.5s;
+       &:hover{
+              box-shadow: none;
+       }
        @media (max-width: ${({theme}) => theme.mobile}) {
-              background: transparent;
               top: 35px;
               right: 35px;
               width: 30px;

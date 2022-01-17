@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Nav = styled.nav<{open: boolean}>`
     height: 110px;
     width: 100%;
-
     background: ${({ open }) => open ? '#fffffe' : 'transparent'};
     display: flex;
     align-items: center;
@@ -39,9 +38,9 @@ export const LogoImg = styled.div`
     }
 `
 export const Logo = styled.h1`
-    color: ${({theme}) =>  theme.palette.head_text };
-    font-family: 'Josefin Slab', sans-serif;
-    font-size: 13px;
+    color: ${({theme}) => theme.palette.pink};
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     letter-spacing: 5px;
     font-weight: bold;
     @media (max-width: ${({theme}) => theme.mobile}) {
@@ -58,7 +57,7 @@ export const Menu = styled.div`
 
 
 export const Line = styled.div`
-    color: ${({theme}) =>  theme.palette.head_text };
+    color: ${({theme}) =>  theme.palette.sub_text };
     width: 0.5px;
     height: 20px;
     background-color: ${({theme}) =>  theme.palette.head_text };
@@ -67,22 +66,27 @@ export const Line = styled.div`
 
 
 export const MenuIcon = styled.div`
-    color: ${({theme}) =>  theme.palette.head_text };
+    color: ${({theme}) => theme.palette.white};
+    background-color: ${({theme}) =>  theme.palette.sub_text};
+    padding: 7px;
+    border: ${({theme}) => `1px solid ${theme.palette.green}` };
     font-family: 'Abel', sans-serif;
     margin-left: 20px;
     font-weight: bold;
-    text-shadow: ${({theme}) => `0px 0px 1px ${theme.palette.head_text}` };
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     transition: all ease 0.3s;
+    box-shadow: ${({theme}) => `5px 5px 0px 0 ${theme.palette.pink}`}; 
     &:hover {
         letter-spacing: 5px;
         margin-left: 15px;
+        box-shadow:none;
     }
     @media (max-width: ${({theme}) => theme.mobile}) {
         font-size: 12px;
         letter-spacing: 3px;
+        box-shadow: ${({theme}) => `3px 3px 0px 0 ${theme.palette.pink}`}; 
         &:hover {
         letter-spacing: 4px;
         margin-left: 16px;
@@ -98,7 +102,7 @@ export const NavList = styled.ul<{open: boolean}>`
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    color: ${({theme}) =>  theme.palette.head_text };
+    color: ${({theme}) =>  theme.palette.sub_text };
     font-family: 'Abel', sans-serif;
     cursor: pointer;
     font-size: 16px;
@@ -128,7 +132,7 @@ export const NavItem = styled.li <{open: boolean}>`
     margin-left: 20px;
     transition: all ease 0.5s;
     & a{
-        color: ${({theme}) =>  theme.palette.head_text };
+        color: ${({theme}) =>  theme.palette.sub_text };
     }
     &:hover{
       letter-spacing: 1px;

@@ -28,7 +28,7 @@ export const ContactP = styled.p`
     font-size: 18px;
     margin-top: 40px;
     white-space: wrap;
-    color: ${({theme}) => theme.palette.sub_text};;
+    color: ${({theme}) => theme.palette.head_text};;
     @media (max-width: ${({theme}) => theme.mobile}) {
         font-size: 14px;
         margin-top: 20px;

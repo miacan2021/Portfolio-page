@@ -8,7 +8,7 @@ export const WorkCard = styled.div<{bg: string}>`
 
 export const WorkTitle = styled.h1`
    letter-spacing: 2px;
-   color: ${({theme}) => theme.palette.head_text};
+   color: ${({theme}) => theme.palette.sub_text};
    margin-bottom: 20px;
    padding-top: 20px;
    font-family: 'Montserrat', sans-serif;
@@ -50,7 +50,7 @@ export const CardImage= styled.div`
 
 export const Skills = styled.ul`
   display: flex; 
-  color: ${({theme}) => theme.palette.sub_text};
+  color: ${({theme}) => theme.palette.head_text};
   font-size: 12px;
   gap: 3px;
   padding: 10px;
@@ -81,7 +81,7 @@ export const Description= styled.p`
 
 
 export const MoreBtn= styled.a`
-   color: ${({theme}) => theme.palette.sub_text};
+   color: ${({theme}) => theme.palette.head_text};
    background: ${({theme}) => theme.palette.beige};
    border:${({theme}) => `1px solid ${theme.palette.sub_text}`};
    padding: 10px 20px;

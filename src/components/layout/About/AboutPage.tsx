@@ -1,4 +1,3 @@
-import { useSetTheme } from "../../../hooks/useSetTheme";
 import { Contact } from "../pattern/Contact"
 import { GrobalStyles } from "../../styles/Globals.styled";
 import { NavBar } from "../pattern/NavBar"
@@ -6,6 +5,7 @@ import { AboutImg, AboutImgArea, AboutMessage, AboutPageWrapper, AboutTitle, Int
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "../../styles/Globals.styled"
 import { AboutH1 } from "../Home/About.styled"
+import { useSetTheme } from "../../../hooks/useSetTheme";
 
 
 export const AboutPage = () => {
@@ -13,8 +13,8 @@ export const AboutPage = () => {
     return(
         <>
         <GrobalStyles />
-        <NavBar/>
         <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme}>
+        <NavBar/>
         <AboutPageWrapper>
         <AboutTitle>About Me</AboutTitle>
         <Introduce>
@@ -29,7 +29,7 @@ export const AboutPage = () => {
         </AboutImgArea>
         </Introduce>
         </AboutPageWrapper>
-        <Contact />
+        <Contact  modeTheme={modeTheme} />
         </ThemeProvider>
         </>
     )

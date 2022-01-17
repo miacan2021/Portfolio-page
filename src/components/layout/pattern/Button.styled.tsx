@@ -39,7 +39,7 @@ export const ButtonPink = styled.button`
     transition: .3s ease-in-out;
   }
   &:hover {
-    color: ${({theme}) => theme.palette.green};
+    color: ${({theme}) => theme.palette.white};
   }
   &:hover::after {
     top: 0;

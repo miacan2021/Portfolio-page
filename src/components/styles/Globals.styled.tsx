@@ -46,11 +46,11 @@ export const theme = {
   export const darkTheme = {
     palette: {
       white: '#fffffe',
-      beige: '#d4d8f0',
+      beige: '#232946',
       pink: '#eebbc3',
       light_pink: '#d4939d',
-      green: '#121629',
-      head_text: '#232946',
+      green: '#b8c1ec',
+      head_text: '#fffffe',
       sub_text: '#232946'
       },
     mobile : "768px",
