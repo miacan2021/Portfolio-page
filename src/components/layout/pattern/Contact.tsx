@@ -1,8 +1,4 @@
-import { useContext } from "react"
-import { ModeContext } from "../../..";
-import { ThemeProvider } from "styled-components"
 import { Button } from "../pattern/Button"
-import { theme, darkTheme } from "../../styles/Globals.styled"
 import { ContactP, ContactTitle, ContactWrapper, Links, Link, ContactBg} from "./Contact.styled"
 import { GoMarkGithub } from "react-icons/go";
 import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiMail, TiDocument, TiDeviceLaptop } from "react-icons/ti";
@@ -10,9 +6,7 @@ import { SiDevdotto } from "react-icons/si";
 
 
 export const Contact = () => {
-    const mode = useContext(ModeContext)
     return(
-        <ThemeProvider theme={ mode === 'light' ? theme : darkTheme}>
             <ContactBg>
             <ContactWrapper id="contact">
                 <ContactTitle>Get in Touch.</ContactTitle>
@@ -29,6 +23,5 @@ export const Contact = () => {
                 </Links>
             </ContactWrapper>
             </ContactBg>
-        </ThemeProvider>
     )
     }

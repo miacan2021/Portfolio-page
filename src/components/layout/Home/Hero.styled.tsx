@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+
+export const Home = styled.div`
+       background:${({theme}) =>  theme.palette.beige };
+`
 export const HeroWrapper = styled.div`
         background:${({theme}) =>  theme.palette.beige };
         width: 100vw;

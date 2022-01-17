@@ -1,5 +1,4 @@
-import { useContext } from "react"
-import { ModeContext } from "../../..";
+import { useSetTheme } from "../../../hooks/useSetTheme";
 import { Contact } from "../pattern/Contact"
 import { GrobalStyles } from "../../styles/Globals.styled";
 import { NavBar } from "../pattern/NavBar"
@@ -10,13 +9,12 @@ import { AboutH1 } from "../Home/About.styled"
 
 
 export const AboutPage = () => {
-    const mode = useContext(ModeContext)
-
+    const {modeTheme} = useSetTheme()
     return(
         <>
         <GrobalStyles />
         <NavBar/>
-        <ThemeProvider theme={ mode === 'light' ? theme : darkTheme}>
+        <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme}>
         <AboutPageWrapper>
         <AboutTitle>About Me</AboutTitle>
         <Introduce>

@@ -1,5 +1,4 @@
-import { useState, useContext } from "react";
-import { ModeContext } from "../../..";
+import { useState } from "react";
 import { Contact } from "../pattern/Contact"
 import { GrobalStyles } from "../../styles/Globals.styled";
 import { NavBar } from "../pattern/NavBar"
@@ -8,13 +7,15 @@ import { theme, darkTheme } from "../../styles/Globals.styled"
 import ProjectData from '../../../ProjectData.json'
 import {CategoryBtn, CategoryWrapper, WorkPageWrapper, WorkCards} from "./WorkPage.styled";
 import { WorkCardWrapper } from "./WorkCard";
+import { useSetTheme } from "../../../hooks/useSetTheme";
+
 
 
 export const WorkPage = () => {
-    const mode = useContext(ModeContext)
+    const {modeTheme} = useSetTheme()
 
     const colors :string[] = 
-    mode === 'light' ?
+    modeTheme === 'light' ?
         [
             '#ffc6c7',
             '#fffffe',
@@ -90,7 +91,7 @@ export const WorkPage = () => {
         <>
         <GrobalStyles />
         <NavBar/>
-        <ThemeProvider  theme={ mode === 'light' ? theme : darkTheme}>
+        <ThemeProvider  theme={ modeTheme === 'light' ? theme : darkTheme}>
         <WorkPageWrapper>
         <CategoryWrapper>
         <CategoryBtn bg={btnBg.all} onClick={() => handleCategory('all')}>ALL</CategoryBtn>

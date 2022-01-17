@@ -53,7 +53,6 @@ export const theme = {
       head_text: '#232946',
       sub_text: '#232946'
       },
-      
     mobile : "768px",
     tablet: "767px"
   }
