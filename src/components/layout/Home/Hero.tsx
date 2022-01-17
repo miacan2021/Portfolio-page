@@ -4,7 +4,7 @@ import { HeroWrapper, HeroContainer, Hello, Name, FamilyName, Title, HeroTitle, 
 export const Hero = () => {
     return (
             <>
-            å<HeroWrapper>
+            <HeroWrapper>
             <HeroContainer>
                 <HeroTitle>
                 <Hello>HELLO. I’M</Hello>

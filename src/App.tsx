@@ -7,8 +7,8 @@ import { GrobalStyles } from "./components/styles/Globals.styled";
 import { useSetTheme } from "./hooks/useSetTheme";
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "./components/styles/Globals.styled"
-import { Home } from "./components/layout/Home/Hero.styled";
-
+import { Home, ModeBtn } from "./components/layout/Home/Hero.styled";
+import { MdModeNight, MdWbSunny } from "react-icons/md";
 
 const App = () => {
   const {modeTheme, setNextMode } = useSetTheme()
@@ -18,8 +18,13 @@ const App = () => {
     <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme }>
     <GrobalStyles />
           <NavBar />
-          <button style={{position:"absolute", zIndex:500, width:'100px'}} onClick={() => setNextMode(modeTheme)}>theme</button>
           <Home>
+          <ModeBtn onClick={() => setNextMode(modeTheme)}>
+            {modeTheme === 'light' ?
+              <MdModeNight size={'25px'} color={"#594a4e"} />
+              :
+              <MdWbSunny size={'25px'} color={"#232946"} />}
+          </ModeBtn>
           <Hero />
           <Featured />
           <About />

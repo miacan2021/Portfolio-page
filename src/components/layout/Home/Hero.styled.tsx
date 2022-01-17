@@ -3,16 +3,20 @@ import styled from "styled-components";
 
 export const Home = styled.div`
        background:${({theme}) =>  theme.palette.beige };
+       width: 100vw;
+       height: auto;
+       padding-top: 130px;
+        @media (max-width: ${({theme}) => theme.mobile}) {
+              padding-top: 100px;
+       }
+       
 `
 export const HeroWrapper = styled.div`
-        background:${({theme}) =>  theme.palette.beige };
-        width: 100vw;
-        height: auto;
         font-family: 'Abel', sans-serif;
         color:${({theme}) =>  theme.palette.head_text };
-        padding: 130px 20px 80px 20px;
+        padding: 0px 20px 80px 20px;
         @media (max-width: ${({theme}) => theme.mobile}) {
-              padding: 100px 5px 50px 5px;
+              padding: 0px 5px 50px 5px;
               overflow: hidden;
        }
 `
@@ -92,6 +96,31 @@ export const TopImg= styled.img`
        width: 100px;
        height: 100px;
        box-shadow: ${({theme}) => `20px 5px 0px 0 ${theme.palette.pink}`}; 
-
     }
 `   
+
+
+export const ModeBtn = styled.button`
+       position:fixed;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 40px;
+       height: 40px;
+       top: 17px;
+       right: 15px;
+       background:${({theme}) =>  theme.palette.beige};
+       z-index: 1000;
+       border: ${({theme}) => `1px solid ${theme.palette.head_text}`};
+       box-shadow: ${({theme}) => `5px 5px 0px 0 ${theme.palette.pink}`}; 
+       cursor: pointer;
+       @media (max-width: ${({theme}) => theme.mobile}) {
+              background: transparent;
+              top: 35px;
+              right: 35px;
+              width: 30px;
+              height: 30px;
+              box-shadow: ${({theme}) => `3px 3px 0px 0 ${theme.palette.pink}`}; 
+       }
+       
+`
