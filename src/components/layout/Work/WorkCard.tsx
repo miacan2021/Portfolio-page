@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react"
-import { WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks, Description, MoreBtn } from "./WorkCard.styled";
+import { WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks, Description, MoreBtn, ProjectLink } from "./WorkCard.styled";
 import { GoMarkGithub, GoBrowser } from "react-icons/go";
 type Params = {
     data:{
@@ -47,10 +47,10 @@ return(
             </Skills>
             <Description>{props.data.description}</Description>
             <ProjectLinks>
-                <a href={props.data.github} target="blank"><GoMarkGithub size={'30px'} color={"#594a4e"} /></a>
-                <a href={props.data.url} target="blank"><GoBrowser size={'30px'} color={"#594a4e"} /></a>
+                <ProjectLink href={props.data.github} target="blank"><GoMarkGithub size={'30px'} color={"#594a4e"} /></ProjectLink>
+                <ProjectLink href={props.data.url} target="blank"><GoBrowser size={'30px'} color={"#594a4e"} /></ProjectLink>
             </ProjectLinks>
-            <MoreBtn href={props.data.slug}>MORE DETAIL</MoreBtn>
+            <MoreBtn href={props.data.slug}>MORE...</MoreBtn>
             </CardDescription>
             </CardContent>  
             </WorkCard>

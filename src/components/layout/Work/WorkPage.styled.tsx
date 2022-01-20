@@ -18,7 +18,7 @@ export const CategoryWrapper = styled.div`
 `
 
 export const CategoryBtn = styled.button<{bg: string}>`
-   color: ${({theme}) => theme.palette.head_text};
+   color: ${({theme}) => theme.palette.sub_text};
    background: ${({bg}) => bg};
    width: 180px;
    height: 50px;
@@ -32,6 +32,9 @@ export const CategoryBtn = styled.button<{bg: string}>`
    border-top:${({theme}) => `1px solid ${theme.palette.sub_text}`};
    border-left: ${({theme}) => `1px solid ${theme.palette.sub_text}`};
    border-right: ${({theme}) => `1px solid ${theme.palette.sub_text}`};
+   &:hover{
+      background: ${({theme}) => theme.palette.pink};
+   }
    @media (max-width: ${({theme}) => theme.mobile}) {
       width: 120px;
       height: 40px;

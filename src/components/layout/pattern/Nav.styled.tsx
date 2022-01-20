@@ -38,7 +38,7 @@ export const LogoImg = styled.div`
     }
 `
 export const Logo = styled.h1`
-    color: ${({theme}) => theme.palette.pink};
+    color: #E090B9;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     letter-spacing: 5px;

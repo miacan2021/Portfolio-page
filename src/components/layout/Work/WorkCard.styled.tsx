@@ -13,11 +13,13 @@ export const WorkTitle = styled.h1`
    padding-top: 20px;
    font-family: 'Montserrat', sans-serif;
 `
+
 export const WorkImg = styled.img`
    width: 100%;
    object-fit: cover;
   
 `
+
 export const CardContent = styled.div<{direction: string}>`
    display: flex;
    justify-content: space-around;
@@ -28,6 +30,7 @@ export const CardContent = styled.div<{direction: string}>`
       justify-content: center;
        }
 `
+
 export const CardDescription = styled.div`
    width: 49%;
    display: flex;
@@ -63,7 +66,6 @@ export const Skill = styled.li`
   padding: 3px;
 `
 
-
 export const ProjectLinks= styled.div`
    display: flex;
    justify-content: center;
@@ -71,7 +73,12 @@ export const ProjectLinks= styled.div`
    padding: 10px;
 `
 
-
+export const ProjectLink= styled.a`
+   transition: all .5s;
+   &:hover{
+      transform: translateY(-3px);
+   }
+`
 
 export const Description= styled.p`
    padding: 10px;
@@ -79,10 +86,19 @@ export const Description= styled.p`
    font-size: 16px;
 `
 
-
 export const MoreBtn= styled.a`
    color: ${({theme}) => theme.palette.head_text};
    background: ${({theme}) => theme.palette.beige};
    border:${({theme}) => `1px solid ${theme.palette.sub_text}`};
    padding: 10px 20px;
+   letter-spacing: 2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all .5s;
+   &:hover {
+      background: ${({theme}) => theme.palette.white};
+      color: ${({theme}) => theme.palette.sub_text};
+      transform: translateY(-3px);
+   }
 `

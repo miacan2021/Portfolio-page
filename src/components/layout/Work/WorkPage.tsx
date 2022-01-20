@@ -8,10 +8,12 @@ import ProjectData from '../../../ProjectData.json'
 import {CategoryBtn, CategoryWrapper, WorkPageWrapper, WorkCards} from "./WorkPage.styled";
 import { WorkCardWrapper } from "./WorkCard";
 import { useSetTheme } from "../../../hooks/useSetTheme";
+import { MdModeNight, MdWbSunny } from "react-icons/md";
+import { ModeBtn } from "../../layout/Home/Hero.styled";
 
 
 export const WorkPage = () => {
-    const {modeTheme} = useSetTheme()
+    const {modeTheme, setNextMode} = useSetTheme()
 
     const colors :string[] = 
     modeTheme === 'light' ?
@@ -92,6 +94,13 @@ export const WorkPage = () => {
         <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme}>
         <NavBar/>
         <WorkPageWrapper>
+        <ModeBtn onClick={() => setNextMode(modeTheme)}>
+            {modeTheme === 'light' ?
+              <MdModeNight size={'25px'} color={"#594a4e"} />
+              :
+              <MdWbSunny size={'25px'} color={"#fffffe"} />
+              }
+          </ModeBtn>
         <CategoryWrapper>
         <CategoryBtn bg={btnBg.all} onClick={() => handleCategory('all')}>ALL</CategoryBtn>
         <CategoryBtn bg={btnBg.featured} onClick={() => handleCategory('featured')}>FEATURED</CategoryBtn>
