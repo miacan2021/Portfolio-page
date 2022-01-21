@@ -58,10 +58,12 @@ export const Cards = styled.div`
       gap: 25px;
       top: -220px;
       overflow-x: hidden;
-      justify-content: center;
-      height: 600px;
+      justify-content: start;
+      height: 550px;
       width: 100%;
       padding-bottom: 40px;
+      padding-top: 10px;
+      overflow-y: auto;
      }
 `
 

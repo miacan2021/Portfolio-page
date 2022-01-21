@@ -1,13 +1,18 @@
 import { useState, useCallback } from "react"
-import { CardTitle, CardWrapper, CardImg, CardLi, CardFlex, CardUl } from "./Card.styled"
+import { CardTitle, CardWrapper, CardImg, CardFlex, CardDesc} from "./Card.styled"
+import { Link } from "react-router-dom"
 
 type DataItem = {
     data:{
-    title: string,
-    gif: string,
-    thumbnail: string,
-    skills: string[],
-    slug: string,
+        title: string,
+        gif: string,
+        thumbnail: string,
+        skills: string[],
+        category: string,
+        github: string,
+        url: string,
+        slug: string,
+        description: string,
     }
 }
 
@@ -21,6 +26,7 @@ export const Card = (props: DataItem) => {
         )
         
     return(
+       <Link to={`/work/${props.data.slug}`}>
        <CardWrapper onMouseEnter={handleHover} onMouseLeave={handleHover}>
            { hover ? 
            <CardImg src={props.data.gif} alt="project-image" />
@@ -29,12 +35,9 @@ export const Card = (props: DataItem) => {
             }
            <CardFlex>
            <CardTitle>{props.data.title}</CardTitle>
-           <CardUl>
-               {props.data.skills.map((skill, i) => (
-                   <CardLi key={i}>{skill}</CardLi>
-               ))}
-           </CardUl>
+           <CardDesc>{props.data.description}</CardDesc>
            </CardFlex>
        </CardWrapper>
+        </Link>
     )
 }

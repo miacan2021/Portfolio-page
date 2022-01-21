@@ -1,6 +1,8 @@
 import { useState, useCallback } from "react"
 import { WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks, Description, MoreBtn, ProjectLink } from "./WorkCard.styled";
-import { GoMarkGithub, GoBrowser } from "react-icons/go";
+import { GoMarkGithub, GoBrowser } from "react-icons/go"
+import {Link} from 'react-router-dom'
+
 type Params = {
     data:{
         title: string,
@@ -28,8 +30,8 @@ export const WorkCardWrapper = (props: Params) => {
         )
   
 
-return(
-<WorkCard bg={`${props.color}`} onMouseEnter={handleHover} onMouseLeave={handleHover}>
+return( 
+            <WorkCard bg={`${props.color}`} onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <WorkTitle>{props.data.title}</WorkTitle>
             <CardContent direction={props.direction}>
             <CardImage>
@@ -50,7 +52,7 @@ return(
                 <ProjectLink href={props.data.github} target="blank"><GoMarkGithub size={'30px'} color={"#594a4e"} /></ProjectLink>
                 <ProjectLink href={props.data.url} target="blank"><GoBrowser size={'30px'} color={"#594a4e"} /></ProjectLink>
             </ProjectLinks>
-            <MoreBtn href={props.data.slug}>MORE...</MoreBtn>
+            <Link to={props.data.slug}><MoreBtn>MORE...</MoreBtn></Link>
             </CardDescription>
             </CardContent>  
             </WorkCard>

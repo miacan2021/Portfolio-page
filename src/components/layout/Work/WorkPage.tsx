@@ -11,7 +11,6 @@ import { useSetTheme } from "../../../hooks/useSetTheme";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
 import { ModeBtn } from "../../layout/Home/Hero.styled";
 
-
 export const WorkPage = () => {
     const {modeTheme, setNextMode} = useSetTheme()
 

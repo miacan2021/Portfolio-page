@@ -86,7 +86,7 @@ export const Description= styled.p`
    font-size: 16px;
 `
 
-export const MoreBtn= styled.a`
+export const MoreBtn= styled.div`
    color: ${({theme}) => theme.palette.head_text};
    background: ${({theme}) => theme.palette.beige};
    border:${({theme}) => `1px solid ${theme.palette.sub_text}`};

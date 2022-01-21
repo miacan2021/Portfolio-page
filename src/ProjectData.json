@@ -31,19 +31,19 @@
         "category":"featured",
         "github":"https://github.com/miacan2021/VanCafe.git",
         "url":"https://work-friendly-cafe-van.vercel.app/",
-        "slug":"work-friendly-cafe-van",
-        "description":"“Next.js” & “WordPress” - JAMstack website using WP GraphQL and REST API."
+        "slug":"cafe-van",
+        "description":"“Next.js” & “WordPress” - JAMstack website using WP GraphQL and REST API. We can find or post cafe information that has outlets and Wi-Fi."
     },
    {
         "title": "FocusTube",
         "gif":"../img/focustube/focus.gif",
         "thumbnail":"../img/focustube/top.jpg",
         "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
-        "category":"featured",
+        "category": "featured",
         "github":"https://github.com/miacan2021/React-Final.git",
         "url":"https://focustube.vercel.app/",
         "slug":"focustube",
-        "description":"Find cafe in Van..."
+        "description":"“Youtube Data API v3” & “Redux” project. On this website, we can control our favourite videos list easily. We also search videos from the search bar on this website."
     },
    {
         "title": "Weather APP with DARK MODE",
@@ -54,7 +54,7 @@
         "github":"https://github.com/miacan2021/weather-app.git",
         "url":"https://happy-hawking-f6969d.netlify.app/",
         "slug":"weather-app",
-        "description":"Find cafe in Van..."
+        "description":"A Weather app web page using “Open weather API”, “Unsplash API” and “TailwindCSS”. It is also adapted to dark mode."
     },
     {
         "title": "My portfolio",

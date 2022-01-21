@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const CardWrapper = styled.button`
+export const CardWrapper = styled.div`
     z-index: 20;
     width: 400px;
     min-width: 350px;
-    height: 250px;
+    height: 220px;
     background: rgba( 255, 255, 255, 0.8 );
     border: none;
     box-shadow: 8px 8px 10px 0 rgba( 31, 38, 135, 0.37 );
@@ -29,13 +29,30 @@ export const CardWrapper = styled.button`
 
 export const CardFlex = styled.div`
     width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 `
 
 export const CardTitle = styled.h1`
      font-size: 18px;
      font-family: 'Abel', sans-serif;
+     padding-bottom: 4px;
+     color:  ${({theme}) => theme.palette.sub_text};
+     letter-spacing: 2px;
      @media (max-width: ${({theme}) => theme.tablet}) {
-        font-size: 12px;
+        font-size: 14px;
+     }
+`
+
+export const CardDesc = styled.p`
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  color: ${({theme}) => theme.palette.sub_text};
+     @media (max-width: ${({theme}) => theme.tablet}) {
+        font-size: 8px;
      }
 `
 
@@ -44,22 +61,4 @@ export const CardImg= styled.img`
       height: 90%;
       object-fit: cover;
       border-radius: 15px;
-`
-export const CardUl= styled.ul`
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
-    justify-content: center;
-    align-items: center;
-`
-
-export const CardLi= styled.li`
-    width: 75px;
-    background-color: ${({theme}) => theme.palette.light_pink};
-    color: ${({theme}) => theme.palette.sub_text};
-    font-family: 'Abel', sans-serif;
-    @media (max-width: ${({theme}) => theme.tablet}) {
-        font-size: 10px;
-     }
 `

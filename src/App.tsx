@@ -10,6 +10,7 @@ import { theme, darkTheme } from "./components/styles/Globals.styled"
 import { Home, ModeBtn } from "./components/layout/Home/Hero.styled";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
 
+
 const App = () => {
   const {modeTheme, setNextMode } = useSetTheme()
 
