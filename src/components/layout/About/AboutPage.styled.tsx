@@ -7,7 +7,7 @@ export const AboutPageWrapper = styled.div`
    padding-bottom: 50px;
    text-align: center;
    margin: auto;
-   @media (max-width: ${({theme}) => theme.mobile}) {
+   @media (max-width: ${({theme}) => theme.tablet}) {
         width: 90wh;
        }
 `
@@ -16,10 +16,11 @@ export const Introduce = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: ${({theme}) =>  theme.palette.beige };
+    background-color: ${({theme}) =>  theme.palette.beige};
     padding-bottom: 20px;
     padding-top: 20px;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    border-radius: 5px 5px 0 0;
+    @media (max-width: ${({theme}) => theme.tablet}) {
        flex-direction: column;
        }
 `
@@ -27,12 +28,13 @@ export const Introduce = styled.div`
 
 export const Name = styled.h1`
     font-family: 'Abel', sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     color: ${({theme}) =>  theme.palette.sub_text};
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     background-color: ${({theme}) =>  theme.palette.pink};
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 40px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         font-size: 24px;
        }
@@ -41,13 +43,32 @@ export const Name = styled.h1`
 export const Myself = styled.div`
     width: 60%;
     padding: 20px;
+    @media (max-width: ${({theme}) => theme.tablet}) {
+        width: 90%;
+        padding: 10px;
+       }
 `
 
+export const Profile = styled.div`
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: 20px;
+    @media (max-width: ${({theme}) => theme.tablet}) {
+        width: 90%;
+       }
+`
 export const AboutTitle = styled.h1`
     font-family: 'Josefin Slab', serif;
     font-size: 48px;
     letter-spacing: 3px;
     color: ${({theme}) =>  theme.palette.pink};
+    background-color: ${({theme}) =>  theme.palette.beige};
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         font-size: 28px;
         letter-spacing: 2px;
@@ -55,14 +76,15 @@ export const AboutTitle = styled.h1`
 `
 
 export const AboutImg = styled.img`
-    width: 230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     box-shadow: 10px 10px 0px ${({theme}) =>  theme.palette.pink };
     transition: all 0.8s;
+    border-radius: 5px;
     @media (max-width: ${({theme}) => theme.mobile}) {
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
        }
 `
 
@@ -99,7 +121,7 @@ export const SectionTitle = styled.h2`
     letter-spacing: 2px;
     background-color: ${({theme}) =>  theme.palette.green};
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     margin-top: 20px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         font-size: 20px;
@@ -109,13 +131,45 @@ export const SectionTitle = styled.h2`
 
 export const AboutP = styled.p`
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: ${({theme}) =>  theme.palette.sub_text};
+    font-size: 16px;
+    color: ${({theme}) => theme.palette.sub_text};
     background-color: ${({theme}) =>  theme.palette.white};
     padding: 20px 10px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
+    line-height: 150%;
     @media (max-width: ${({theme}) => theme.mobile}) {
-        font-size: 16px;
+        font-size: 14px;
        }
 
+`
+
+
+export const Skills = styled.div`
+    background-color: ${({theme}) =>  theme.palette.white};
+    border-radius: 0 0 5px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+`
+
+export const Skill = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: ${({theme}) =>  theme.palette.sub_text};
+`
+
+export const Highlight = styled.span`
+    background-color: ${({theme}) =>  theme.palette.green};
+    padding: 2px;
 `
