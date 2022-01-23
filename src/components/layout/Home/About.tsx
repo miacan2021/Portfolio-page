@@ -14,11 +14,11 @@ export const About = () => {
             </AboutLi>
             <AboutLi>
             <AboutLiSpan>High potential as a developer</AboutLiSpan>
-            <br/>I'm pleased to code, design, google about new things, solve problems. 
+            <br/>I'm pleased to code, design, learn about new things, solve problems. 
             </AboutLi>
             <AboutLi>
-            <AboutLiSpan>Bachelor of multi-media</AboutLiSpan>
-            <br />I've had a bachelor of multi-media 6 years ago in Japan. I have knowledge about not only web development but also editing videos, photos, graphics, so on and so forth. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I’m looking for a job as a front-end developer.
+            <AboutLiSpan>Bachelor of Multi-media</AboutLiSpan>
+            <br />I've had a bachelor of multi-media in Japan. I have knowledge about not only web development but also editing videos, photos, graphics, so on and so forth. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I’m looking for a job as a front-end developer.
             </AboutLi>
         </AboutUl>
         <ButtonCeter>

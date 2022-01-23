@@ -50,10 +50,21 @@
         "thumbnail":"../img/blog/top.jpg",
         "skills":["React", "WordPress REST API", "Slack API", "MUI"],
         "category":"fun",
-        "github":"https://github.com/",
-        "url":"https://",
+        "github":"https://github.com/miacan2021/BlogSearching-react",
+        "url":"https://vigorous-hoover-828c01.netlify.app/",
         "slug":"blog-search",
         "description":"An automatic chat apps page. It can find WordPress blog articles using 'WordPress REST API'"
+    },
+    {
+        "title": "Node.js-MongoDB Blog",
+        "gif":"../img/node-blog/node-blog.GIF",
+        "thumbnail":"../img/node-blog/top.jpg",
+        "skills":["Node.js", "MongoDB", "Express.js", "Bluma"],
+        "category":"fun",
+        "github":"https://github.com/miacan2021/Node-MongoDB_Blog.git",
+        "url":"https://github.com/miacan2021/Node-MongoDB_Blog.git",
+        "slug":"node-mongodb",
+        "description":"A blog has a CRUD system.  We can add comments and click the like / dislike button. Using MongoDB for a database. It would be updated with submitting something."
     }
 ]
 }
