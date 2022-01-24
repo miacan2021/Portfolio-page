@@ -1,13 +1,14 @@
 import { Contact } from "../pattern/Contact"
 import { GrobalStyles } from "../../styles/Globals.styled";
 import { NavBar } from "../pattern/NavBar"
-import { Highlight, Skill, Skills, Profile, Name, AboutImg, AboutImgArea, AboutMessage, AboutPageWrapper, AboutTitle, Introduce, Myself, AboutP, SectionTitle } from "./AboutPage.styled";
+import { Interest, Highlight, Skill, Skills, Profile, Name, AboutImg, AboutImgArea, AboutMessage, AboutPageWrapper, AboutTitle, Introduce, Myself, AboutP, SectionTitle, LikeThing } from "./AboutPage.styled";
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
 import { ModeBtn } from "../../layout/Home/Hero.styled";
 import { SiHtml5, SiTailwindcss, SiCss3, SiSass, SiBootstrap, SiJavascript, SiReact, SiRedux, SiTypescript, SiNodedotjs, SiMongodb} from "react-icons/si";
+import Typewriter from 'typewriter-effect';
 
 
 export const AboutPage = () => {
@@ -57,11 +58,25 @@ export const AboutPage = () => {
         <AboutP>
             As mentioned above, I graduated with a <Highlight>Bachelor of Multi-media major at a University in Japan.</Highlight> So, In addition to web development,  I can edit videos, photos, make logos, and make basic web designs. 
             All my projects you can see on this website "WORK" page I designed.  
-            I've gotten a scholarship at University since my grades were at the top.
+            I've gotten a scholarship at University since my grades were at the top. <Highlight>GPA was 4.2.</Highlight>
         </AboutP>
         </Myself>
-       
         </Introduce>
+        <SectionTitle>My interest topic</SectionTitle>
+        <Interest>
+            <LikeThing>
+            I like 
+            </LikeThing>
+            <LikeThing>
+            <Typewriter
+            options={{
+                strings: ['Hello', 'World'],
+                autoStart: true,
+                loop: true,
+            }}
+            />
+            </LikeThing>      
+        </Interest>
         </AboutPageWrapper>
         <Contact  modeTheme={modeTheme} />
         </ThemeProvider>

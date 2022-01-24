@@ -151,7 +151,7 @@ export const Skills = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 2px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         grid-template-columns: 1fr 1fr 1fr;
@@ -172,4 +172,16 @@ export const Skill = styled.p`
 export const Highlight = styled.span`
     background-color: ${({theme}) =>  theme.palette.green};
     padding: 2px;
+`
+
+export const Interest = styled.div`
+    display: flex;
+    justify-content: center;
+`
+
+export const LikeThing = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    color: ${({theme}) =>  theme.palette.sub_text};
 `
