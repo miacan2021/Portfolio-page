@@ -74,6 +74,19 @@ export const AboutTitle = styled.h1`
         letter-spacing: 2px;
        }
 `
+export const ClickText = styled.p`
+    font-family: 'Josefin Slab', serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: ${({theme}) =>  theme.palette.head_text};
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        font-size: 8px;
+        letter-spacing: 2px;
+       }
+`
+
 
 export const AboutImg = styled.img`
     width: 250px;

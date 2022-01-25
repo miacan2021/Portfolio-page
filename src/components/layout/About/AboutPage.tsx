@@ -1,7 +1,7 @@
 import { Contact } from "../pattern/Contact"
 import { GrobalStyles } from "../../styles/Globals.styled";
 import { NavBar } from "../pattern/NavBar"
-import { Interest, Highlight, Skill, Skills, Profile, Name, AboutImg, AboutImgArea, AboutMessage, AboutPageWrapper, AboutTitle, Introduce, Myself, AboutP, SectionTitle, LikeThing } from "./AboutPage.styled";
+import { Interest, Highlight, Skill, Skills, Profile, Name, AboutImg, AboutImgArea, AboutMessage, AboutPageWrapper, AboutTitle, Introduce, Myself, AboutP, SectionTitle, LikeThing, ClickText } from "./AboutPage.styled";
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme";
@@ -29,6 +29,7 @@ export const AboutPage = () => {
         <AboutTitle>About Me</AboutTitle>
         <Introduce>
         <Profile>
+        <ClickText>\\Click Me!//</ClickText>
         <AboutImgArea href="resume">
         <AboutImg src="/img/about.jpg" alt="myphoto" />
         <AboutMessage>View my resume</AboutMessage>
@@ -37,12 +38,26 @@ export const AboutPage = () => {
         <AboutP>
             Hello! My name is Shiho and I enjoy creating things that live on the internet. 
             I'm a <Highlight>front-end</Highlight> developer based in Vancouver.
+            <Interest>
+            <LikeThing>
+            I'm Interrested in
+            </LikeThing>
+            <LikeThing>
+            <Typewriter
+            options={{
+                strings: ['Web development.', 'Design.', 'new things.',  'EdTech.', 'AgriTech.', 'MedTech.', 'BeautyProducts.', 'cafes.', 'animals.', 'Anime.', 'Youtube.'],
+                autoStart: true,
+                loop: true,
+            }}
+            />
+            </LikeThing>     
+        </Interest>
         </AboutP>
         <SectionTitle>Skillsets</SectionTitle>
         <Skills>
            <Skill>HTML5<SiHtml5 /></Skill><Skill>CSS3<SiCss3 /></Skill><Skill>Sass<SiSass /></Skill><Skill>TailwindCSS<SiTailwindcss /></Skill>
            <Skill>BootStrap<SiBootstrap /></Skill>
-           <Skill>Javascript(ES6)<SiJavascript /></Skill><Skill>React<SiReact /></Skill><Skill>Redux<SiRedux /></Skill>
+           <Skill>Javascript(ES6)<SiJavascript /></Skill><Highlight><Skill>React<SiReact /></Skill></Highlight><Skill>Redux<SiRedux /></Skill>
            <Skill>TypeScript<SiTypescript /></Skill><Skill>Node.js<SiNodedotjs /></Skill><Skill>MongoDB<SiMongodb /></Skill>
         </Skills>
         </Profile>
@@ -62,21 +77,6 @@ export const AboutPage = () => {
         </AboutP>
         </Myself>
         </Introduce>
-        <SectionTitle>My interest topic</SectionTitle>
-        <Interest>
-            <LikeThing>
-            I like 
-            </LikeThing>
-            <LikeThing>
-            <Typewriter
-            options={{
-                strings: ['Hello', 'World'],
-                autoStart: true,
-                loop: true,
-            }}
-            />
-            </LikeThing>      
-        </Interest>
         </AboutPageWrapper>
         <Contact  modeTheme={modeTheme} />
         </ThemeProvider>
