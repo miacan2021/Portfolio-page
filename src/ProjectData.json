@@ -56,13 +56,13 @@
         "description":"An automatic chat apps page. It can find WordPress blog articles using 'WordPress REST API'"
     },
     {
-        "title": "Node.js-MongoDB Blog",
+        "title": "Node.js-MongoDB CRUD Blog with comments",
         "gif":"../img/node-blog/node-blog.GIF",
         "thumbnail":"../img/node-blog/top.jpg",
         "skills":["Node.js", "MongoDB", "Express.js", "Bluma"],
         "category":"fun",
         "github":"https://github.com/miacan2021/Node-MongoDB_Blog.git",
-        "url":"https://github.com/miacan2021/Node-MongoDB_Blog.git",
+        "url":"https://node-mongodb-crud-blog.herokuapp.com/",
         "slug":"node-mongodb",
         "description":"A blog has a CRUD system.  We can add comments and click the like / dislike button. Using MongoDB for a database. It would be updated with submitting something."
     }

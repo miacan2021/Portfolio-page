@@ -145,11 +145,13 @@ export const NavItem = styled.li <{open: boolean}>`
 
 export const Resume = styled.div`
     cursor: pointer;
+    width: 100px;
     background:${({theme}) =>  theme.palette.light_pink };
     padding: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    color: ${({theme}) =>  theme.palette.sub_text};
 `
 
 export const LinkLi = styled.li`

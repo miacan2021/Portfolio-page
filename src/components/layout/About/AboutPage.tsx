@@ -45,7 +45,7 @@ export const AboutPage = () => {
             <LikeThing>
             <Typewriter
             options={{
-                strings: ['Web development.', 'Design.', 'new things.',  'EdTech.', 'AgriTech.', 'MedTech.', 'BeautyProducts.', 'cafes.', 'animals.', 'Anime.', 'Youtube.'],
+                strings: ['Web development.', 'Design.', 'new things.',  'EdTech.', 'AgriTech.', 'MedTech.', 'BeautyProducts.', 'cafes.', 'animals.', 'Anime.', 'Youtube.', 'social media.'],
                 autoStart: true,
                 loop: true,
             }}
@@ -67,7 +67,7 @@ export const AboutPage = () => {
             I have always liked to learn new things and also liked to develop something using a computer. 
             I created movies when I was a high school student and I've learned multi-media at university in Japan. 
             <Highlight>I studied web development at Cornerstone International Community College of Canada,</Highlight> I realized about I like learning and developing the web. A web developer is my dream job because I'm a person who likes to learn new things!
-            I mostly <Highlight>enjoy working with Javascript.</Highlight>  Especially, <Highlight>React JS.</Highlight> Currently, I'm hardly learning <Highlight>TypeScript.</Highlight> I have a solid knowledge of basic front-end development, I continue to learn further skillsets as a front-end developer.
+            I mostly <Highlight>enjoy working with Javascript.</Highlight>  Especially, <Highlight>React JS.</Highlight> Currently, I'm hardly learning <Highlight>TypeScript.</Highlight> I have a solid knowledge of basic front-end development, I continue to learn further skillsets as a professional front-end developer.
         </AboutP>
         <SectionTitle>Bachelor of Multi-media.</SectionTitle>
         <AboutP>

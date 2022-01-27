@@ -4,6 +4,7 @@ import { Line, Logo, LogoImg, LogoSet, Menu, MenuIcon, Nav, NavList, NavItem, Re
 import { GoMarkGithub } from "react-icons/go";
 import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiMail } from "react-icons/ti";
 import { SiDevdotto } from "react-icons/si";
+import { BsDownload } from "react-icons/bs";
 
 
 export const NavBar = () => {
@@ -29,7 +30,7 @@ export const NavBar = () => {
                     <NavItem open={open} onClick={handleOpen}><Link to='/about'>ABOUT</Link></NavItem>
                     <NavItem open={open} onClick={handleOpen}><Link to='/work'>WORK</Link></NavItem>
                     <NavItem open={open} onClick={handleOpen}><a href="#contact">CONTACT</a></NavItem>
-                    <NavItem open={open} onClick={handleOpen}><Resume>RESUME</Resume></NavItem>
+                    <NavItem open={open} onClick={handleOpen}><Resume><BsDownload />RESUME</Resume></NavItem>
                     <LinkUl>
                     <LinkLi><a href="https://github.com/miacan2021" rel="noopener noreferrer" target="_blank"><GoMarkGithub size={'20px'} color={"#594a4e"} /></a></LinkLi>
                     <LinkLi><a href="https://github.com/miacan2021" rel="noopener noreferrer" target="_blank"><TiSocialLinkedinCircular size={'30px'} color={"#594a4e"} /></a></LinkLi>

@@ -6,6 +6,7 @@ export const About = () => {
     
     return(
         <AboutWrapper>
+        <AboutH1>SHIHO KAZAMA</AboutH1>
         <AboutH1>No goal in learning. I'll never stop learning.</AboutH1>
         <AboutUl>
             <AboutLi>
@@ -14,7 +15,7 @@ export const About = () => {
             </AboutLi>
             <AboutLi>
             <AboutLiSpan>High potential as a developer</AboutLiSpan>
-            <br/>I'm pleased to code, design, learn about new things, solve problems. 
+            <br/>I'm pleased to code, design, learn about new things, solve problems. I can learn fast.
             </AboutLi>
             <AboutLi>
             <AboutLiSpan>Bachelor of Multi-media</AboutLiSpan>
