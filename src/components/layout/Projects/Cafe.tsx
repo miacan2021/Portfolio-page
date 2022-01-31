@@ -57,6 +57,21 @@ export const Cafe = () => {
             When I try to find cafes in Vancouver that I've never been to, I always take much time to search which cafe is fit for working or has outlets and Wi-Fi.
             So, I decided to create a website we can search cafes that are suited for work or study.
             </p>
+            <img src="/img/van-cafe/about-1.png" alt="cafesiteimage" />
+            <h1>Features - </h1>
+            <p>
+              Users can search cafes from areas or a map.
+              On the area search page, we can see a list of cafes information in the area.
+              On the map search page, we can find a cafe on the map and access the cafe's detail page or open Google Maps.
+            </p>
+            <img src="/img/van-cafe/about-2.png" alt="cafesiteimage" />
+            <img src="/img/van-cafe/about-4.png" alt="cafesiteimage" />
+            <p>
+            Users can send information about cafes that fit for work.
+            The information would be saved on WordPress is used as a headless CMS.
+            </p>
+            <img src="/img/van-cafe/about-3.png" alt="cafesiteimage" />
+            <img src="/img/van-cafe/about-5.png" alt="cafesiteimage" />
             <h1>Description</h1>
             <p>
               It was used Next.js for the front-end and WordPress as a headless CMS.  WP GraphQL was used for getting data and sending data to WordPress, WP REST API to send featured photos to WordPress because WP GraphQL hasn't supported sending images yet.
