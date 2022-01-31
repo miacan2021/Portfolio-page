@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react"
+import { useNavigate } from 'react-router-dom';
 import { GrobalStyles } from "../../styles/Globals.styled"
 import { NavBar } from "../pattern/NavBar"
 import { ThemeProvider } from "styled-components"
@@ -6,9 +7,11 @@ import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme"
 import { ContentTitle, ContentWarapper, HoverMsg, Line, Top, TopImg } from "./Detail.styled"
 import { ModeBtn } from "../Home/Hero.styled"
-import { MdModeNight, MdWbSunny } from "react-icons/md";
+import { MdModeNight, MdWbSunny } from "react-icons/md"
 import Data from '../../../ProjectData.json'
 import { Skills, Skill } from "../Projects/Detail.styled"
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
+
 
 export const Cafe = () => {
   const { modeTheme, setNextMode } = useSetTheme()
@@ -21,7 +24,7 @@ export const Cafe = () => {
       },
       []
       )
-
+    const navigate = useNavigate();
   return(
     <>
     <GrobalStyles />
@@ -72,6 +75,8 @@ export const Cafe = () => {
             </p>
             <img src="/img/van-cafe/about-3.png" alt="cafesiteimage" />
             <img src="/img/van-cafe/about-5.png" alt="cafesiteimage" />
+            </section>
+            <section>
             <h1>Description</h1>
             <p>
               It was used Next.js for the front-end and WordPress as a headless CMS.  WP GraphQL was used for getting data and sending data to WordPress, WP REST API to send featured photos to WordPress because WP GraphQL hasn't supported sending images yet.
@@ -96,6 +101,7 @@ export const Cafe = () => {
               Now, I can see information sent by users through the WordPress admin page, put extra information myself, and then It'll be published.
             </p>
           </section>
+          <button onClick={() => navigate(-1)}><IoArrowForwardCircleOutline color={modeTheme === 'light' ? "#594a4e" : "#fffffe"} /></button>
     </ContentWarapper>
     </ThemeProvider>
     </>

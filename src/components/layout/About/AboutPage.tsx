@@ -73,7 +73,7 @@ export const AboutPage = () => {
         <AboutP>
             As mentioned above, I graduated with a <Highlight>Bachelor of Multi-media major at a University in Japan.</Highlight> So, In addition to web development,  I can edit videos, photos, make logos, and make basic web designs. 
             All my projects you can see on this website "WORK" page I designed.  
-            I've gotten a scholarship at University since my grades were at the top. <Highlight>GPA was 4.2.</Highlight>
+            I've gotten a scholarship at University since my grades were at the top.
         </AboutP>
         </Myself>
         </Introduce>

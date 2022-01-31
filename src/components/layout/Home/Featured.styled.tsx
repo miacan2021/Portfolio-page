@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const FeaturedWrapper = styled.div`
      position: relative;
      background: ${({theme}) => theme.palette.beige };
@@ -75,4 +76,13 @@ export const ButtonStyle= styled.div`
      @media (max-width: ${({theme}) => theme.tablet}) {
           padding: 120px 5px 40px 5px;
      }
+`
+
+export const CloseBtn= styled.button`
+     background: ${({theme}) =>  theme.palette.beige };
+     color: ${({theme}) =>  theme.palette.head_text};
+     font-size: 18px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
 `

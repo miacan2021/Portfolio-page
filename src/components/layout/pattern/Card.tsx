@@ -26,7 +26,7 @@ export const Card = (props: DataItem) => {
         )
         
     return(
-       <Link to={`/work/${props.data.slug}`}>
+    //    <Link to={`/work/${props.data.slug}`}>
        <CardWrapper onMouseEnter={handleHover} onMouseLeave={handleHover}>
            { hover ? 
            <CardImg src={props.data.gif} alt="project-image" />
@@ -38,6 +38,6 @@ export const Card = (props: DataItem) => {
            <CardDesc>{props.data.description}</CardDesc>
            </CardFlex>
        </CardWrapper>
-        </Link>
+        // </Link>
     )
 }
