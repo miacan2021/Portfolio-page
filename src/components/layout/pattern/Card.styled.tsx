@@ -22,7 +22,7 @@ export const CardWrapper = styled.div`
     }
     @media (max-width: ${({theme}) => theme.tablet}) {
         width: 90%;
-        max-width:300px;
+        max-width:350px;
         min-width: 150px;
      }
 `
@@ -43,16 +43,16 @@ export const CardTitle = styled.h1`
      color:  ${({theme}) => theme.palette.sub_text};
      letter-spacing: 2px;
      @media (max-width: ${({theme}) => theme.tablet}) {
-        font-size: 14px;
+        font-size: 16px;
      }
 `
 
 export const CardDesc = styled.p`
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   color: ${({theme}) => theme.palette.sub_text};
      @media (max-width: ${({theme}) => theme.tablet}) {
-        font-size: 8px;
+        font-size: 11px;
      }
 `
 

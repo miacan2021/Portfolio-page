@@ -1,5 +1,5 @@
-import { useState, useCallback } from "react"
-import { FeatureContainer, FeaturedWrapper, Cards, ButtonStyle, CloseBtn } from "./Featured.styled"
+import { useState, } from "react"
+import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn } from "./Featured.styled"
 import { Card } from "../pattern/Card"
 import ProjectData from '../../../ProjectData.json'  
 import { Button } from "../pattern/Button"
@@ -36,11 +36,7 @@ export const Featured = () => {
     return(
         <>
         <FeaturedWrapper>
-            <FeatureContainer />
             <Cards>
-             {/* {featuredProjects.map((data, i) => (
-                <Card key={i} data={data} />
-             ))} */}
                {featuredProjects.map((item, i:number) => (
                      <motion.div layoutId={item.title} onClick={() => setSelectedId(item.title)}>
                      <Card key={i} data={item} />

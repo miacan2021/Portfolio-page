@@ -9,9 +9,13 @@ export const ContactBg = styled.div`
 export const ContactWrapper = styled.div`
     width: 80%;
     height: auto;
-    text-align: center;
     padding: 60px 0;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 `
 
 export const ContactTitle = styled.h1`
@@ -43,6 +47,10 @@ export const Links = styled.div`
     margin: 0 auto;
     padding-top: 35px;
     gap: 10px;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        width: 200px;
+       }
+    
 `
 
 export const Link = styled.a<{title:string}>`

@@ -13,40 +13,16 @@ export const FeaturedWrapper = styled.div`
      @media (max-width: ${({theme}) => theme.tablet}) {
       margin-top: 280px;
       margin-bottom: 40px;
+      height: 160px;
      }
 `
-export const FeatureContainer = styled.div`
-     width: 100%;
-     background: ${({theme}) =>  theme.palette.beige };
-     font-family: 'Josefin Slab', serif;
-     color: ${({theme}) =>  theme.palette.green };
-     font-size: 90px;
-     overflow: hidden;
-     font-weight: bold;
-     transform: scale(1.2, 3.8);
-     white-space: nowrap;
-     letter-spacing: 10px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     &::before{
-          content: 'FEATURED PROJECTS';
-          text-align: center;
-     }
-     @media (max-width: ${({theme}) => theme.tablet}) {
-          white-space: normal;
-          font-size: 40px;
-          &::before{
-          content: 'FEATURED PROJECTS FEATURED PROJECTS';
-     }
-     }
-`
+
 
 export const Cards = styled.div`
     position: absolute;
     height: 300px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 15px;
     top: -80px;
     left: 50%;
@@ -59,12 +35,12 @@ export const Cards = styled.div`
       gap: 25px;
       top: -220px;
       overflow-x: hidden;
-      justify-content: start;
       height: 550px;
       width: 100%;
       padding-bottom: 40px;
       padding-top: 10px;
       overflow-y: auto;
+      transform: translateX(-47%);
      }
 `
 
@@ -72,7 +48,7 @@ export const ButtonStyle= styled.div`
      width: 100vw;
      display: flex;
      justify-content: center;
-     padding: 170px 5px 90px 5px;
+     padding: 200px 5px 90px 5px;
      @media (max-width: ${({theme}) => theme.tablet}) {
           padding: 120px 5px 40px 5px;
      }
@@ -85,4 +61,17 @@ export const CloseBtn= styled.button`
      width: 50px;
      height: 50px;
      border-radius: 50%;
+`
+
+export const OpenCard = styled.div`
+     position: absolute;
+     background: ${({theme}) =>  theme.palette.white };
+     color: ${({theme}) =>  theme.palette.sub_text};
+     width: 70vw;
+     height: 50vh;
+     position: absolute;
+     top: -200px;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 100;
 `
