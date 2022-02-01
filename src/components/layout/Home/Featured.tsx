@@ -1,10 +1,14 @@
 import { useState, } from "react"
-import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn, OpenCard, ProjectImg } from "./Featured.styled"
+import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn, OpenCard, ProjectImg, ProjectLinks, ProjectLink, CardContainer, SplitLine, TextContainer, TextHead } from "./Featured.styled"
 import { Card } from "../pattern/Card"
 import ProjectData from '../../../ProjectData.json'  
 import { Button } from "../pattern/Button"
 import { motion, AnimatePresence } from "framer-motion"
 import { Link } from 'react-router-dom'
+import { GoMarkGithub, GoBrowser } from "react-icons/go"
+import { BiDetail, BiX } from "react-icons/bi";
+
+
 
 interface project {
         title: string,
@@ -19,7 +23,11 @@ interface project {
     }
 
 
-export const Featured = () => {
+type Props= {
+    modeTheme: string|null
+}
+
+export const Featured = ({modeTheme}:Props) => {
     
     let featuredProjects: project[] = []
     ProjectData.projects.forEach((project: project) => {
@@ -33,7 +41,7 @@ export const Featured = () => {
     const [selectedId, setSelectedId] = useState<null|string>(null)
 
     let openItem = featuredProjects.filter(item => item.title === selectedId)
-
+    let width = window.innerWidth;
    return(
         <>
         <FeaturedWrapper>
@@ -48,10 +56,21 @@ export const Featured = () => {
             <AnimatePresence>
                      {selectedId && 
                      ( <OpenCard as={motion.div} layoutId={selectedId}>
-                         <CloseBtn as={motion.button} onClick={() => setSelectedId(null)}>X</CloseBtn>
+                         <CloseBtn as={motion.button} onClick={() => setSelectedId(null)}><BiX size={width > 768 ? '25px': '18px'} color={modeTheme === 'light' ? "#594a4e" : "#fffffe" }/></CloseBtn>
+                          <CardContainer>
                           <ProjectImg as={motion.img} src={openItem[0].thumbnail} alt="projectimage" />
-                          <motion.h5>{openItem[0].title}</motion.h5>
+                          <TextContainer>
+                          <TextHead as={motion.h1}>{openItem[0].title}</TextHead>
                           <motion.h2>{openItem[0].description}</motion.h2>
+                          </TextContainer>
+                          <ProjectLinks>
+                          <ProjectLink as={Link} to={`/work/${openItem[0].slug}`}>Detail<BiDetail size={width > 768 ? '20px': '17px'} color={"#594a4e"} /></ProjectLink>
+                            <SplitLine />
+                            <ProjectLink href={openItem[0].url}>View<GoBrowser size={width > 768 ? '20px': '17px'} color={"#594a4e"} /></ProjectLink>
+                            <SplitLine />
+                            <ProjectLink href={openItem[0].github}>GitHub<GoMarkGithub size={width > 768 ? '20px': '17px'} color={"#594a4e"} /></ProjectLink>
+                           </ProjectLinks>
+                           </CardContainer>
                         </OpenCard>
                      )}
             </AnimatePresence>

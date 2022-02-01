@@ -27,7 +27,7 @@ const App = () => {
               }
           </ModeBtn>
           <Hero />
-          <Featured />
+          <Featured modeTheme={modeTheme} />
           <About />
           <Contact modeTheme={modeTheme} />
           </Home>

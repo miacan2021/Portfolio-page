@@ -58,8 +58,8 @@ export const CloseBtn= styled.button`
      background: ${({theme}) =>  theme.palette.beige };
      color: ${({theme}) =>  theme.palette.head_text};
      font-size: 18px;
-     width: 50px;
-     height: 50px;
+     width: 40px;
+     height: 40px;
      border-radius: 50%;
      border: none;
      border: ${({theme}) => `1px solid ${theme.palette.white}`};
@@ -71,8 +71,15 @@ export const CloseBtn= styled.button`
      left: 10px;
      z-index: 1001;
      border:${({theme}) => `1px solid ${theme.palette.sub_text}`};
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
      &:hover{
      background: ${({theme}) =>  theme.palette.green};
+     }
+     @media (max-width: ${({theme}) => theme.mobile}) {
+     width: 35px;
+     height: 35px;
      }
 `    
 
@@ -88,7 +95,6 @@ export const OpenCard = styled.div`
      right: 0;
      bottom: 0;
      margin: auto;
-     padding: 10px;
      z-index: 1000 ;
      border-radius: 5px;
      box-shadow: 8px 8px 0 0 ${({theme}) => theme.palette.green};
@@ -103,11 +109,89 @@ export const OpenCard = styled.div`
 
      }
 `
+
+
+export const CardContainer = styled.div`
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+`
+
 export const ProjectImg = styled.img`
-     width: 50%;
-     height: 40%;
+     width: 80%;
+     height: 47%;
      object-fit: cover;
+     object-position: top;
      margin: auto;
      display: block;
+     @media (max-width: ${({theme}) => theme.mobile}) {
+     width: 90%;
+     height: 30%;
+     }
 `
      
+
+export const ProjectLinks = styled.div`
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-flow: row wrap;
+     border-top: ${({theme}) => `1px solid${theme.palette.sub_text}`};
+`
+
+export const SplitLine = styled.div`
+     width: 1px;
+     height: 30px;
+     background: ${({theme}) =>  theme.palette.sub_text };
+`
+
+export const TextContainer = styled.div`
+     width: 80%;
+     text-align: center;
+     padding-bottom: 15px;
+     @media (max-width: ${({theme}) => theme.mobile}) {
+          width: 95%;
+          padding-bottom: 5px;
+     }
+`
+
+export const TextHead = styled.h1`
+     letter-spacing: 2px;
+     padding-bottom:15px;
+     font-size: 22px;
+     font-family: 'Josefin Slab', serif;
+     @media (max-width: ${({theme}) => theme.mobile}) {
+          font-size: 18px;
+          padding-bottom: 10px;
+     }
+`
+
+export const TextSub = styled.p`
+     font-family: 'Montserrat', sans-serif;
+     font-size: 16px;
+     @media (max-width: ${({theme}) => theme.mobile}) {
+          font-size: 13px;
+     }
+`
+
+export const ProjectLink = styled.a`
+     font-size: 20px;
+     color: ${({theme}) =>  theme.palette.sub_text};
+     padding: 7px;
+     display: flex;
+     align-items: center;
+     gap: 3px;
+     flex-wrap: nowrap;
+     transition: transform ease .3s;
+     &:hover{
+          transform: translateY(-3px);
+     }
+     @media (max-width: ${({theme}) => theme.mobile}) {
+     font-size: 18px;
+     gap: 1px;
+     }
+`
