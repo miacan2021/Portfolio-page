@@ -16,8 +16,8 @@ import { IoArrowForwardCircleOutline } from "react-icons/io5";
 export const Cafe = () => {
   const { modeTheme, setNextMode } = useSetTheme()
   const data = Data.projects[0]
-
   const [hover, setHover] = useState<boolean>(false)
+  let width = window.innerWidth;
   const handleHover = useCallback(
       () => {
          setHover(prev => !prev)
@@ -35,9 +35,9 @@ export const Cafe = () => {
       <Line />
       <ModeBtn onClick={() => setNextMode(modeTheme)}>
             {modeTheme === 'light' ?
-              <MdModeNight size={'25px'} color={"#594a4e"} />
+              <MdModeNight size={width > 768 ? '25px': '20px'} color={"#594a4e"} />
               :
-              <MdWbSunny size={'25px'} color={"#fffffe"} />
+              <MdWbSunny size={width > 768 ? '25px': '20px'} color={"#fffffe"} />
               }
           </ModeBtn>
          <Skills>
