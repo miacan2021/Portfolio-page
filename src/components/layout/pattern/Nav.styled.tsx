@@ -9,10 +9,11 @@ export const Nav = styled.nav<{open: boolean}>`
     gap: 5px;
     z-index: 90;
     position: fixed;
-    transition: all ease .8s;
+    transition: all ease .5s;
     @media (max-width: ${({theme}) => theme.mobile}) {
         width: 80vw;
         justify-content: center;
+        transition: all ease 1.5s;
     }
 `
 export const LogoSet = styled.div`
@@ -20,7 +21,6 @@ export const LogoSet = styled.div`
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    z-index: 100;
     padding-left: 25px;
     @media (max-width: ${({theme}) => theme.mobile}) {
         justify-content: center;
@@ -76,7 +76,7 @@ export const MenuIcon = styled.div`
     letter-spacing: 3px;
     font-size: 16px;
     cursor: pointer;
-    transition: all ease 0.3s;
+    transition: all ease .5s;
     box-shadow: ${({theme}) => `5px 5px 0px 0 ${theme.palette.pink}`}; 
     &:hover {
         letter-spacing: 5px;
@@ -95,11 +95,10 @@ export const MenuIcon = styled.div`
 `
 
 export const NavList = styled.ul<{open: boolean}>`
-    background: ${({ open }) => open ? '#fffffe' : 'transparent'};
     width: 100%;
     height: 80px;
     padding-right: 20px;
-    display: flex;
+    display: ${({ open }) => open ? 'flex' : 'none'};
     align-items: flex-end;
     justify-content: space-around;
     color: ${({theme}) =>  theme.palette.sub_text };
@@ -108,20 +107,36 @@ export const NavList = styled.ul<{open: boolean}>`
     font-size: 16px;
     font-weight: bold;
     flex-wrap: wrap;
-    transform: ${({ open }) => open ? 'translateX(0px)' : 'translateX(-400px)'} translateX(0px);
-    opacity: ${({ open }) => (open ? 1 : 0)};
-    transition: all ease 0.5s;
+    transition: all ease .5s;
     z-index: 97;
+    animation: ${({ open }) => open ? 'fade-in .8s' : 'fade-out .8s'};
+    overflow: hidden;
+        @keyframes fade-in {
+        from {
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+        }
+        @keyframes fade-out {
+        from {
+            transform: translateX(0px);
+        }
+        to {
+            transform: translateX(-2000px);
+        }
+        }
     @media (max-width: ${({theme}) => theme.mobile}) {
         width: 80vw;
-        height: 100vh;
+        height: 80vh;
         flex-direction: column;
         justify-content: space-around;
         background:${({theme}) =>  theme.palette.white };
         position: fixed;
         top: 0;
         left: 0;
-        padding-top: 3rem;
+        margin-top: 100px;
         padding-bottom: 3rem;
         align-items: center;
     }
@@ -130,7 +145,7 @@ export const NavList = styled.ul<{open: boolean}>`
 export const NavItem = styled.li <{open: boolean}>` 
     width: 70px;
     margin-left: 20px;
-    transition: all ease 0.5s;
+    transition: all ease .3s;
     & a{
         color: ${({theme}) =>  theme.palette.sub_text };
     }
@@ -155,7 +170,7 @@ export const Resume = styled.div`
 `
 
 export const LinkLi = styled.li`
-    transition: all ease .4s;
+    transition: all ease .3s;
     &:hover{
         transform: scale(1.1, 1.1)
     }

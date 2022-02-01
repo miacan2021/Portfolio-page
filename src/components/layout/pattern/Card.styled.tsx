@@ -23,6 +23,7 @@ export const CardWrapper = styled.div`
     @media (max-width: ${({theme}) => theme.tablet}) {
         width: 90%;
         max-width:350px;
+        height: 190px;
         min-width: 150px;
      }
 `

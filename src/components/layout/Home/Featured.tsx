@@ -1,11 +1,10 @@
-import { useState, } from "react"
-import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn } from "./Featured.styled"
+import { useEffect, useState, } from "react"
+import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn, OpenCard, ProjectImg } from "./Featured.styled"
 import { Card } from "../pattern/Card"
 import ProjectData from '../../../ProjectData.json'  
 import { Button } from "../pattern/Button"
 import { motion, AnimatePresence } from "framer-motion"
-import { CardTitle, CardWrapper, CardImg, CardFlex, CardDesc} from "../pattern/Card.styled"
-
+import { Link } from 'react-router-dom'
 
 interface project {
         title: string,
@@ -22,7 +21,7 @@ interface project {
 
 export const Featured = () => {
     
-    let featuredProjects:project[] = []
+    let featuredProjects: project[] = []
     ProjectData.projects.forEach((project: project) => {
         if(project.category === 'featured'){
             featuredProjects.push(project)
@@ -31,9 +30,11 @@ export const Featured = () => {
         }
     })
 
-    const [selectedId, setSelectedId] = useState<number|null|string>(null)
-    
-    return(
+    const [selectedId, setSelectedId] = useState<null|string>(null)
+
+    let openItem = featuredProjects.filter(item => item.title === selectedId)
+
+   return(
         <>
         <FeaturedWrapper>
             <Cards>
@@ -41,23 +42,23 @@ export const Featured = () => {
                      <motion.div layoutId={item.title} onClick={() => setSelectedId(item.title)}>
                      <Card key={i} data={item} />
                      </motion.div>
-                   ))
+                ))
                 }
             </Cards>
             <AnimatePresence>
-                     {selectedId &&
-                     featuredProjects.map(item => (
-                       <motion.div layoutId={selectedId.toString()}>
-                         <motion.h5>{item.title}</motion.h5>
-                         <motion.h2>{item.description}</motion.h2>
-                         <motion.button onClick={() => setSelectedId(null)}><CloseBtn>X</CloseBtn></motion.button>
-                       </motion.div>
-                     ))}
+                     {selectedId && 
+                     ( <OpenCard as={motion.div} layoutId={selectedId}>
+                         <CloseBtn as={motion.button} onClick={() => setSelectedId(null)}>X</CloseBtn>
+                          <ProjectImg as={motion.img} src={openItem[0].thumbnail} alt="projectimage" />
+                          <motion.h5>{openItem[0].title}</motion.h5>
+                          <motion.h2>{openItem[0].description}</motion.h2>
+                        </OpenCard>
+                     )}
             </AnimatePresence>
-        </FeaturedWrapper>
         <ButtonStyle>
-         <Button title={'ALL PROJECTS'}></Button>
+         <Link to='/work'><Button title={'ALL PROJECTS'}></Button></Link>
         </ButtonStyle>
+        </FeaturedWrapper>
         </>
     )
 }
