@@ -1,4 +1,4 @@
-import { useEffect, useState, } from "react"
+import { useState, } from "react"
 import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn, OpenCard, ProjectImg } from "./Featured.styled"
 import { Card } from "../pattern/Card"
 import ProjectData from '../../../ProjectData.json'  

@@ -84,14 +84,18 @@ export const Img= styled.div`
     }
 
 `   
-export const TopImg= styled.img`
+export const TopImg= styled.button`
       width: 230px;
       height: 230px;
       border-radius: 50%;
-      object-fit: cover;
-      object-position: 100% 0%;
       box-shadow: ${({theme}) => `30px 5px 0px 0 ${theme.palette.pink}`}; 
       border: ${({theme}) => `2px solid ${theme.palette.head_text}`};
+      background-image: url('../img/photo.jpg');
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: ${({theme}) => theme.palette.pink};
+      cursor: pointer;
       @media (max-width: ${({theme}) => theme.mobile}) {
        width: 100px;
        height: 100px;
@@ -121,8 +125,8 @@ export const ModeBtn = styled.button`
        @media (max-width: ${({theme}) => theme.mobile}) {
               top: 35px;
               right: 35px;
-              width: 30px;
-              height: 30px;
+              width: 35px;
+              height: 35px;
               box-shadow: ${({theme}) => `3px 3px 0px 0 ${theme.palette.pink}`}; 
        }
        

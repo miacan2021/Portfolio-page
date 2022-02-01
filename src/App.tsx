@@ -12,7 +12,7 @@ import { MdModeNight, MdWbSunny } from "react-icons/md";
 
 const App = () => {
   const {modeTheme, setNextMode } = useSetTheme()
-
+  let width = window.innerWidth;
   return (
     <>
     <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme }>
@@ -21,9 +21,9 @@ const App = () => {
           <Home>
           <ModeBtn onClick={() => setNextMode(modeTheme)}>
             {modeTheme === 'light' ?
-              <MdModeNight size={'25px'} color={"#594a4e"} />
+              <MdModeNight size={width > 768 ? '25px': '20px'} color={"#594a4e"} />
               :
-              <MdWbSunny size={'25px'} color={"#fffffe"} />
+              <MdWbSunny size={width > 768 ? '25px': '20px'} color={"#fffffe"} />
               }
           </ModeBtn>
           <Hero />

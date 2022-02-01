@@ -70,6 +70,7 @@ export const CloseBtn= styled.button`
      top: 10px;
      left: 10px;
      z-index: 1001;
+     border:${({theme}) => `1px solid ${theme.palette.sub_text}`};
      &:hover{
      background: ${({theme}) =>  theme.palette.green};
      }
@@ -90,12 +91,16 @@ export const OpenCard = styled.div`
      padding: 10px;
      z-index: 1000 ;
      border-radius: 5px;
+     box-shadow: 8px 8px 0 0 ${({theme}) => theme.palette.green};
+     border:${({theme}) => `1px solid${theme.palette.sub_text}`};
      @media (max-width: ${({theme}) => theme.mobile}) {
-     width: 80%;
-     height: 100%;
+     width: 95vw;
+     height: 90vh;
      max-width: 300px;
      max-height: 350px;
      top: -350px;
+     box-shadow: 4px 4px 0 0 ${({theme}) => theme.palette.green};
+
      }
 `
 export const ProjectImg = styled.img`

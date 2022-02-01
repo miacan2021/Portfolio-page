@@ -5,13 +5,13 @@ export const CardWrapper = styled.div`
     width: 400px;
     min-width: 350px;
     height: 220px;
-    background: rgba( 255, 255, 255, 0.8 );
+    background: ${({theme}) => theme.palette.white};
     border: none;
-    box-shadow: 8px 8px 10px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 8px 8px 0 0 ${({theme}) => theme.palette.green};
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border:${({theme}) => `1px solid${theme.palette.sub_text}`};
     transition: all ease 0.3s;
     cursor: pointer;
     display: flex;
@@ -25,6 +25,7 @@ export const CardWrapper = styled.div`
         max-width:350px;
         height: 190px;
         min-width: 150px;
+        box-shadow: 4px 4px 0 0 ${({theme}) => theme.palette.green};
      }
 `
 

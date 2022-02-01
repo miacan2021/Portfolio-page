@@ -35,7 +35,7 @@ export const Card = (props: DataItem) => {
             }
            <CardFlex>
            <CardTitle>{props.data.title}</CardTitle>
-           <CardDesc>{props.data.description}</CardDesc>
+           <CardDesc>{props.data.description.length > 65 ? props.data.description.slice(0 , 65).concat('...') : props.data.description.length}</CardDesc>
            </CardFlex>
        </CardWrapper>
         // </Link>
