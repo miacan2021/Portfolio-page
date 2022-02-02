@@ -6,6 +6,8 @@ import { WorkPage } from './components/layout/Work/WorkPage';
 import { Cafe } from './components/layout/Projects/Cafe';
 import { Error } from './components/layout/Error';
 import { FocusTube } from './components/layout/Projects/FocusTube';
+import { Weather }from './components/layout/Projects/Weather';
+import { FindBlog } from './components/layout/Projects/FindBlog';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -15,6 +17,8 @@ ReactDOM.render(
     <Route path="work" element={ <WorkPage />} />
     <Route path="work/cafe-van" element={ <Cafe />} />
     <Route path="work/focustube" element={ <FocusTube />} />
+    <Route path="work/weather-app" element={ <Weather />} />
+    <Route path="work/blog-search" element={ <FindBlog />} />
     <Route path="*" element={<Error />} />
   </Routes>
   </BrowserRouter>

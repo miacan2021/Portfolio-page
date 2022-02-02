@@ -18,7 +18,7 @@ import { motion } from 'framer-motion'
 
 export const Cafe = () => {
   const { modeTheme, setNextMode } = useSetTheme()
-  const data = Data.projects[0]
+  const data = Data.projects.filter(project => project.slug === 'cafe-van')[0]
   const [hover, setHover] = useState<boolean>(false)
   let width = window.innerWidth;
   const handleHover = useCallback(
@@ -110,7 +110,7 @@ export const Cafe = () => {
             </TextP>
           </DescSection>
           <DescSection>
-            <TextH1>Hardest part - </TextH1>
+            <TextH1>Challenging part - </TextH1>
             <TextP>
               The hardest part was the authentication part when users send information about cafes. I had no idea how to send information and an image to the WordPress admin page as a draft article.
               I found the way to use JSON Basic Authentication plugin for authentication and WP GraphQL doesn't support post images for now.
