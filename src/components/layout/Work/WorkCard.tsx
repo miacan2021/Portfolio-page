@@ -28,7 +28,8 @@ export const WorkCardWrapper = (props: Params) => {
         },
         []
         )
-  
+    let width = window.innerWidth;
+
 
 return( 
             <WorkCard bg={`${props.color}`} onMouseEnter={handleHover} onMouseLeave={handleHover}>
@@ -49,8 +50,8 @@ return(
             </Skills>
             <Description>{props.data.description}</Description>
             <ProjectLinks>
-                <ProjectLink href={props.data.github} target="blank"><GoMarkGithub size={'30px'} color={"#594a4e"} /></ProjectLink>
-                <ProjectLink href={props.data.url} target="blank"><GoBrowser size={'30px'} color={"#594a4e"} /></ProjectLink>
+                <ProjectLink href={props.data.github} target="blank"><GoMarkGithub size={width > 768 ? '30px': '25px'} color={"#594a4e"} /></ProjectLink>
+                <ProjectLink href={props.data.url} target="blank"><GoBrowser size={width > 768 ? '30px': '25px'} color={"#594a4e"} /></ProjectLink>
             </ProjectLinks>
             <Link to={props.data.slug}><MoreBtn>MORE...</MoreBtn></Link>
             </CardDescription>

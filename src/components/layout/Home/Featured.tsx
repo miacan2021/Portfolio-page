@@ -1,5 +1,5 @@
 import { useState, } from "react"
-import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn, OpenCard, ProjectImg, ProjectLinks, ProjectLink, CardContainer, SplitLine, TextContainer, TextHead } from "./Featured.styled"
+import {FeaturedWrapper, Cards, ButtonStyle, CloseBtn, OpenCard, ProjectImg, ProjectLinks, ProjectLink, CardContainer, SplitLine, TextContainer, TextHead, TextSub } from "./Featured.styled"
 import { Card } from "../pattern/Card"
 import ProjectData from '../../../ProjectData.json'  
 import { Button } from "../pattern/Button"
@@ -61,7 +61,7 @@ export const Featured = ({modeTheme}:Props) => {
                           <ProjectImg as={motion.img} src={openItem[0].thumbnail} alt="projectimage" />
                           <TextContainer>
                           <TextHead as={motion.h1}>{openItem[0].title}</TextHead>
-                          <motion.h2>{openItem[0].description}</motion.h2>
+                          <TextSub as={motion.p}>{openItem[0].description}</TextSub>
                           </TextContainer>
                           <ProjectLinks>
                           <ProjectLink as={Link} to={`/work/${openItem[0].slug}`}>Detail<BiDetail size={width > 768 ? '20px': '17px'} color={"#594a4e"} /></ProjectLink>

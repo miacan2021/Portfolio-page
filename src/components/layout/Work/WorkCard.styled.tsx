@@ -12,12 +12,19 @@ export const WorkTitle = styled.h1`
    margin-bottom: 20px;
    padding-top: 20px;
    font-family: 'Montserrat', sans-serif;
+   font-size: 26px;
+   @media (max-width: ${({theme}) => theme.mobile}) {
+      width: 100%;
+      font-size: 18px;
+       }
 `
 
 export const WorkImg = styled.img`
    width: 100%;
    object-fit: cover;
-  
+   @media (max-width: ${({theme}) => theme.mobile}) {
+      width: 80%;
+       }
 `
 
 export const CardContent = styled.div<{direction: string}>`
@@ -57,6 +64,10 @@ export const Skills = styled.ul`
   font-size: 12px;
   gap: 3px;
   padding: 10px;
+  flex-wrap: wrap;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+   gap: 1px;
+       }
 `
 
 export const Skill = styled.li`
@@ -64,6 +75,7 @@ export const Skill = styled.li`
   background: ${({theme}) => theme.palette.beige};
   border-radius: 5px;
   padding: 3px;
+  font-size: 12px;
 `
 
 export const ProjectLinks= styled.div`
@@ -84,6 +96,9 @@ export const Description= styled.p`
    padding: 10px;
    color: ${({theme}) => theme.palette.sub_text};
    font-size: 16px;
+   @media (max-width: ${({theme}) => theme.mobile}) {
+      font-size: 14px;
+       }
 `
 
 export const MoreBtn= styled.div`
@@ -101,4 +116,7 @@ export const MoreBtn= styled.div`
       color: ${({theme}) => theme.palette.sub_text};
       transform: translateY(-3px);
    }
+   @media (max-width: ${({theme}) => theme.mobile}) {
+      margin-bottom: 20px;
+       }
 `

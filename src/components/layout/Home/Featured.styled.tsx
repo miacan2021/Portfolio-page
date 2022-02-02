@@ -121,15 +121,16 @@ export const CardContainer = styled.div`
 `
 
 export const ProjectImg = styled.img`
-     width: 80%;
-     height: 47%;
+     width: 65%;
+     height: 53%;
      object-fit: cover;
      object-position: top;
      margin: auto;
      display: block;
+     border-radius: 5px;
      @media (max-width: ${({theme}) => theme.mobile}) {
      width: 90%;
-     height: 30%;
+     height: 45%;
      }
 `
      
@@ -145,14 +146,15 @@ export const ProjectLinks = styled.div`
 
 export const SplitLine = styled.div`
      width: 1px;
-     height: 30px;
+     height: 50px;
      background: ${({theme}) =>  theme.palette.sub_text };
 `
 
 export const TextContainer = styled.div`
      width: 80%;
      text-align: center;
-     padding-bottom: 15px;
+     padding-top: 15px;
+     padding-bottom: 25px;
      @media (max-width: ${({theme}) => theme.mobile}) {
           width: 95%;
           padding-bottom: 5px;
@@ -165,7 +167,7 @@ export const TextHead = styled.h1`
      font-size: 22px;
      font-family: 'Josefin Slab', serif;
      @media (max-width: ${({theme}) => theme.mobile}) {
-          font-size: 18px;
+          font-size: 16px;
           padding-bottom: 10px;
      }
 `
@@ -175,23 +177,25 @@ export const TextSub = styled.p`
      font-size: 16px;
      @media (max-width: ${({theme}) => theme.mobile}) {
           font-size: 13px;
+          padding-bottom: 10px;
      }
 `
 
 export const ProjectLink = styled.a`
      font-size: 20px;
      color: ${({theme}) =>  theme.palette.sub_text};
-     padding: 7px;
      display: flex;
      align-items: center;
      gap: 3px;
      flex-wrap: nowrap;
      transition: transform ease .3s;
+     padding: 10px 0 20px 0;
      &:hover{
           transform: translateY(-3px);
      }
      @media (max-width: ${({theme}) => theme.mobile}) {
      font-size: 18px;
      gap: 1px;
+     padding: 0px;
      }
 `
