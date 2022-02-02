@@ -117,7 +117,7 @@ export const Cafe = () => {
               Now, I can see information sent by users through the WordPress admin page, put extra information myself, and then It'll be published.
             </TextP>
           </DescSection>
-          <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '30px': '25px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
+          <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
     </ContentWarapper>
     </Content>
     </ThemeProvider>

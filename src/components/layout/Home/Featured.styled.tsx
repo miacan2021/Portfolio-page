@@ -146,7 +146,7 @@ export const ProjectLinks = styled.div`
 
 export const SplitLine = styled.div`
      width: 1px;
-     height: 30px;
+     height: 50px;
      background: ${({theme}) =>  theme.palette.sub_text };
 `
 
@@ -184,17 +184,18 @@ export const TextSub = styled.p`
 export const ProjectLink = styled.a`
      font-size: 20px;
      color: ${({theme}) =>  theme.palette.sub_text};
-     padding: 7px;
      display: flex;
      align-items: center;
      gap: 3px;
      flex-wrap: nowrap;
      transition: transform ease .3s;
+     padding: 10px 0 20px 0;
      &:hover{
           transform: translateY(-3px);
      }
      @media (max-width: ${({theme}) => theme.mobile}) {
      font-size: 18px;
      gap: 1px;
+     padding: 0px;
      }
 `
