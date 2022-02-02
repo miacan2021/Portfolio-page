@@ -14,6 +14,8 @@ import Data from '../../../ProjectData.json'
 import { Skills, Skill } from "../Projects/Detail.styled"
 import { IoArrowForwardCircleOutline } from "react-icons/io5"
 import { motion } from 'framer-motion'
+import { ProjectLinks, ProjectLink } from "../Work/WorkCard.styled"
+import { GoMarkGithub, GoBrowser } from "react-icons/go"
 
 export const FocusTube = () => {
   const { modeTheme, setNextMode } = useSetTheme()
@@ -56,6 +58,10 @@ export const FocusTube = () => {
                     <TopImg src={data.thumbnail} alt="project_featured_image" />
                 }
           </Top>
+          <ProjectLinks>
+                <ProjectLink href={data.github} target="blank"><GoMarkGithub size={width > 768 ? '30px': '25px'} color={"#594a4e"} /></ProjectLink>
+                <ProjectLink href={data.url} target="blank"><GoBrowser size={width > 768 ? '30px': '25px'} color={"#594a4e"} /></ProjectLink>
+           </ProjectLinks>
           <Line />
           <Section>
             <TextSection>
@@ -120,7 +126,7 @@ export const FocusTube = () => {
           <DescSection>
             <TextH1>Hardest part - </TextH1>
             <TextP>
-             ////
+           i'll add here something.....
             </TextP>
           </DescSection>
           <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>

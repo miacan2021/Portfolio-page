@@ -8,6 +8,7 @@ import { Error } from './components/layout/Error';
 import { FocusTube } from './components/layout/Projects/FocusTube';
 import { Weather }from './components/layout/Projects/Weather';
 import { FindBlog } from './components/layout/Projects/FindBlog';
+import { CRUDBlog } from './components/layout/Projects/CRUDBlog';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Route path="work/focustube" element={ <FocusTube />} />
     <Route path="work/weather-app" element={ <Weather />} />
     <Route path="work/blog-search" element={ <FindBlog />} />
+    <Route path="work/node-mongodb" element={ <CRUDBlog />} />
     <Route path="*" element={<Error />} />
   </Routes>
   </BrowserRouter>

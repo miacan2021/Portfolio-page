@@ -58,7 +58,7 @@ export const Top = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 20px 0;
   flex-direction: column;
   @media (max-width: ${({theme}) => theme.mobile}) {
     padding: 10px 0;
@@ -88,7 +88,7 @@ export const HoverMsg = styled.p`
 export const TopImg = styled.img`
   width: 500px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   @media (max-width: ${({theme}) => theme.mobile}) {
     width: 80%;
     margin-bottom: 10px;

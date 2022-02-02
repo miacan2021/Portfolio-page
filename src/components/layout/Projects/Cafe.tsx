@@ -14,6 +14,8 @@ import Data from '../../../ProjectData.json'
 import { Skills, Skill } from "../Projects/Detail.styled"
 import { IoArrowForwardCircleOutline } from "react-icons/io5"
 import { motion } from 'framer-motion'
+import { ProjectLinks, ProjectLink } from "../Work/WorkCard.styled"
+import { GoMarkGithub, GoBrowser } from "react-icons/go"
 
 
 export const Cafe = () => {
@@ -57,6 +59,10 @@ export const Cafe = () => {
                     <TopImg src={data.thumbnail} alt="project_featured_image" />
                 }
           </Top>
+          <ProjectLinks>
+                <ProjectLink href={data.github} target="blank"><GoMarkGithub size={width > 768 ? '30px': '25px'} color={"#594a4e"} /></ProjectLink>
+                <ProjectLink href={data.url} target="blank"><GoBrowser size={width > 768 ? '30px': '25px'} color={"#594a4e"} /></ProjectLink>
+           </ProjectLinks>
           <Line />
           <Section>
             <TextSection>
