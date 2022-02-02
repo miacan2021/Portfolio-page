@@ -1,16 +1,19 @@
 import { useState, useCallback } from "react"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import { GrobalStyles } from "../../styles/Globals.styled"
 import { NavBar } from "../pattern/NavBar"
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme"
-import { ContentTitle, ContentWarapper, HoverMsg, Line, Top, TopImg, SubImg, Section, TextSection, SectionRev, TextH1, TextP, DescSection, Content } from "./Detail.styled"
+import { ContentTitle, ContentWarapper, HoverMsg, Line, Top, TopImg, SubImg, 
+  Section, TextSection, SectionRev, TextH1, TextP, DescSection, Content, BackBtn } 
+  from "./Detail.styled"
 import { ModeBtn } from "../Home/Hero.styled"
 import { MdModeNight, MdWbSunny } from "react-icons/md"
 import Data from '../../../ProjectData.json'
 import { Skills, Skill } from "../Projects/Detail.styled"
-import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import { IoArrowForwardCircleOutline } from "react-icons/io5"
+import { motion } from 'framer-motion'
 
 
 export const Cafe = () => {
@@ -114,7 +117,7 @@ export const Cafe = () => {
               Now, I can see information sent by users through the WordPress admin page, put extra information myself, and then It'll be published.
             </TextP>
           </DescSection>
-          <button onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '30px': '25px'}  color={modeTheme === 'light' ? "#594a4e" : "#fffffe"} /></button>
+          <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '30px': '25px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
     </ContentWarapper>
     </Content>
     </ThemeProvider>

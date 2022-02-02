@@ -64,6 +64,10 @@ export const Skills = styled.ul`
   font-size: 12px;
   gap: 3px;
   padding: 10px;
+  flex-wrap: wrap;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+   gap: 1px;
+       }
 `
 
 export const Skill = styled.li`

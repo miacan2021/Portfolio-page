@@ -8,7 +8,7 @@ export const WorkPageWrapper = styled.div`
    text-align: center;
    margin: auto;
    @media (max-width: ${({theme}) => theme.mobile}) {
-        width: 90wh;
+        width: 95vw;
        }
 `
 
