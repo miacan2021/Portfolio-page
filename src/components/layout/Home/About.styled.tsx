@@ -48,6 +48,7 @@ export const AboutLiSpan = styled.span`
     letter-spacing: 3px;
     background: ${({theme}) =>  theme.palette.light_pink};
     padding: 3px;
+    color: ${({theme}) =>  theme.palette.head_text};;
     @media (max-width: ${({theme}) => theme.mobile}) {
         padding: 2px;
        }

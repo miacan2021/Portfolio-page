@@ -47,7 +47,7 @@ export const AboutPage = () => {
             <LikeThing>
             <Typewriter
             options={{
-                strings: ['Web development.', 'Design.', 'new things.',  'EdTech.', 'AgriTech.', 'MedTech.', 'BeautyProducts.', 'cafes.', 'animals.', 'Anime.', 'Youtube.', 'social media.'],
+                strings: ['Web development.', 'Design.', 'New things.', 'Education.', 'Cafes.', 'Youtube.', 'Social media.'],
                 autoStart: true,
                 loop: true,
             }}

@@ -121,15 +121,16 @@ export const CardContainer = styled.div`
 `
 
 export const ProjectImg = styled.img`
-     width: 80%;
-     height: 47%;
+     width: 65%;
+     height: 53%;
      object-fit: cover;
      object-position: top;
      margin: auto;
      display: block;
+     border-radius: 5px;
      @media (max-width: ${({theme}) => theme.mobile}) {
      width: 90%;
-     height: 30%;
+     height: 45%;
      }
 `
      
@@ -152,7 +153,8 @@ export const SplitLine = styled.div`
 export const TextContainer = styled.div`
      width: 80%;
      text-align: center;
-     padding-bottom: 15px;
+     padding-top: 15px;
+     padding-bottom: 25px;
      @media (max-width: ${({theme}) => theme.mobile}) {
           width: 95%;
           padding-bottom: 5px;
@@ -165,7 +167,7 @@ export const TextHead = styled.h1`
      font-size: 22px;
      font-family: 'Josefin Slab', serif;
      @media (max-width: ${({theme}) => theme.mobile}) {
-          font-size: 18px;
+          font-size: 16px;
           padding-bottom: 10px;
      }
 `
@@ -175,6 +177,7 @@ export const TextSub = styled.p`
      font-size: 16px;
      @media (max-width: ${({theme}) => theme.mobile}) {
           font-size: 13px;
+          padding-bottom: 10px;
      }
 `
 

@@ -45,7 +45,7 @@
         "description":"This portfolio website. It was used 'React with TypeScript' and 'styled-components' for styling."
     },
     {
-        "title": "Find Blog",
+        "title": "FIND BLOG POSTS",
         "gif":"../img/blog/blog.GIF",
         "thumbnail":"../img/blog/top.jpg",
         "skills":["React", "WordPress REST API", "Slack API", "MUI"],

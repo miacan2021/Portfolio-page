@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-export const ContentWarapper = styled.div`
+export const Content = styled.div`
   background: ${({theme}) => theme.palette.beige};
   width: 100vw;
-  height: auto;
+`
+export const ContentWarapper = styled.div`
   padding-top: 130px;
+  max-width: 1350px;
+  width: 80vw;
+  margin: auto;
+  background: ${({theme}) => theme.palette.white};
 `
 
 export const ContentTitle = styled.h1`
@@ -19,7 +24,7 @@ export const Line = styled.div`
   width: 50px;
   height: 2px;
   background: ${({theme}) => theme.palette.light_pink};
-  margin: 20px auto;
+  margin: 30px auto;
 `
 
 export const Skills = styled.ul`
@@ -67,4 +72,92 @@ export const HoverMsg = styled.p`
 `
 export const TopImg = styled.img`
   width: 500px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+    width: 350px;
+    margin-bottom: 10px;
+       }
+`
+
+
+export const SubImg = styled.img`
+  width: 40%;
+  border-radius: 5px;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+    width: 80%;
+       }
+`
+
+export const Section = styled.section`
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+       flex-direction: column;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       }
+`
+
+export const SectionRev = styled.section`
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+       flex-direction: column;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       }
+`
+
+export const TextSection = styled.div`
+  height: auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: ${({theme}) => theme.palette.head_text};
+  @media (max-width: ${({theme}) => theme.mobile}) {
+     width: 100%;
+       }
+`
+
+
+export const TextH1 = styled.h1`
+  font-size: 28px;
+  letter-spacing: 3px;
+`
+
+
+export const TextP = styled.p`
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+`
+
+
+export const DescSection = styled.section`
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: ${({theme}) => theme.palette.head_text};
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+     width: 90%;
+       }
 `
