@@ -96,6 +96,10 @@ export const TopImg= styled.button`
       background-size: cover;
       background-color: ${({theme}) => theme.palette.pink};
       cursor: pointer;
+      transition: all ease .2s;
+      &:hover{
+       box-shadow:none;
+      }
       @media (max-width: ${({theme}) => theme.mobile}) {
        width: 100px;
        height: 100px;
