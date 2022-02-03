@@ -1,6 +1,38 @@
 import styled from "styled-components";
 
 
+export const LoadingWrapper = styled.div`
+       background: ${({theme}) =>  theme.palette.beige };
+       width: 100vw;
+       height: 2000px;
+       `
+export const Loading = styled.div`
+       background: ${({theme}) =>  theme.palette.beige };
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 30px;
+       flex-wrap: nowrap;
+       @media (max-width: ${({theme}) => theme.mobile}) {
+              gap: 10px;
+       }
+`
+
+export const LoadingImg = styled.img`
+       width: 60px;
+       overflow: hidden;
+`
+       
+
+export const LoadingText = styled.img`
+       overflow: hidden;
+       font-size: 28px;
+       letter-spacing: 3px;
+       color: ${({theme}) =>  theme.palette.head_text};
+       `
+
 export const Home = styled.div`
        background:${({theme}) =>  theme.palette.beige };
        width: 100vw;

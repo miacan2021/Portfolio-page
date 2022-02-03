@@ -8,8 +8,9 @@ import { GrobalStyles } from "./components/styles/Globals.styled";
 import { useSetTheme } from "./hooks/useSetTheme";
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "./components/styles/Globals.styled"
-import { Home, ModeBtn } from "./components/layout/Home/Hero.styled";
+import { Home, Loading, LoadingImg, LoadingText, LoadingWrapper, ModeBtn } from "./components/layout/Home/Hero.styled";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 2500);
   }, []);
 
   const {modeTheme, setNextMode } = useSetTheme()
@@ -28,10 +29,20 @@ const App = () => {
     <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme }>
     <GrobalStyles />
     {loading ?
-    
-    <h1>loading</h1> 
-    
-    :   <>
+    <LoadingWrapper>
+    <Loading as={motion.div} 
+    animate={{ y: -1000 }}
+    initial={{ y: 0 }}
+    transition={{ delay: 2, duration: 1}}>
+     <LoadingImg as={motion.img} initial={{ height: '0px' }} animate={{ height: '60px'}} transition={{ duration: 1}} src="/img/logo.png" />
+     <LoadingText as={motion.h1} initial={{ height: '0px' }} animate={{ height: '30px'}} transition={{ duration: 1.5}}>Shiho Kazama</LoadingText>
+    </Loading>
+    </LoadingWrapper>
+      :  
+       <LoadingWrapper>
+       <motion.div animate={{ y: 0 }}
+           initial={{ y: 1000 }}
+           transition={{ duration: 1}}>
           <NavBar />
           <Home>
           <ModeBtn  onClick={() => setNextMode(modeTheme)}>
@@ -46,7 +57,8 @@ const App = () => {
           <About />
           <Contact modeTheme={modeTheme} />
           </Home>
-          </>
+          </motion.div>
+          </LoadingWrapper>
       }
       </ThemeProvider>
     </>
