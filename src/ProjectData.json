@@ -36,7 +36,7 @@
     {
         "title": "My portfolio page",
         "gif":"../img/portfolio/top.gif",
-        "thumbnail":"../img/portfolio/top.png",
+        "thumbnail":"../img/portfolio/top.jpg",
         "skills":["React(TypeScript)", "React Router", "styled-components", "Framer Motion", "DEV.to API"],
         "category":"featured",
         "github":"https://github.com/miacan2021/Portfolio-page",

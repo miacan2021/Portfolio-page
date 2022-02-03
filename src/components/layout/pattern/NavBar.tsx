@@ -33,7 +33,7 @@ export const NavBar = () => {
                     <NavItem open={open} onClick={handleOpen}><Resume><BsDownload />RESUME</Resume></NavItem>
                     <LinkUl>
                     <LinkLi><a href="https://github.com/miacan2021" rel="noopener noreferrer" target="_blank"><GoMarkGithub size={'20px'} color={"#594a4e"} /></a></LinkLi>
-                    <LinkLi><a href="https://github.com/miacan2021" rel="noopener noreferrer" target="_blank"><TiSocialLinkedinCircular size={'30px'} color={"#594a4e"} /></a></LinkLi>
+                    <LinkLi><a href="https://www.linkedin.com/in/shiho-kazama-659782230/" rel="noopener noreferrer" target="_blank"><TiSocialLinkedinCircular size={'30px'} color={"#594a4e"} /></a></LinkLi>
                     <LinkLi><a href="https://twitter.com/shiho_kazama" rel="noopener noreferrer" target="_blank"><TiSocialTwitterCircular size={'30px'} color={"#594a4e"} /></a></LinkLi>
                     <LinkLi><a href="https://dev.to/miacan2021" rel="noopener noreferrer" target="_blank"><SiDevdotto size={'30px'} color={"#594a4e"} /></a></LinkLi>
                     <LinkLi><a href="mailto:mia.can2021@gmail.com"><TiMail size={'30px'} color={"#594a4e"} /></a></LinkLi>
