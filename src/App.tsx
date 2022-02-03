@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 2000);
   }, []);
 
   const {modeTheme, setNextMode } = useSetTheme()
@@ -30,19 +30,14 @@ const App = () => {
     <GrobalStyles />
     {loading ?
     <LoadingWrapper>
-    <Loading as={motion.div} 
-    animate={{ y: -1000 }}
-    initial={{ y: 0 }}
-    transition={{ delay: 2, duration: 1}}>
-     <LoadingImg as={motion.img} initial={{ height: '0px' }} animate={{ height: '60px'}} transition={{ duration: 1}} src="/img/logo.png" />
-     <LoadingText as={motion.h1} initial={{ height: '0px' }} animate={{ height: '30px'}} transition={{ duration: 1.5}}>Shiho Kazama</LoadingText>
+    <Loading as={motion.div} animate={{ y: -1000 }} initial={{ y: 0 }} transition={{ delay: 1.5, duration: 1}}>
+     <LoadingImg as={motion.img} initial={{ height: '0px' }} animate={{ height: '60px'}} transition={{ duration: 1 }} src="/img/logo.png" />
+     <LoadingText as={motion.h1} initial={{ height: '0px' }} animate={{ height: '30px'}} transition={{ duration: 1 }}>Shiho Kazama</LoadingText>
     </Loading>
     </LoadingWrapper>
       :  
        <LoadingWrapper>
-       <motion.div animate={{ y: 0 }}
-           initial={{ y: 1000 }}
-           transition={{ duration: 1}}>
+       <motion.div animate={{ y: 0 }} initial={{ y: 1000 }} transition={{ duration: 1}}>
           <NavBar />
           <Home>
           <ModeBtn  onClick={() => setNextMode(modeTheme)}>

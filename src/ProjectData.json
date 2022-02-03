@@ -65,6 +65,17 @@
         "url":"https://node-mongodb-crud-blog.herokuapp.com/",
         "slug":"node-mongodb",
         "description":"A blog has a CRUD system.  We can add comments and click the like / dislike button. Using MongoDB for a database. It would be updated with submitting something."
+    },
+    {
+        "title": "LP page",
+        "gif":"../img/LP/top.GIF",
+        "thumbnail":"../img/LP/top.jpg",
+        "skills":["Sass", "Javascript"],
+        "category":"fun",
+        "github":"https://github.com/miacan2021/minimalist-credit_LP",
+        "url":"https://eager-knuth-847dfa.netlify.app/",
+        "slug":"lp-page",
+        "description":"LP website using Sass and Vanilla Javascript. I tried using the 'Neumorphism' design because it was a trend. "
     }
 ]
 }

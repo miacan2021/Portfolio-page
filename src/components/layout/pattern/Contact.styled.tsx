@@ -16,6 +16,9 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        padding: 30px 0px 0px 0px;
+       }
 `
 
 export const ContactTitle = styled.h1`
