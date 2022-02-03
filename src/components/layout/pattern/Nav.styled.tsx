@@ -10,7 +10,7 @@ export const Nav = styled.nav<{open: boolean}>`
     z-index: 90;
     position: fixed;
     transition: all ease .5s;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: ${({theme}) => theme.tablet}) {
         width: 80vw;
         justify-content: center;
         transition: all ease 1.5s;
@@ -22,7 +22,7 @@ export const LogoSet = styled.div`
     gap: 10px;
     cursor: pointer;
     padding-left: 25px;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: ${({theme}) => theme.tablet}) {
         justify-content: center;
     }
 `
@@ -32,7 +32,7 @@ export const LogoImg = styled.div`
     height: 40px;
     background-image: url("../img/logo.png");
     background-size: cover;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: ${({theme}) => theme.tablet}) {
         width: 30px;
         height: 30px;
     }
@@ -43,7 +43,7 @@ export const Logo = styled.h1`
     font-size: 15px;
     letter-spacing: 5px;
     font-weight: bold;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: ${({theme}) => theme.tablet}) {
         font-size: 10px;
         letter-spacing: 3px;
     }
@@ -83,7 +83,7 @@ export const MenuIcon = styled.div`
         margin-left: 15px;
         box-shadow:none;
     }
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: ${({theme}) => theme.tablet}) {
         font-size: 12px;
         letter-spacing: 3px;
         box-shadow: ${({theme}) => `3px 3px 0px 0 ${theme.palette.pink}`}; 
@@ -127,7 +127,7 @@ export const NavList = styled.ul<{open: boolean}>`
             transform: translateX(-2000px);
         }
         }
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: ${({theme}) => theme.tablet}) {
         width: 80vw;
         height: 80vh;
         flex-direction: column;
@@ -152,7 +152,7 @@ export const NavItem = styled.li <{open: boolean}>`
     &:hover{
       letter-spacing: 1px;
     }
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: ${({theme}) => theme.tablet}) {
         width: auto;
         margin-left: 0px;
     }
@@ -160,7 +160,7 @@ export const NavItem = styled.li <{open: boolean}>`
 
 export const Resume = styled.div`
     cursor: pointer;
-    width: 100px;
+    width: 90px;
     background:${({theme}) =>  theme.palette.light_pink };
     padding: 5px;
     display: flex;
@@ -182,7 +182,7 @@ export const LinkUl = styled.ul`
     align-items: center;
     justify-content:flex-end;
     gap: 20px;
-@media (max-width: ${({theme}) => theme.mobile}) {
+@media (max-width: ${({theme}) => theme.tablet}) {
     width: 80%;
     margin: 0 auto;
     justify-content:center;

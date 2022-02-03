@@ -34,12 +34,12 @@
         "description":"A Weather app web page using “Open weather API”, “Unsplash API” and “TailwindCSS”. It is also adapted to dark mode."
     },
     {
-        "title": "My portfolio",
-        "gif":"../img/weather.png",
-        "thumbnail":"../img/focusube/top.jpg",
-        "skills":["React(TypeScript)"],
+        "title": "My portfolio page",
+        "gif":"../img/portfolio/top.gif",
+        "thumbnail":"../img/portfolio/top.png",
+        "skills":["React(TypeScript)", "React Router", "styled-components", "Framer Motion", "DEV.to API"],
         "category":"featured",
-        "github":"https://github.com/",
+        "github":"https://github.com/miacan2021/Portfolio-page",
         "url":"https://",
         "slug":"portfolio",
         "description":"This portfolio website. It was used 'React with TypeScript' and 'styled-components' for styling."

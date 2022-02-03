@@ -122,12 +122,13 @@ export const CardContainer = styled.div`
 
 export const ProjectImg = styled.img`
      width: 65%;
-     height: 53%;
+     height: 50%;
      object-fit: cover;
      object-position: top;
      margin: auto;
      display: block;
      border-radius: 5px;
+     padding: 5px 0;
      @media (max-width: ${({theme}) => theme.mobile}) {
      width: 90%;
      height: 45%;
@@ -189,7 +190,7 @@ export const ProjectLink = styled.a`
      gap: 3px;
      flex-wrap: nowrap;
      transition: transform ease .3s;
-     padding: 10px 0 20px 0;
+     padding: 10px 0;
      &:hover{
           transform: translateY(-3px);
      }

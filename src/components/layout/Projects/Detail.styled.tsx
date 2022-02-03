@@ -16,7 +16,7 @@ export const ContentWarapper = styled.div`
 `
 
 export const ContentTitle = styled.h1`
-  color: ${({theme}) => theme.palette.head_text};
+  color: ${({theme}) => theme.palette.sub_text};
   font-size: 32px;
   text-align: center;
   letter-spacing: 3px;
@@ -49,7 +49,7 @@ export const Skill = styled.li`
   padding: 8px;
   font-size: 16px;
   letter-spacing: 1px;
-  color:  ${({theme}) => theme.palette.head_text};
+  color:  ${({theme}) => theme.palette.sub_text};
   @media (max-width: ${({theme}) => theme.mobile}) {
     font-size: 12px;
        }
@@ -58,7 +58,7 @@ export const Top = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 20px 0;
   flex-direction: column;
   @media (max-width: ${({theme}) => theme.mobile}) {
     padding: 10px 0;
@@ -70,7 +70,7 @@ export const HoverMsg = styled.p`
   font-family: 'Abel', sans-serif;
   font-size: 14px;
   letter-spacing: 4px;
-  color:  ${({theme}) => theme.palette.head_text};
+  color:  ${({theme}) => theme.palette.sub_text};
   margin-bottom: 10px;
     @keyframes flash {
       0% {
@@ -88,7 +88,7 @@ export const HoverMsg = styled.p`
 export const TopImg = styled.img`
   width: 500px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   @media (max-width: ${({theme}) => theme.mobile}) {
     width: 80%;
     margin-bottom: 10px;
