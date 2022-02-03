@@ -1,7 +1,7 @@
 import { Button } from "../pattern/Button"
 import { ContactP, ContactTitle, ContactWrapper, Links, Link, ContactBg} from "./Contact.styled"
 import { GoMarkGithub } from "react-icons/go";
-import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiMail, TiDocument, TiDeviceLaptop } from "react-icons/ti";
+import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiMail, TiDocument } from "react-icons/ti";
 import { SiDevdotto } from "react-icons/si";
 
 type Props = {

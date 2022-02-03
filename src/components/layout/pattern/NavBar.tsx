@@ -26,9 +26,9 @@ export const NavBar = () => {
                     {open ? 'CLOSE' : 'MENU' }</MenuIcon>
                 </Menu>
                 <NavList open={open}>
-                    <NavItem open={open} onClick={handleOpen}><Link to='/'>HOME</Link></NavItem>
                     <NavItem open={open} onClick={handleOpen}><Link to='/about'>ABOUT</Link></NavItem>
                     <NavItem open={open} onClick={handleOpen}><Link to='/work'>WORK</Link></NavItem>
+                    <NavItem open={open} onClick={handleOpen}><Link to='/blog'>BLOG</Link></NavItem>
                     <NavItem open={open} onClick={handleOpen}><a href="#contact">CONTACT</a></NavItem>
                     <NavItem open={open} onClick={handleOpen}><Resume><BsDownload />RESUME</Resume></NavItem>
                     <LinkUl>

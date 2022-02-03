@@ -9,6 +9,7 @@ import { FocusTube } from './components/layout/Projects/FocusTube';
 import { Weather }from './components/layout/Projects/Weather';
 import { FindBlog } from './components/layout/Projects/FindBlog';
 import { CRUDBlog } from './components/layout/Projects/CRUDBlog';
+import { BlogPage } from './components/layout/Blog/BlogPage';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -16,6 +17,7 @@ ReactDOM.render(
   <Route path="/" element={ <App /> }/>
     <Route path="about" element={ <AboutPage />} />
     <Route path="work" element={ <WorkPage />} />
+    <Route path="blog" element={ <BlogPage />} />
     <Route path="work/cafe-van" element={ <Cafe />} />
     <Route path="work/focustube" element={ <FocusTube />} />
     <Route path="work/weather-app" element={ <Weather />} />

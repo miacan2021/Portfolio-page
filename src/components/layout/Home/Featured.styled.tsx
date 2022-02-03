@@ -122,12 +122,13 @@ export const CardContainer = styled.div`
 
 export const ProjectImg = styled.img`
      width: 65%;
-     height: 53%;
+     height: 50%;
      object-fit: cover;
      object-position: top;
      margin: auto;
      display: block;
      border-radius: 5px;
+     padding: 5px 0;
      @media (max-width: ${({theme}) => theme.mobile}) {
      width: 90%;
      height: 45%;
