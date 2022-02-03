@@ -190,7 +190,7 @@ export const ProjectLink = styled.a`
      gap: 3px;
      flex-wrap: nowrap;
      transition: transform ease .3s;
-     padding: 10px 0 20px 0;
+     padding: 10px 0;
      &:hover{
           transform: translateY(-3px);
      }

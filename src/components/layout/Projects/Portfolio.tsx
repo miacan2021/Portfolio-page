@@ -16,9 +16,9 @@ import { motion } from 'framer-motion'
 import { ProjectLinks, ProjectLink } from "../Work/WorkCard.styled"
 import { GoMarkGithub, GoBrowser } from "react-icons/go"
 
-export const CRUDBlog = () => {
+export const Portfolio = () => {
   const { modeTheme, setNextMode } = useSetTheme()
-  const data = Data.projects.filter(project => project.slug === 'node-mongodb')[0]
+  const data = Data.projects.filter(project => project.slug === 'portfolio')[0]
   const [hover, setHover] = useState<boolean>(false)
   let width = window.innerWidth;
   const handleHover = useCallback(

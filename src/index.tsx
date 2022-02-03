@@ -10,6 +10,7 @@ import { Weather }from './components/layout/Projects/Weather';
 import { FindBlog } from './components/layout/Projects/FindBlog';
 import { CRUDBlog } from './components/layout/Projects/CRUDBlog';
 import { BlogPage } from './components/layout/Blog/BlogPage';
+import { Portfolio } from './components/layout/Projects/Portfolio';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -23,6 +24,7 @@ ReactDOM.render(
     <Route path="work/weather-app" element={ <Weather />} />
     <Route path="work/blog-search" element={ <FindBlog />} />
     <Route path="work/node-mongodb" element={ <CRUDBlog />} />
+    <Route path="work/portfolio" element={ <Portfolio />} />
     <Route path="*" element={<Error />} />
   </Routes>
   </BrowserRouter>
