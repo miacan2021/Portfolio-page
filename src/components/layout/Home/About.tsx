@@ -1,6 +1,7 @@
 import { Button } from "../pattern/Button"
 import { AboutH1, AboutLi, AboutLiSpan, AboutUl, AboutWrapper, ButtonCeter } from "./About.styled"
-import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect'
+import { Link } from 'react-router-dom'
 
 export const About = () => {
     return(
@@ -28,7 +29,7 @@ export const About = () => {
             </AboutLi>
         </AboutUl>
         <ButtonCeter>
-        <Button title={'ABOUT ME'}></Button>
+        <Link to='/about'><Button title={'ABOUT ME'}></Button></Link> 
         </ButtonCeter>
         </AboutWrapper>
     )
