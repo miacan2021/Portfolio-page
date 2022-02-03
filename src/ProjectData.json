@@ -17,7 +17,7 @@
         "thumbnail":"../img/focustube/top.jpg",
         "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
         "category": "featured",
-        "github":"https://github.com/miacan2021/FocusTube-React",
+        "github":"https://github.com/miacan2021/React-Final.git",
         "url":"https://focustube.vercel.app/",
         "slug":"focustube",
         "description":"“Youtube Data API v3” & “Redux” project. On this website, we can control our favourite videos list easily. We also search videos from the search bar on this website."
