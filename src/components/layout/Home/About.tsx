@@ -25,7 +25,7 @@ export const About = () => {
             </AboutLi>
             <AboutLi>
             <AboutLiSpan>Bachelor of Multi-media</AboutLiSpan>
-            <br />I've had a bachelor of multi-media. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I’m looking for a job as a front-end developer.
+            <br />I've had a bachelor of multi-media. Now, I'm furthering my professional web development studies at Cornerstone International Community College of Canada. I'm looking for a job as a front-end developer.
             </AboutLi>
         </AboutUl>
         <ButtonCeter>
