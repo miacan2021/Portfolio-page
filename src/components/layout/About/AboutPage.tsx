@@ -7,7 +7,7 @@ import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
 import { ModeBtn } from "../../layout/Home/Hero.styled";
-import { SiHtml5, SiTailwindcss, SiCss3, SiSass, SiBootstrap, SiJavascript, SiReact, SiRedux, SiTypescript, SiNodedotjs, SiMongodb} from "react-icons/si";
+import { SiGithub, SiHtml5, SiTailwindcss, SiCss3, SiSass, SiBootstrap, SiJavascript, SiReact, SiRedux, SiTypescript, SiNodedotjs, SiMongodb} from "react-icons/si";
 import Typewriter from 'typewriter-effect';
 
 
@@ -38,7 +38,7 @@ export const AboutPage = () => {
         </AboutImgArea>
         <Name>Shiho Kazama</Name>
         <AboutP>
-            Hello! My name is Shiho and I enjoy creating things that live on the internet. 
+            Hello! My name is Shiho. I enjoy creating things that live on the internet. 
             I'm a <Highlight>front-end</Highlight> developer based in Vancouver.
             <Interest>
             <LikeThing>
@@ -60,22 +60,26 @@ export const AboutPage = () => {
            <Skill>HTML5<SiHtml5 /></Skill><Skill>CSS3<SiCss3 /></Skill><Skill>Sass<SiSass /></Skill><Skill>TailwindCSS<SiTailwindcss /></Skill>
            <Skill>BootStrap<SiBootstrap /></Skill>
            <Skill>Javascript(ES6)<SiJavascript /></Skill><Highlight><Skill>React<SiReact /></Skill></Highlight><Skill>Redux<SiRedux /></Skill>
-           <Skill>TypeScript<SiTypescript /></Skill><Skill>Node.js<SiNodedotjs /></Skill><Skill>MongoDB<SiMongodb /></Skill>
+           <Skill>TypeScript<SiTypescript /></Skill><Skill>GitHub<SiGithub /></Skill><Skill>Node.js<SiNodedotjs /></Skill><Skill>MongoDB<SiMongodb /></Skill>
         </Skills>
         </Profile>
         <Myself>
-        <SectionTitle>Passionate about learning!</SectionTitle>
+        <SectionTitle>My Story - Passionate about creativity!</SectionTitle>
         <AboutP>
-            I have always liked to learn new things and also liked to develop something using a computer. 
-            I created movies when I was a high school student and I've learned multi-media at university in Japan. 
-            <Highlight>I studied web development at Cornerstone International Community College of Canada,</Highlight> I realized about I like learning and developing the web. A web developer is my dream job because I'm a person who likes to learn new things!
-            I mostly <Highlight>enjoy working with Javascript.</Highlight>  Especially, <Highlight>React JS.</Highlight> Currently, I'm hardly learning <Highlight>TypeScript.</Highlight> I have a solid knowledge of basic front-end development, I continue to learn further skillsets as a professional front-end developer.
-        </AboutP>
-        <SectionTitle>Bachelor of Multi-media.</SectionTitle>
-        <AboutP>
-            As mentioned above, I graduated with a <Highlight>Bachelor of Multi-media major at a University in Japan.</Highlight> So, In addition to web development,  I can edit videos, photos, make logos, and make basic web designs. 
-            All my projects you can see on this website "WORK" page I designed.  
+            I have always liked to learn new things and also liked to develop something using a computer since I was a child. I had my website when I was a junior high. I created movies when I was a high school student. I've learned multi-media at university.
             I've gotten a scholarship at University since my grades were at the top.
+            After graduated university, I've worked at a famous car manufacturing company's customer service department as an admin and customer support operator for four years.
+            I got a new face award in my first year at work because I was a fast learner. I could handle working like a senior employee in my first year.
+            Later also, I got another award two years in a row from the customer satisfaction survey.
+            I was pleased to help customers however I sometimes felt unsatisfied with not challenging work.
+            I also wanted to be someone who could tell people what I am without having to say the name of the company.
+            Therefore, I decided to change my carrier because I like creative things, challenging jobs!
+            I studied web development at Cornerstone International Community College of Canada.
+            I was sure  I like learning and developing the web.
+            A web developer is my dream job because I'm a person who likes to learn new things!
+            I also like the fact that I can see my skills clearly stepping up.
+            Now, I mostly enjoy working with Javascript. Especially, ReactJS. And currently, I'm learning hard TypeScript. I used Typescript on this portfolio.  I have a solid knowledge of basic front-end development, I continue to learn further skillsets as a professional front-end developer.
+            I am eager to participate in making websites or services that help people / useful for people, looking forward to it.
         </AboutP>
         </Myself>
         </Introduce>
