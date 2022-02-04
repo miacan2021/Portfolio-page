@@ -33,7 +33,7 @@ export const AboutPage = () => {
         <Profile>
         <ClickText>\\Click Me!//</ClickText>
         <AboutImgArea href="resume">
-        <AboutImg src="/img/about.jpg" alt="myphoto" />
+        <AboutImg src="img/about.jpg" alt="myphoto" />
         <AboutMessage>View my resume</AboutMessage>
         </AboutImgArea>
         <Name>Shiho Kazama</Name>

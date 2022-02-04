@@ -83,7 +83,8 @@ export const Name= styled.h1`
        font-size: 144px;
        letter-spacing: 6px;
        @media (max-width: ${({theme}) => theme.mobile}) {
-              font-size: 70px;
+              font-size: 60px;
+              letter-spacing: 4px;
        }
 `
 export const FamilyName= styled.h1`
@@ -91,6 +92,7 @@ export const FamilyName= styled.h1`
        letter-spacing: 30px;
        @media (max-width: ${({theme}) => theme.mobile}) {
               font-size: 30px;
+              letter-spacing: 20px;
        }
 `   
 export const Title= styled.h1`
@@ -111,8 +113,8 @@ export const Img= styled.div`
       top: 50px;
       left: 380px;
       @media (max-width: ${({theme}) => theme.mobile}) {
-       top: 20px;
-       left: 200px;
+       top: 12px;
+       left: 185px;
     }
 
 `   
@@ -122,7 +124,7 @@ export const TopImg= styled.button`
       border-radius: 50%;
       box-shadow: ${({theme}) => `30px 5px 0px 0 ${theme.palette.pink}`}; 
       border: ${({theme}) => `2px solid ${theme.palette.head_text}`};
-      background-image: url('../img/photo.jpg');
+      background-image: url('img/photo.jpg');
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
@@ -133,9 +135,9 @@ export const TopImg= styled.button`
        box-shadow:none;
       }
       @media (max-width: ${({theme}) => theme.mobile}) {
-       width: 100px;
-       height: 100px;
-       box-shadow: ${({theme}) => `20px 5px 0px 0 ${theme.palette.pink}`}; 
+       width: 130px;
+       height: 130px;
+       box-shadow: ${({theme}) => `15px 5px 0px 0 ${theme.palette.pink}`}; 
     }
 `   
 

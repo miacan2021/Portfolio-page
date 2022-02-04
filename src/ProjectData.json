@@ -46,7 +46,7 @@
     },
     {
         "title": "FIND BLOG POSTS",
-        "gif":"../img/blog/blog.GIF",
+        "gif":"../img/blog/blog.gif",
         "thumbnail":"../img/blog/top.jpg",
         "skills":["React", "WordPress REST API", "Slack API", "MUI"],
         "category":"fun",
@@ -57,7 +57,7 @@
     },
     {
         "title": "Node.js-MongoDB CRUD Blog with comments",
-        "gif":"../img/node-blog/node-blog.GIF",
+        "gif":"../img/node-blog/node-blog.gif",
         "thumbnail":"../img/node-blog/top.jpg",
         "skills":["Node.js", "MongoDB", "Express.js", "Bluma"],
         "category":"fun",
@@ -68,7 +68,7 @@
     },
     {
         "title": "LP page",
-        "gif":"../img/LP/top.GIF",
+        "gif":"../img/LP/top.gif",
         "thumbnail":"../img/LP/top.jpg",
         "skills":["Sass", "Javascript"],
         "category":"fun",

@@ -8,7 +8,7 @@ export const AboutPageWrapper = styled.div`
    text-align: center;
    margin: auto;
    @media (max-width: ${({theme}) => theme.tablet}) {
-        width: 90wh;
+        width: 100vw;
        }
 `
 export const Introduce = styled.div`
@@ -178,9 +178,7 @@ export const Skills = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    @media (max-width: ${({theme}) => theme.mobile}) {
-        grid-template-columns: 1fr 1fr 1fr;
-       }
+    
 `
 
 export const Skill = styled.p`
