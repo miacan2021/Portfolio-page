@@ -66,20 +66,23 @@ export const AboutPage = () => {
         <Myself>
         <SectionTitle>My Story - Passionate about creativity!</SectionTitle>
         <AboutP>
-            I have always liked to learn new things and also liked to develop something using a computer since I was a child. I had my website when I was a junior high. I created movies when I was a high school student. I've learned multi-media at university.
-            I've gotten a scholarship at University since my grades were at the top.
+            I have always liked to learn new things and also liked to develop something using a computer since I was a child. I had my website when I was a junior high. I created movies when I was a high school student. I've learned multi-media at university. I got a scholarship because my school record was top-level.
             After graduated university, I've worked at a famous car manufacturing company's customer service department as an admin and customer support operator for four years.
             I got a new face award in my first year at work because I was a fast learner. I could handle working like a senior employee in my first year.
             Later also, I got another award two years in a row from the customer satisfaction survey.
             I was pleased to help customers however I sometimes felt unsatisfied with not challenging work.
             I also wanted to be someone who could tell people what I am without having to say the name of the company.
+            It was always the information on websites and web services (SNS, etc.) that helped me solve my problems.
+
             Therefore, I decided to change my carrier because I like creative things, challenging jobs!
             I studied web development at Cornerstone International Community College of Canada.
-            I was sure  I like learning and developing the web.
-            A web developer is my dream job because I'm a person who likes to learn new things!
-            I also like the fact that I can see my skills clearly stepping up.
+            I was sure  I like learning and developing the web. 
+            A web developer is my dream job because I'm a person who likes to learn new things! 
+            I also like the fact that I can see my skills clearly stepping up. 
+
             Now, I mostly enjoy working with Javascript. Especially, ReactJS. And currently, I'm learning hard TypeScript. I used Typescript on this portfolio.  I have a solid knowledge of basic front-end development, I continue to learn further skillsets as a professional front-end developer.
             I am eager to participate in making websites or services that help people / useful for people, looking forward to it.
+
         </AboutP>
         </Myself>
         </Introduce>
