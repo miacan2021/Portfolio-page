@@ -157,13 +157,23 @@ export const TextH1 = styled.h1`
 `
 
 
+export const DescHead = styled.p`
+ font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  text-align: start;
+  @media (max-width: ${({theme}) => theme.mobile}) {
+     font-size: 16px;
+       }
+
+`
+
 export const TextP = styled.p`
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
+  text-align: start;
   @media (max-width: ${({theme}) => theme.mobile}) {
-     font-size: 15px;
-     text-align: center;
+     font-size: 16px;
        }
 `
 
