@@ -66,11 +66,12 @@ export const Cafe = () => {
           <Line />
           <Section>
             <TextSection>
-            <TextH1>Story - </TextH1>
+            <TextH1>Story</TextH1>
             <TextP>
             I like cafes, sometimes I use them for study, sometimes I use them for writing my blog.
             When I try to find cafes in Vancouver that I've never been to, I always take much time to search which cafe is fit for working or has outlets and Wi-Fi.
             So, I decided to create a website we can search cafes that are suited for work or study.
+            The design was created to convey a comfortable atmosphere.
             </TextP>
             </TextSection>
             <SubImg src="/img/van-cafe/about-1.png" alt="cafesiteimage" />
