@@ -65,13 +65,10 @@ export const Weather = () => {
           <Line />
           <Section>
             <TextSection>
-            <TextH1>Story - </TextH1>
+            <TextH1>Story</TextH1>
             <TextP>
-            I created a weather forecast web application using open weather API.
-            It can use to know current weather that users search, weekly weather. And You can also know the current time the city you searched. The reason why I made the time showing section is that I usually wonder what time is Japan now when I call my family live in Japan. I'm confused with time differences since summertime ends.
-            For styling, I wanted to challenge applying two features of a cool website.
-            First, I was challenged to apply for 'Dark Mode' on this website. On this website, the block background is white and text is black with light mode and block background is black and the text is white with dark mode.
-            Second, the styling theme is 'Glassmorphism' that is the trend of web design in 2021. The Glassmorphism feature is like a frosted-glass effect using a background blur.
+              I created a weather forecast web application using open weather API. It can use to know current weather where users search, weekly weather. And You can also know the current time on this app.
+              I could know how to handle API on React and try to cool styling through this project.
             </TextP>
             </TextSection>
             <SubImg src="/img/weather/about-1.png" alt="siteimage" />
@@ -81,7 +78,7 @@ export const Weather = () => {
             <TextSection>
             <TextH1>Features - Dark Mode</TextH1>
             <TextP>
-            Applied 'Dark Mode' using tailwind css.
+            Applied 'Dark Mode' using Tailwind CSS. 
             The first view shows whether light mode or dark mode depends on the users' device setting. If users set their device light mode, it shows light mode first. If users set their devices in dark mode, it shows dark mode first.
             If users set their devices in light and dark mode, it shows light or dark mode it depends on time. And users can change the mode using the button placed top-left of the website.
             </TextP>
@@ -116,18 +113,21 @@ export const Weather = () => {
             </SectionRev>
             <Line />
             <DescSection>
-            <TextH1>Description - </TextH1>
+            <TextH1>Description</TextH1>
             <TextP>
-            A Weather app web page using “Open weather API”, “Unsplash API” and “TailwindCSS”. It is also adapted to dark mode.
-            The spinner shows when data fetcing.
-            It can be a good user experience during waiting time.
-            When no the city's information, it shows Sorry comment.
+            I used two different types of API provided from "Open weather API" to handle typical weather data and the world clock and weekly forecasts.
+            For adapting dark mode, I tried to use "Tailwind CSS" dark-mode function.
+            The styling theme is 'Glassmorphism' which was the trend of web design in 2021. The Glassmorphism feature is like a frosted-glass effect using a background blur.
+            I didn't want to be a boring web app, I made this page's background image will change with every search.
+            Considering user experience, I applied a loading spinner view during fetching data. In addition, when no the city's information, it shows up a sorry comment.
             </TextP>
           </DescSection>
           <DescSection>
-            <TextH1>Challenging part - </TextH1>
+            <TextH1>Challenging part</TextH1>
             <TextP>
-            I used 'tailwind css' for styling the whole of this project. They have dark mode classes but it was really hard to apply because of the SVG file. I used SVG icons. First, I imported the SVG icon for the image tag but it can't apply for dark mode. It due to the image tag, I had to import the SVG file as a component using 'React Component' to handle it like using SVG tag instead of an image tag with source attribute.
+            I used 'tailwind css' for styling the whole of this project. They have dark mode classes but it was really hard to apply because of the SVG file.
+            I used SVG icons. First, I imported the SVG icon for the image tag but it can't apply for dark mode. Due to the image tag, I had to import the SVG file as a component using 'React Component' to handle it like using SVG tag instead of an image tag with source attribute.
+            It was a beginner-level stuck. But yet, It is worth it for me since I'm also getting better with my googling skills!
             </TextP>
           </DescSection>
           <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
