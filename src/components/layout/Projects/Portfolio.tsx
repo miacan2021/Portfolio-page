@@ -5,7 +5,7 @@ import { NavBar } from "../pattern/NavBar"
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme"
-import { ContentTitle, ContentWarapper, HoverMsg, Line, Top, TopImg, TextH1, TextP, DescSection, Content, BackBtn } 
+import { ContentTitle, ContentWarapper, HoverMsg, Line, Top, TopImg, TextH1, TextP, DescSection, Content, BackBtn, DescHead } 
   from "./Detail.styled"
 import { ModeBtn } from "../Home/Hero.styled"
 import { MdModeNight, MdWbSunny } from "react-icons/md"
@@ -64,15 +64,20 @@ export const Portfolio = () => {
           <Line />
             <DescSection>
             <TextH1>Description - </TextH1>
+            <TextP>I did my best to create this portfolio website in every aspect.</TextP>
+            <DescHead>1 - Challenged using TypeScript</DescHead>
             <TextP>
-            I made a blog website using Node.js MongoDB and Express. 
-            I also used mongoose. 
-            I'll share you guys my project. 
-            It was so simple one. 
-            First, CRUD functions. We can make a new article, edit the article and delete the article. 
-            Second, It have like-dislike button. 
-            Lastly, It has comments feature. I created a comment schema using mongoose. When a new comment submits, it would be created through a comment schema that type is an object and then push to the array of articles. My article schema has a comments array. My blog doesn’t have edit and deletes features at each comment but It would be deleted from the database with the article deleted. 
-            I was a complete beginner of Node.js but I could find the fun of the backend a bit through this project.
+              I was challenged to make this using TypeScript with React.
+              I learned just how to declare in class. I've never used it for projects.
+              A portfolio website doesn't have a complicated structure in general. I thought it was good for learning how to use Typescript through this portfolio. 
+              Eventually, I was able to get used to TypeScript!
+            </TextP>
+            <DescHead>2 -Styling</DescHead>
+            <TextP>
+            I can handle Tailwind CSS, Bootstrap and so on however I didn't use these this time.
+            The reason is that I'd have liked to show my solid CSS knowledge and how I'm serious about becoming a front-end developer. 
+            I also designed the whole of this site. 
+            I wrote CSS that includes dark-mode parts using "styled-components". 
             </TextP>
           </DescSection>
           <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
