@@ -106,18 +106,7 @@ export const FindBlog = () => {
             <SubImg src="/img/blog/about-3.png" alt="siteimage" />
             </Section>
             <Line />
-            <DescSection>
-            <TextH1>Description - </TextH1>
-            <TextP>
-            add something
-            </TextP>
-          </DescSection>
-          <DescSection>
-            <TextH1>Challenging part - </TextH1>
-            <TextP>
-                add something
-            </TextP>
-          </DescSection>
+    
           <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
     </ContentWarapper>
     </Content>
