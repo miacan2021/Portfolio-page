@@ -65,7 +65,9 @@ export const LP = () => {
             <DescSection>
             <TextH1>Description - </TextH1>
             <TextP>
-            LP website using Sass and Vanilla Javascript. I tried using the 'Neumorphism' design because it was a trend. 
+            A landing page website using Sass and Vanilla Javascript. 
+            I tried using the 'Neumorphism' design because it was a web design trend. 
+            I could understand dom manipulation in javascript and how to handle Sass effectively. 
             </TextP>
           </DescSection>
           <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
