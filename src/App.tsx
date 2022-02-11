@@ -11,6 +11,7 @@ import { theme, darkTheme } from "./components/styles/Globals.styled"
 import { Home, Loading, LoadingImg, LoadingText, LoadingWrapper, ModeBtn } from "./components/layout/Home/Hero.styled";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
 import { motion } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const [loading, setLoading] = useState(true);

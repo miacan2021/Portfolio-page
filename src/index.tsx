@@ -12,9 +12,11 @@ import { CRUDBlog } from './components/layout/Projects/CRUDBlog';
 import { BlogPage } from './components/layout/Blog/BlogPage';
 import { Portfolio } from './components/layout/Projects/Portfolio';
 import { LP } from './components/layout/Projects/LP';
+import ScrollToTop from './components/ScrollToTop';
 
 ReactDOM.render(
   <BrowserRouter>
+  <ScrollToTop />
   <Routes>
   <Route path="/" element={ <App /> }/>
     <Route path="about" element={ <AboutPage />} />
