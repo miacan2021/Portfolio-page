@@ -1,12 +1,12 @@
 import { useCallback, useState } from 'react';
 
-type Value = {
+type returnValueType = {
     modeTheme: string|null;
     setModeTheme: React.Dispatch<React.SetStateAction<string|null>>;
     setNextMode: (current: string|null) => void;
 }
 
-export const useSetTheme = (): Value => {
+export const useSetTheme = ():returnValueType => {
   const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
   const mode = isDarkMode ? "dark" : "light"
   const [modeTheme, setModeTheme] = useState<string|null>(localStorage.getItem('mode') === null ? mode : localStorage.getItem('mode'))

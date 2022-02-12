@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { About } from "./components/layout/Home/About";
 import { Contact } from "./components/layout/pattern/Contact";
 import { Featured } from "./components/layout/Home/Featured";
@@ -11,17 +10,10 @@ import { theme, darkTheme } from "./components/styles/Globals.styled"
 import { Home, Loading, LoadingImg, LoadingText, LoadingWrapper, ModeBtn } from "./components/layout/Home/Hero.styled";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
 import { motion } from "framer-motion";
-import ScrollToTop from "./components/ScrollToTop";
+import { useHandleLoading } from "./hooks/useHandleLoading";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-
+ const { loading, sesstionVal } = useHandleLoading()
   const {modeTheme, setNextMode } = useSetTheme()
   let width = window.innerWidth;
 
@@ -38,7 +30,7 @@ const App = () => {
     </LoadingWrapper>
       :  
        <LoadingWrapper>
-       <motion.div animate={{ y: 0 }} initial={{ y: 1000 }} transition={{ duration: 1}}>
+       <motion.div animate={{ y: 0 }} initial={sesstionVal==='1' ? {y:0} : { y: 1000 }} transition={{ duration: 1}}>
           <NavBar />
           <Home>
           <ModeBtn  onClick={() => setNextMode(modeTheme)}>
