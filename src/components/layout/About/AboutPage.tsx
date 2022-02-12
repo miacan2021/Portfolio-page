@@ -13,7 +13,7 @@ import Typewriter from 'typewriter-effect';
 
 export const AboutPage = () => {
     const {modeTheme, setNextMode} = useSetTheme()
-    let width = window.innerWidth;
+    const width = window.innerWidth;
 
     return(
         <>

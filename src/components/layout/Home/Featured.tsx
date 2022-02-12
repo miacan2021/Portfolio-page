@@ -28,8 +28,7 @@ type Props= {
 }
 
 export const Featured = ({modeTheme}:Props) => {
-    
-    let featuredProjects: project[] = []
+    const featuredProjects: project[] = []
     ProjectData.projects.forEach((project: project) => {
         if(project.category === 'featured'){
             featuredProjects.push(project)
@@ -40,8 +39,8 @@ export const Featured = ({modeTheme}:Props) => {
 
     const [selectedId, setSelectedId] = useState<null|string>(null)
 
-    let openItem = featuredProjects.filter(item => item.title === selectedId)
-    let width = window.innerWidth;
+    const openItem = featuredProjects.filter(item => item.title === selectedId)
+    const width = window.innerWidth;
    return(
         <>
         <FeaturedWrapper>

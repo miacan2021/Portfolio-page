@@ -79,7 +79,7 @@ export const WorkPage = () => {
     }
     
     const directionArr: string[] = ['row', 'row-reverse']
-    let chooseDirection = (i: number) => {
+    const chooseDirection = (i: number) => {
         if(i % 2 === 0) {
            return directionArr[0]
         }else{
@@ -87,7 +87,7 @@ export const WorkPage = () => {
         }
     }
     
-    let width = window.innerWidth;
+    const width = window.innerWidth;
 
 
     return(
@@ -110,8 +110,8 @@ export const WorkPage = () => {
         </CategoryWrapper>
         <WorkCards>
         {datas.map((data, i) => {
-           let color = pickColor(i)
-           let direction = chooseDirection(i)
+           const color = pickColor(i)
+           const direction = chooseDirection(i)
         return(
             <WorkCardWrapper key={data.title} color={color} data={data} direction={direction} />
         )}

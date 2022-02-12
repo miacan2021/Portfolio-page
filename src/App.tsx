@@ -15,7 +15,7 @@ import { useHandleLoading } from "./hooks/useHandleLoading";
 const App = () => {
  const { loading, sesstionVal } = useHandleLoading()
   const {modeTheme, setNextMode } = useSetTheme()
-  let width = window.innerWidth;
+  const width = window.innerWidth;
 
   return (
     <>
