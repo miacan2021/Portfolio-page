@@ -141,18 +141,27 @@ export const TopImg= styled.button`
     }
 `   
 
-
-export const ModeBtn = styled.button`
+export const ModeBtnWrapper = styled.div`
        position:fixed;
+       z-index: 100;
+       width: 100%;
+       max-width: 1800px;
+       height: 40px;
+       padding-right: 40px;
+       display: flex;
+      justify-content: flex-end;
+      @media (max-width: ${({theme}) => theme.mobile}) {
+              padding-right: 35px;
+              top: 35px;
+       }
+`
+export const ModeBtn = styled.button`
        display: flex;
        align-items: center;
        justify-content: center;
        width: 40px;
        height: 40px;
-       top: 130px;
-       right: 40px;
        background:${({theme}) =>  theme.palette.beige};
-       z-index: 80;
        border: ${({theme}) => `1px solid ${theme.palette.head_text}`};
        box-shadow: ${({theme}) => `5px 5px 0px 0 ${theme.palette.pink}`}; 
        cursor: pointer;
@@ -161,8 +170,6 @@ export const ModeBtn = styled.button`
               box-shadow: none;
        }
        @media (max-width: ${({theme}) => theme.mobile}) {
-              top: 35px;
-              right: 35px;
               width: 35px;
               height: 35px;
               box-shadow: ${({theme}) => `3px 3px 0px 0 ${theme.palette.pink}`}; 

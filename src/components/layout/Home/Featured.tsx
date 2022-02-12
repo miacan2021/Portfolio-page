@@ -47,8 +47,8 @@ export const Featured = ({modeTheme}:Props) => {
         <FeaturedWrapper>
             <Cards>
                {featuredProjects.map((item, i:number) => (
-                     <motion.div layoutId={item.title} onClick={() => setSelectedId(item.title)}>
-                     <Card key={i} data={item} />
+                     <motion.div  key={i} layoutId={item.title} onClick={() => setSelectedId(item.title)}>
+                     <Card data={item} />
                      </motion.div>
                 ))
                 }
