@@ -8,7 +8,7 @@ import { useSetTheme } from "../../../hooks/useSetTheme"
 import { ContentTitle, ContentWarapper, HoverMsg, Line, Top, TopImg, SubImg, 
   Section, TextSection, SectionRev, TextH1, TextP, DescSection, Content, BackBtn, DescHead } 
   from "./Detail.styled"
-import { ModeBtn } from "../Home/Hero.styled"
+import { ModeBtn, ModeBtnWrapperAbout } from "../Home/Hero.styled"
 import { MdModeNight, MdWbSunny } from "react-icons/md"
 import Data from '../../../ProjectData.json'
 import { Skills, Skill } from "../Projects/Detail.styled"
@@ -39,6 +39,7 @@ export const Cafe = () => {
     <ContentWarapper>
       <ContentTitle>{data.title}</ContentTitle>
       <Line />
+      <ModeBtnWrapperAbout>
       <ModeBtn onClick={() => setNextMode(modeTheme)}>
             {modeTheme === 'light' ?
               <MdModeNight size={width > 768 ? '25px': '20px'} color={"#594a4e"} />
@@ -46,6 +47,7 @@ export const Cafe = () => {
               <MdWbSunny size={width > 768 ? '25px': '20px'} color={"#fffffe"} />
               }
       </ModeBtn>
+      </ModeBtnWrapperAbout>
          <Skills>
             {data.skills.map((skill,i)=>(
                  <Skill key={i}>{skill}</Skill>
