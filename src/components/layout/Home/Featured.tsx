@@ -30,7 +30,7 @@ type Props= {
 export const Featured = ({modeTheme}:Props) => {
     const featuredProjects: project[] = []
     ProjectData.projects.forEach((project: project) => {
-        if(project.category === 'featured'){
+        if(project.category === 'Featured'){
             featuredProjects.push(project)
         } else {
             return
