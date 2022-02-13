@@ -21,6 +21,7 @@ export const BlogTitle = styled.h1`
     background: ${({theme}) => theme.palette.white};
     color: ${({theme}) => theme.palette.sub_text};
     width: 40%;
+    max-width: 700px;
     padding: 10px 0;
    @media (max-width: ${({theme}) => theme.mobile}) {
     font-size: 20px;

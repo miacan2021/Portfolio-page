@@ -9,7 +9,12 @@ import {CategoryBtn, CategoryWrapper, WorkPageWrapper, WorkCards} from "./WorkPa
 import { WorkCardWrapper } from "./WorkCard";
 import { useSetTheme } from "../../../hooks/useSetTheme";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
-import { ModeBtn } from "../../layout/Home/Hero.styled";
+import { ModeBtn, ModeBtnWrapperAbout } from "../../layout/Home/Hero.styled";
+import { AboutTitle } from "../About/AboutPage.styled";
+import { useNavigate } from 'react-router-dom'
+import { BackBtn } from "../Projects/Detail.styled"
+import { IoArrowBackCircleOutline } from "react-icons/io5"
+import { motion } from 'framer-motion'
 
 export const WorkPage = () => {
     const {modeTheme, setNextMode} = useSetTheme()
@@ -59,7 +64,7 @@ export const WorkPage = () => {
                 featured: colors[3],
                 fun: colors[3],
             })
-        }else if(value === 'featured'){
+        }else if(value === 'Featured'){
             const filterData = ProjectData.projects.filter((project) => project.category === value)
             setDatas(filterData)
             setBtnBg({
@@ -67,7 +72,7 @@ export const WorkPage = () => {
                 featured: colors[4],
                 fun: colors[3],
             })
-        }else if(value === 'fun'){
+        }else if(value === 'Fun'){
             const filterData = ProjectData.projects.filter((project) => project.category === value)
             setDatas(filterData)
             setBtnBg({
@@ -88,6 +93,7 @@ export const WorkPage = () => {
     }
     
     const width = window.innerWidth;
+    const navigate = useNavigate();
 
 
     return(
@@ -96,6 +102,7 @@ export const WorkPage = () => {
         <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme}>
         <NavBar/>
         <WorkPageWrapper>
+        <ModeBtnWrapperAbout>
         <ModeBtn onClick={() => setNextMode(modeTheme)}>
             {modeTheme === 'light' ?
               <MdModeNight size={width > 768 ? '25px': '20px'} color={"#594a4e"} />
@@ -103,10 +110,12 @@ export const WorkPage = () => {
               <MdWbSunny size={width > 768 ? '25px': '20px'} color={"#fffffe"} />
               }
           </ModeBtn>
+        </ModeBtnWrapperAbout>
+        <AboutTitle>My Work</AboutTitle>
         <CategoryWrapper>
         <CategoryBtn bg={btnBg.all} onClick={() => handleCategory('all')}>ALL</CategoryBtn>
-        <CategoryBtn bg={btnBg.featured} onClick={() => handleCategory('featured')}>FEATURED</CategoryBtn>
-        <CategoryBtn bg={btnBg.fun} onClick={() => handleCategory('fun')}>FUN / PRACTICE</CategoryBtn>
+        <CategoryBtn bg={btnBg.featured} onClick={() => handleCategory('Featured')}>FEATURED</CategoryBtn>
+        <CategoryBtn bg={btnBg.fun} onClick={() => handleCategory('Fun')}>FUN / PRACTICE</CategoryBtn>
         </CategoryWrapper>
         <WorkCards>
         {datas.map((data, i) => {
@@ -117,6 +126,7 @@ export const WorkPage = () => {
         )}
         )}
         </WorkCards>
+        <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowBackCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
         </WorkPageWrapper>
         <Contact modeTheme={modeTheme} />
         </ThemeProvider>

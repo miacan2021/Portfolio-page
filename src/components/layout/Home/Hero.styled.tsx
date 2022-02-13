@@ -155,6 +155,22 @@ export const ModeBtnWrapper = styled.div`
               top: 35px;
        }
 `
+
+export const ModeBtnWrapperAbout = styled.div`
+       position:fixed;
+       z-index: 100;
+       width: 90%;
+       max-width: 1200px;
+       height: 40px;
+       padding-right: 30px;
+       padding-top: 20px;
+       display: flex;
+       justify-content: flex-end;
+      @media (max-width: ${({theme}) => theme.mobile}) {
+              padding-right: 35px;
+              top: 20px;
+       }
+`
 export const ModeBtn = styled.button`
        display: flex;
        align-items: center;
