@@ -18,6 +18,22 @@ export const WorkTitle = styled.h1`
       font-size: 18px;
        }
 `
+export const Category = styled.p`
+   width: 130px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 2px;
+   color: ${({theme}) => theme.palette.sub_text};
+   background: ${({theme}) => theme.palette.white};
+   padding: 4px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   border-radius: 5px;
+   @media (max-width: ${({theme}) => theme.mobile}) {
+      font-size: 14px;
+       }
+`
 
 export const WorkImg = styled.img`
    width: 100%;

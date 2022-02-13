@@ -74,7 +74,7 @@ export const Featured = ({modeTheme}:Props) => {
                      )}
             </AnimatePresence>
         <ButtonStyle>
-         <Link to='/work'><Button title={'ALL PROJECTS'}></Button></Link>
+         <Link to='/work'><Button title={'ALL WORKS'}></Button></Link>
         </ButtonStyle>
         </FeaturedWrapper>
         </>

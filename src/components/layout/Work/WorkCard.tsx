@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react"
-import { WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks, Description, MoreBtn, ProjectLink } from "./WorkCard.styled";
+import { Category, WorkImg, WorkCard, CardDescription, CardImage, CardContent, WorkTitle, Skills, Skill, ProjectLinks, Description, MoreBtn, ProjectLink } from "./WorkCard.styled";
 import { GoMarkGithub, GoBrowser } from "react-icons/go"
 import { Link } from 'react-router-dom'
 
@@ -43,6 +43,7 @@ return(
                 }
             </CardImage>
             <CardDescription>
+            <Category>{props.data.category}</Category>
             <Skills>
             {props.data.skills.map((skill,i)=>(
                     <Skill key={i}>{skill}</Skill>

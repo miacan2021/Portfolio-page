@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme"
 import { ContentTitle, ContentWarapper, HoverMsg, Line, Top, TopImg, SubImg, 
-  Section, TextSection, SectionRev, TextH1, TextP, DescSection, Content, BackBtn } 
+  Section, TextSection, SectionRev, TextH1, TextP, Content, BackBtn } 
   from "./Detail.styled"
 import { ModeBtn } from "../Home/Hero.styled"
 import { MdModeNight, MdWbSunny } from "react-icons/md"

@@ -9,11 +9,16 @@ import { MdModeNight, MdWbSunny } from "react-icons/md";
 import { ModeBtn, ModeBtnWrapperAbout } from "../../layout/Home/Hero.styled";
 import { SiGithub, SiHtml5, SiTailwindcss, SiCss3, SiSass, SiBootstrap, SiJavascript, SiReact, SiRedux, SiTypescript, SiNodedotjs, SiMongodb} from "react-icons/si";
 import Typewriter from 'typewriter-effect';
+import { useNavigate } from 'react-router-dom'
+import { BackBtn } from "../Projects/Detail.styled"
+import { IoArrowBackCircleOutline } from "react-icons/io5"
+import { motion } from 'framer-motion'
 
 
 export const AboutPage = () => {
     const {modeTheme, setNextMode} = useSetTheme()
     const width = window.innerWidth;
+    const navigate = useNavigate();
 
     return(
         <>
@@ -88,6 +93,7 @@ export const AboutPage = () => {
         </AboutP>
         </Myself>
         </Introduce>
+        <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowBackCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
         </AboutPageWrapper>
         <Contact  modeTheme={modeTheme} />
         </ThemeProvider>
