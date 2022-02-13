@@ -1,6 +1,5 @@
 import { useState, useCallback } from "react"
 import { CardTitle, CardWrapper, CardImg, CardFlex, CardDesc} from "./Card.styled"
-import { Link } from "react-router-dom"
 
 type DataItem = {
     data:{
@@ -26,7 +25,6 @@ export const Card = (props: DataItem) => {
         )
         
     return(
-    //    <Link to={`/work/${props.data.slug}`}>
        <CardWrapper onMouseEnter={handleHover} onMouseLeave={handleHover}>
            { hover ? 
            <CardImg src={props.data.gif} alt="project-image" />
@@ -38,6 +36,5 @@ export const Card = (props: DataItem) => {
            <CardDesc>{props.data.description.length > 65 ? props.data.description.slice(0 , 65).concat('...') : props.data.description.length}</CardDesc>
            </CardFlex>
        </CardWrapper>
-        // </Link>
     )
 }

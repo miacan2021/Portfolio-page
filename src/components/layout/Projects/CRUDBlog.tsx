@@ -11,7 +11,7 @@ import { ModeBtn } from "../Home/Hero.styled"
 import { MdModeNight, MdWbSunny } from "react-icons/md"
 import Data from '../../../ProjectData.json'
 import { Skills, Skill } from "./Detail.styled"
-import { IoArrowForwardCircleOutline } from "react-icons/io5"
+import { IoArrowBackCircleOutline } from "react-icons/io5"
 import { motion } from 'framer-motion'
 import { ProjectLinks, ProjectLink } from "../Work/WorkCard.styled"
 import { GoMarkGithub, GoBrowser } from "react-icons/go"
@@ -75,7 +75,7 @@ export const CRUDBlog = () => {
             I was a complete beginner of Node.js but I could find the fun of the backend a bit through this project.
             </TextP>
           </DescSection>
-          <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowForwardCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
+          <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}><IoArrowBackCircleOutline size={width > 768 ? '40px': '30px'}  color={modeTheme === 'light' ? "#594a4e" : "#232946"} /></BackBtn>
     </ContentWarapper>
     </Content>
     </ThemeProvider>

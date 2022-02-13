@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "../../styles/Globals.styled"
 import { useSetTheme } from "../../../hooks/useSetTheme";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
-import { ModeBtn } from "../../layout/Home/Hero.styled";
+import { ModeBtn, ModeBtnWrapperAbout } from "../../layout/Home/Hero.styled";
 import { SiGithub, SiHtml5, SiTailwindcss, SiCss3, SiSass, SiBootstrap, SiJavascript, SiReact, SiRedux, SiTypescript, SiNodedotjs, SiMongodb} from "react-icons/si";
 import Typewriter from 'typewriter-effect';
 
@@ -21,6 +21,7 @@ export const AboutPage = () => {
         <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme}>
         <NavBar/>
         <AboutPageWrapper>
+        <ModeBtnWrapperAbout>
         <ModeBtn onClick={() => setNextMode(modeTheme)}>
             {modeTheme === 'light' ?
               <MdModeNight size={width > 768 ? '25px': '20px'} color={"#594a4e"} />
@@ -28,7 +29,8 @@ export const AboutPage = () => {
               <MdWbSunny size={width > 768 ? '25px': '20px'} color={"#fffffe"} />
               }
           </ModeBtn>
-        <AboutTitle>About Me</AboutTitle>
+          </ModeBtnWrapperAbout>
+          <AboutTitle>About Me</AboutTitle>
         <Introduce>
         <Profile>
         <ClickText>\\Click Me!//</ClickText>
