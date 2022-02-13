@@ -28,7 +28,7 @@ export const WorkCardWrapper = (props: Params) => {
         },
         []
         )
-    let width = window.innerWidth;
+    const width = window.innerWidth;
 
 
 return( 

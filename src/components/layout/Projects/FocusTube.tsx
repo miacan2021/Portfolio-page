@@ -21,7 +21,7 @@ export const FocusTube = () => {
   const { modeTheme, setNextMode } = useSetTheme()
   const data = Data.projects.filter(project => project.slug === 'focustube')[0]
   const [hover, setHover] = useState<boolean>(false)
-  let width = window.innerWidth;
+  const width = window.innerWidth;
   const handleHover = useCallback(
       () => {
          setHover(prev => !prev)

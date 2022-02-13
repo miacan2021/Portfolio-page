@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 
 export const BlogPage = () => {
     const {modeTheme, setNextMode} = useSetTheme()
-    let width = window.innerWidth;
+    const width = window.innerWidth;
     const url = 'https://dev.to/api/articles?username=miacan2021'
     const [posts, setPosts] = useState([])
 

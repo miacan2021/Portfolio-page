@@ -21,7 +21,7 @@ export const FindBlog = () => {
   const { modeTheme, setNextMode } = useSetTheme()
   const data = Data.projects.filter(project => project.slug === 'blog-search')[0]
   const [hover, setHover] = useState<boolean>(false)
-  let width = window.innerWidth;
+  const width = window.innerWidth;
   const handleHover = useCallback(
       () => {
          setHover(prev => !prev)

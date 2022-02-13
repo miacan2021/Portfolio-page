@@ -9,7 +9,7 @@ type Props = {
 }
 
 export const Contact = ({modeTheme}: Props) => {
-    let width = window.innerWidth;
+    const width = window.innerWidth;
 
     return(
             <ContactBg>

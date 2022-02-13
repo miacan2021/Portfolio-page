@@ -17,7 +17,7 @@ type DataItem = {
 }
 
 export const Card = (props: DataItem) => {
-    const [hover, setHover] = useState<Boolean>(false)
+    const [hover, setHover] = useState<boolean>(false)
     const handleHover = useCallback(
         () => {
            setHover(prev => !prev)

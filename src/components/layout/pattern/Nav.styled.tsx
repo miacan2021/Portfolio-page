@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav<{open: boolean}>`
     height: 110px;
     width: 100%;
+    max-width: 1800px;
     background: ${({ open }) => open ? '#fffffe' : 'transparent'};
     display: flex;
     align-items: center;
@@ -10,10 +11,14 @@ export const Nav = styled.nav<{open: boolean}>`
     z-index: 90;
     position: fixed;
     transition: all ease .5s;
+    left: 0;
+    right: 0;
+    margin: auto;
     @media (max-width: ${({theme}) => theme.tablet}) {
         width: 80vw;
         justify-content: center;
         transition: all ease 1.5s;
+        margin: 0;
     }
 `
 export const LogoSet = styled.div`

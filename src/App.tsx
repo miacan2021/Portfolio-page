@@ -7,7 +7,7 @@ import { GrobalStyles } from "./components/styles/Globals.styled";
 import { useSetTheme } from "./hooks/useSetTheme";
 import { ThemeProvider } from "styled-components"
 import { theme, darkTheme } from "./components/styles/Globals.styled"
-import { Home, Loading, LoadingImg, LoadingText, LoadingWrapper, ModeBtn } from "./components/layout/Home/Hero.styled";
+import { Home, Loading, LoadingImg, LoadingText, LoadingWrapper, ModeBtn, ModeBtnWrapper} from "./components/layout/Home/Hero.styled";
 import { MdModeNight, MdWbSunny } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useHandleLoading } from "./hooks/useHandleLoading";
@@ -15,7 +15,7 @@ import { useHandleLoading } from "./hooks/useHandleLoading";
 const App = () => {
  const { loading, sesstionVal } = useHandleLoading()
   const {modeTheme, setNextMode } = useSetTheme()
-  let width = window.innerWidth;
+  const width = window.innerWidth;
 
   return (
     <>
@@ -33,6 +33,7 @@ const App = () => {
        <motion.div animate={{ y: 0 }} initial={sesstionVal==='1' ? {y:0} : { y: 1000 }} transition={{ duration: 1}}>
           <NavBar />
           <Home>
+          <ModeBtnWrapper>
           <ModeBtn  onClick={() => setNextMode(modeTheme)}>
             {modeTheme === 'light' ?
               <MdModeNight size={width > 768 ? '25px': '20px'} color={"#594a4e"} />
@@ -40,6 +41,7 @@ const App = () => {
               <MdWbSunny size={width > 768 ? '25px': '20px'} color={"#fffffe"} />
               }
           </ModeBtn>
+          </ModeBtnWrapper>
           <Hero />
           <Featured modeTheme={modeTheme} />
           <About />
