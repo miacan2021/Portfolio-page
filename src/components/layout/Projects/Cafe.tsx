@@ -56,9 +56,9 @@ export const Cafe = () => {
           <Top onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <HoverMsg>\\Hover Me//</HoverMsg>
                 { hover ?
-                    <TopImg src={data.gif} alt="project_featured_image" />
+                    <TopImg src={`../${data.gif}`} alt="project_featured_image" />
                     :
-                    <TopImg src={data.thumbnail} alt="project_featured_image" />
+                    <TopImg src={`../${data.thumbnail}`} alt="project_featured_image" />
                 }
           </Top>
           <ProjectLinks>
@@ -76,7 +76,7 @@ export const Cafe = () => {
             The design was created to convey a comfortable atmosphere.
             </TextP>
             </TextSection>
-            <SubImg src="/img/van-cafe/about-1.png" alt="cafesiteimage" />
+            <SubImg src="../img/van-cafe/about-1.png" alt="cafesiteimage" />
             </Section>
             <Line />
             <SectionRev>
@@ -88,7 +88,7 @@ export const Cafe = () => {
               On the map search page, we can find a cafe on the map and access the cafe's detail page or open Google Maps.
             </TextP>
             </TextSection>
-            <SubImg src="/img/van-cafe/about-4.png" alt="cafesiteimage" />
+            <SubImg src="../img/van-cafe/about-4.png" alt="cafesiteimage" />
             </SectionRev>
             <Section>
             <TextSection>
@@ -98,7 +98,7 @@ export const Cafe = () => {
             The information would be saved on WordPress is used as a headless CMS.
             </TextP>
             </TextSection>
-            <SubImg src="/img/van-cafe/about-3.png" alt="cafesiteimage" />
+            <SubImg src="../img/van-cafe/about-3.png" alt="cafesiteimage" />
             </Section>
             <Line />
             <DescSection>

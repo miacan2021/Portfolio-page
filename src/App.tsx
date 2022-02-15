@@ -24,7 +24,7 @@ const App = () => {
     {loading ?
     <LoadingWrapper>
     <Loading as={motion.div} animate={{ y: -1000 }} initial={{ y: 0 }} transition={{ delay: 1.5, duration: 1}}>
-     <LoadingImg as={motion.img} initial={{ height: '0px' }} animate={{ height: '60px'}} transition={{ duration: 1 }} src="/img/logo.png" />
+     <LoadingImg as={motion.img} initial={{ height: '0px' }} animate={{ height: '60px'}} transition={{ duration: 1 }} src="img/logo.png" />
      <LoadingText as={motion.h1} initial={{ height: '0px' }} animate={{ height: '30px'}} transition={{ duration: 1 }}>Shiho Kazama</LoadingText>
     </Loading>
     </LoadingWrapper>

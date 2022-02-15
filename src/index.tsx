@@ -15,7 +15,7 @@ import { LP } from './components/layout/Projects/LP';
 import ScrollToTop from './components/ScrollToTop';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/portfolio">
   <ScrollToTop />
   <Routes>
   <Route path="/" element={ <App /> }/>

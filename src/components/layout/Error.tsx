@@ -49,7 +49,7 @@ export const Error = () => {
     <GrobalStyles />
     <ThemeProvider theme={ modeTheme === 'light' ? theme : darkTheme}>
       <ErrWrapper>
-      <ErrImg src="/img/err.png" alt="err" />
+      <ErrImg src="img/err.png" alt="err" />
       <ErrMessage>
       <h1>SORRY!</h1>
       <h2>Something wrong... Please go back to top page.</h2>

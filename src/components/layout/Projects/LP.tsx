@@ -54,9 +54,9 @@ export const LP = () => {
           <Top onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <HoverMsg>\\Hover Me//</HoverMsg>
                 { hover ?
-                    <TopImg src={data.gif} alt="project_featured_image" />
+                    <TopImg src={`../${data.gif}`} alt="project_featured_image" />
                     :
-                    <TopImg src={data.thumbnail} alt="project_featured_image" />
+                    <TopImg src={`../${data.thumbnail}`} alt="project_featured_image" />
                 }
           </Top>
           <ProjectLinks>

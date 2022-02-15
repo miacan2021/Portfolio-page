@@ -55,9 +55,9 @@ export const FocusTube = () => {
           <Top onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <HoverMsg>\\Hover Me//</HoverMsg>
                 { hover ?
-                    <TopImg src={data.gif} alt="project_featured_image" />
+                    <TopImg src={`../${data.gif}`} alt="project_featured_image" />
                     :
-                    <TopImg src={data.thumbnail} alt="project_featured_image" />
+                    <TopImg src={`../${data.thumbnail}`} alt="project_featured_image" />
                 }
           </Top>
           <ProjectLinks>
@@ -71,7 +71,7 @@ export const FocusTube = () => {
             <TextP>
             I like watching Youtube and I tend to waste my time watching Youtube. So, when I should study but I'd like to watch Youtube, I search "Study with me" videos on Youtube and then try to focus on my study. Youtube has a good algorithm that can analyze which videos are users wants to watch. When I decided to study with "Study with me" videos, recommended videos by Youtube tend to disturb my study. For this reason, I created this website FocusTube that just search and show up "Study with me" videos!            </TextP>
             </TextSection>
-            <SubImg src="/img/focustube/logo.png" alt="siteimage" />
+            <SubImg src="../img/focustube/logo.png" alt="siteimage" />
             </Section>
             <Line />
             <SectionRev>
@@ -83,7 +83,7 @@ export const FocusTube = () => {
             This API has a limit to provide information like video title, description so on and so forth. During I was creating this website, I saw an error that reaches the limit number. I added an error-handling code just in case.
             </TextP>
             </TextSection>
-            <SubImg src="/img/focustube/about-1.png" alt="siteimage" />
+            <SubImg src="../img/focustube/about-1.png" alt="siteimage" />
             </SectionRev>
             <Section>
             <TextSection>
@@ -93,7 +93,7 @@ export const FocusTube = () => {
             On "My fav page" users can see all videos they added to the list and they can remove them. Users can also handle favourite videos on the fav list (only over laptop size provided). The list contents are saved on local storage.
             </TextP>
             </TextSection>
-            <SubImg src="/img/focustube/about-2.png" alt="siteimage" />
+            <SubImg src="../img/focustube/about-2.png" alt="siteimage" />
             </Section>
             <SectionRev>
             <TextSection>
@@ -102,7 +102,7 @@ export const FocusTube = () => {
             To add a search box on the navigation bar, users can search videos everywhere! After the search value submits, the page would be back to the home page and show the result videos of the search.
             </TextP>
             </TextSection>
-            <SubImg src="/img/focustube/about-3.png" alt="siteimage" />
+            <SubImg src="../img/focustube/about-3.png" alt="siteimage" />
             </SectionRev>
             <Line />
             <DescSection>

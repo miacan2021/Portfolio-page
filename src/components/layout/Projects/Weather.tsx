@@ -55,9 +55,9 @@ export const Weather = () => {
           <Top onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <HoverMsg>\\Hover Me//</HoverMsg>
                 { hover ?
-                    <TopImg src={data.gif} alt="project_featured_image" />
+                    <TopImg src={`../${data.gif}`} alt="project_featured_image" />
                     :
-                    <TopImg src={data.thumbnail} alt="project_featured_image" />
+                    <TopImg src={`../${data.thumbnail}`} alt="project_featured_image" />
                 }
           </Top>
           <ProjectLinks>
@@ -73,7 +73,7 @@ export const Weather = () => {
               I could know how to handle API on React and try to cool styling through this project.
             </TextP>
             </TextSection>
-            <SubImg src="/img/weather/about-1.png" alt="siteimage" />
+            <SubImg src="../img/weather/about-1.png" alt="siteimage" />
             </Section>
             <Line />
             <SectionRev>
@@ -85,7 +85,7 @@ export const Weather = () => {
             If users set their devices in light and dark mode, it shows light or dark mode it depends on time. And users can change the mode using the button placed top-left of the website.
             </TextP>
             </TextSection>
-            <SubImg src="/img/weather/about-2.png" alt="siteimage" />
+            <SubImg src="../img/weather/about-2.png" alt="siteimage" />
             </SectionRev>
             <Section>
             <TextSection>
@@ -97,7 +97,7 @@ export const Weather = () => {
             For example, now, Canada is Nov.19, Japan is Nov.20. So, the weekly weather section should be shown from Nov.20 for the Canada page and from Nov.21 for the Japan page.
             </TextP>
             </TextSection>
-            <SubImg src="/img/weather/about-3.png" alt="siteimage" />
+            <SubImg src="../img/weather/about-3.png" alt="siteimage" />
             </Section>
             <SectionRev>
             <TextSection>
@@ -111,7 +111,7 @@ export const Weather = () => {
             To show this loading image, the background might be like flashing but it is better than a white background.
             </TextP>
             </TextSection>
-            <SubImg src="/img/weather/about-4.png" alt="siteimage" />
+            <SubImg src="../img/weather/about-4.png" alt="siteimage" />
             </SectionRev>
             <Line />
             <DescSection>

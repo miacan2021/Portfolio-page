@@ -55,9 +55,9 @@ export const FindBlog = () => {
           <Top onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <HoverMsg>\\Hover Me//</HoverMsg>
                 { hover ?
-                    <TopImg src={data.gif} alt="project_featured_image" />
+                    <TopImg src={`../${data.gif}`} alt="project_featured_image" />
                     :
-                    <TopImg src={data.thumbnail} alt="project_featured_image" />
+                    <TopImg src={`../${data.thumbnail}`} alt="project_featured_image" />
                 }
           </Top>
           <ProjectLinks>
@@ -72,7 +72,7 @@ export const FindBlog = () => {
             This is the first project I created using React. I've written articles about studying abroad and posted them on my blog for 9 months. In the begging, My blog didn't have many readers but I continue to post articles, it has gotten a lot of readers. Thankfully, I have been able to make some money from my blog. I decided to create a website related to this blog for this project. I created a website that was named 'FIND BLOG POSTS' can find articles written pieces of information users want to know.
             </TextP>
             </TextSection>
-            <SubImg src="/img/blog/about-1.png" alt="siteimage" />
+            <SubImg src="../img/blog/about-1.png" alt="siteimage" />
             </Section>
             <Line />
             <SectionRev>
@@ -82,7 +82,7 @@ export const FindBlog = () => {
             Suggest article section is linked to the chatbot. When users click a choice in the chatbot, the suggest article section would be shown articles that users are interested in. In addition to the article block, titles will be updated by an operating chatbot. (Titles are also set on the dataset file.) I used 'WordPress Rest API' to get data on blog articles and I set URLs(to get data via API) at the 'dataset.json' file. And then, I used 'useEffect' to fetch new data when the chatbot is updated. WordPress Rest API's URL and JSX are like this... I fetched six articles from blog categories related to the information selected in the chat and displayed them on the page. Loading dots will show when fetching data.
             </TextP>
             </TextSection>
-            <SubImg src="/img/blog/about-2.png" alt="siteimage" />
+            <SubImg src="../img/blog/about-2.png" alt="siteimage" />
             </SectionRev>
             <Section>
             <TextSection>
@@ -92,7 +92,7 @@ export const FindBlog = () => {
             I can receive requests via slack.
             </TextP>
             </TextSection>
-            <SubImg src="/img/blog/about-3.png" alt="siteimage" />
+            <SubImg src="../img/blog/about-3.png" alt="siteimage" />
             </Section>
             <Line />
     

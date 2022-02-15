@@ -2,8 +2,8 @@
     "projects": [ 
     {
         "title": "WORK FRIENDLY CAFE - VAN",
-        "gif":"../img/van-cafe/vancafe.gif",
-        "thumbnail":"../img/van-cafe/top.jpg",
+        "gif":"img/van-cafe/vancafe.gif",
+        "thumbnail":"img/van-cafe/top.jpg",
         "skills":["Next.js", "GraphQL", "WordPress", "Tailwind CSS", "MapBox"],
         "category":"Featured",
         "github":"https://github.com/miacan2021/VanCafe.git",
@@ -13,8 +13,8 @@
     },
    {
         "title": "FocusTube",
-        "gif":"../img/focustube/focus.gif",
-        "thumbnail":"../img/focustube/top.jpg",
+        "gif":"img/focustube/focus.gif",
+        "thumbnail":"img/focustube/top.jpg",
         "skills":["React", "YouTube Data API", "Redux", "Tailwind CSS"],
         "category": "Featured",
         "github":"https://github.com/miacan2021/FocusTube-React",
@@ -24,8 +24,8 @@
     },
    {
         "title": "Weather APP with DARK MODE",
-        "gif":"../img/weather/weather.gif",
-        "thumbnail":"../img/weather/top.jpg",
+        "gif":"img/weather/weather.gif",
+        "thumbnail":"img/weather/top.jpg",
         "skills":["React", "Weather API", "Tailwind CSS"],
         "category":"Featured",
         "github":"https://github.com/miacan2021/weather-app.git",
@@ -35,8 +35,8 @@
     },
     {
         "title": "My portfolio page",
-        "gif":"../img/portfolio/top.gif",
-        "thumbnail":"../img/portfolio/top.jpg",
+        "gif":"img/portfolio/top.gif",
+        "thumbnail":"img/portfolio/top.jpg",
         "skills":["React(TypeScript)", "React Router", "styled-components", "Framer Motion", "DEV.to API"],
         "category":"Featured",
         "github":"https://github.com/miacan2021/Portfolio-page",
@@ -46,8 +46,8 @@
     },
     {
         "title": "FIND BLOG POSTS",
-        "gif":"../img/blog/blog.gif",
-        "thumbnail":"../img/blog/top.jpg",
+        "gif":"img/blog/blog.gif",
+        "thumbnail":"img/blog/top.jpg",
         "skills":["React", "WordPress REST API", "Slack API", "MUI"],
         "category":"Fun",
         "github":"https://github.com/miacan2021/BlogSearching-react",
@@ -57,8 +57,8 @@
     },
     {
         "title": "Node.js-MongoDB CRUD Blog with comments",
-        "gif":"../img/node-blog/node-blog.gif",
-        "thumbnail":"../img/node-blog/top.jpg",
+        "gif":"img/node-blog/node-blog.gif",
+        "thumbnail":"img/node-blog/top.jpg",
         "skills":["Node.js", "MongoDB", "Express.js", "Bluma"],
         "category":"Fun",
         "github":"https://github.com/miacan2021/Node-MongoDB_Blog.git",
@@ -68,8 +68,8 @@
     },
     {
         "title": "LP page",
-        "gif":"../img/LP/top.gif",
-        "thumbnail":"../img/LP/top.jpg",
+        "gif":"img/LP/top.gif",
+        "thumbnail":"img/LP/top.jpg",
         "skills":["Sass", "Javascript"],
         "category":"Fun",
         "github":"https://github.com/miacan2021/minimalist-credit_LP",

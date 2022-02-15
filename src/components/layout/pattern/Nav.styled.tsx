@@ -35,7 +35,7 @@ export const LogoSet = styled.div`
 export const LogoImg = styled.div`
     width: 40px;
     height: 40px;
-    background-image: url("../img/logo.png");
+    background-image: url("img/logo.png");
     background-size: cover;
     @media (max-width: ${({theme}) => theme.tablet}) {
         width: 30px;

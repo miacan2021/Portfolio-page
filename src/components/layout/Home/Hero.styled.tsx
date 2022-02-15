@@ -124,7 +124,7 @@ export const TopImg= styled.button`
       border-radius: 50%;
       box-shadow: ${({theme}) => `30px 5px 0px 0 ${theme.palette.pink}`}; 
       border: ${({theme}) => `2px solid ${theme.palette.head_text}`};
-      background-image: url('/img/photo.jpg');
+      background-image: url('img/photo.jpg');
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
