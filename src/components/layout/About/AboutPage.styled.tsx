@@ -7,7 +7,7 @@ export const AboutPageWrapper = styled.div`
    padding-bottom: 50px;
    text-align: center;
    margin: auto;
-   @media (max-width: ${({theme}) => theme.tablet}) {
+   @media (max-width: 900px) {
         width: 100vw;
        }
 `
@@ -20,7 +20,7 @@ export const Introduce = styled.div`
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: 5px 5px 0 0;
-    @media (max-width: ${({theme}) => theme.tablet}) {
+    @media (max-width: 900px) {
        flex-direction: column;
        }
 `
@@ -35,15 +35,15 @@ export const Name = styled.h1`
     padding: 10px;
     border-radius: 5px 5px 0 0;
     margin-top: 40px;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: 900px) {
         font-size: 24px;
        }
 `
 
 export const Myself = styled.div`
     width: 60%;
-    padding: 20px;
-    @media (max-width: ${({theme}) => theme.tablet}) {
+    padding: 5px 15px;
+    @media (max-width: 900px) {
         width: 90%;
         padding: 10px;
        }
@@ -56,7 +56,7 @@ export const Profile = styled.div`
     align-items: stretch;
     justify-content: center;
     margin: 20px;
-    @media (max-width: ${({theme}) => theme.tablet}) {
+    @media (max-width: 900px) {
         width: 90%;
        }
 `
@@ -69,7 +69,7 @@ export const AboutTitle = styled.h1`
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 5px;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: 900px) {
         font-size: 28px;
         letter-spacing: 2px;
        }
@@ -93,7 +93,7 @@ export const ClickText = styled.p`
         opacity: 1;
       }
      }
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: 900px) {
         font-size: 8px;
         letter-spacing: 2px;
        }
@@ -107,7 +107,7 @@ export const AboutImg = styled.img`
     box-shadow: 10px 10px 0px ${({theme}) =>  theme.palette.pink };
     transition: all 0.8s;
     border-radius: 5px;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: 900px) {
         width: 220px;
         height: 220px;
        }
@@ -148,7 +148,7 @@ export const SectionTitle = styled.h2`
     padding: 10px;
     border-radius: 5px 5px 0 0;
     margin-top: 20px;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: 900px) {
         font-size: 20px;
        }
 
@@ -162,8 +162,22 @@ export const AboutP = styled.p`
     padding: 20px 10px;
     border-radius: 0 0 5px 5px;
     line-height: 150%;
-    @media (max-width: ${({theme}) => theme.mobile}) {
+    @media (max-width: 900px) {
         font-size: 14px;
+       }
+
+`
+
+export const AboutPSpan = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: ${({theme}) => theme.palette.sub_text};
+    background-color: ${({theme}) =>  theme.palette.pink};
+    padding: 5px;
+    border-radius: 5px;
+     margin: 15px 0;
+    @media (max-width: 900px) {
+        font-size: 16px;
        }
 
 `

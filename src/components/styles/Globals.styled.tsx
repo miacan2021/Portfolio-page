@@ -23,10 +23,6 @@ export const GrobalStyles = createGlobalStyle`
     a {
         text-decoration: none;
     }
-/* font-family: 'Abel', sans-serif;
-font-family: 'Josefin Slab', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif; */
 `
 export const theme = {
     palette: {
