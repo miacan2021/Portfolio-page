@@ -13,6 +13,7 @@ import { BlogPage } from './components/layout/Blog/BlogPage';
 import { Portfolio } from './components/layout/Projects/Portfolio';
 import { LP } from './components/layout/Projects/LP';
 import ScrollToTop from './components/ScrollToTop';
+import { Mokumoku } from './components/layout/Projects/Mokumoku';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -23,6 +24,7 @@ ReactDOM.render(
     <Route path="work" element={ <WorkPage />} />
     <Route path="blog" element={ <BlogPage />} />
     <Route path="work/cafe-van" element={ <Cafe />} />
+    <Route path="work/mokumoku" element={ <Mokumoku />} />
     <Route path="work/focustube" element={ <FocusTube />} />
     <Route path="work/weather-app" element={ <Weather />} />
     <Route path="work/blog-search" element={ <FindBlog />} />

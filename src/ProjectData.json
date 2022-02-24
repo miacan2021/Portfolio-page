@@ -11,6 +11,17 @@
         "slug":"cafe-van",
         "description":"“Next.js” & “WordPress” - JAMstack website using WP GraphQL and REST API. We can find or post cafe information that has outlets and Wi-Fi."
     },
+    {
+        "title":"MokuMoku Vancouver",
+        "gif":"img/mokumoku/top.gif",
+        "thumbnail":"img/mokumoku/top.jpg",
+        "skills":[ "MongoDB", "Express.js", "React", "Node.js", "Firebase"],
+        "category":"Featured",
+        "github":"https://github.com/miacan2021/VanCafe.git",
+        "url":"https://github.com/miacan2021/MokuMoku-Vancouver.git",
+        "slug":"mokumoku",
+        "description":"MERN stack event advertisement web application. We can recruit participants for the event."
+    },   
    {
         "title": "FocusTube",
         "gif":"img/focustube/focus.gif",
@@ -22,17 +33,6 @@
         "slug":"focustube",
         "description":"“Youtube Data API v3” & “Redux” project. On this website, we can control our favourite videos list easily. We also search videos from the search bar on this website."
     },
-   {
-        "title": "Weather APP with DARK MODE",
-        "gif":"img/weather/weather.gif",
-        "thumbnail":"img/weather/top.jpg",
-        "skills":["React", "Weather API", "Tailwind CSS"],
-        "category":"Featured",
-        "github":"https://github.com/miacan2021/weather-app.git",
-        "url":"https://happy-hawking-f6969d.netlify.app/",
-        "slug":"weather-app",
-        "description":"A Weather app web page using “Open weather API”, “Unsplash API” and “TailwindCSS”. It is also adapted to dark mode."
-    },
     {
         "title": "My portfolio page",
         "gif":"img/portfolio/top.gif",
@@ -40,9 +40,20 @@
         "skills":["React(TypeScript)", "React Router", "styled-components", "Framer Motion", "DEV.to API"],
         "category":"Featured",
         "github":"https://github.com/miacan2021/Portfolio-page",
-        "url":"https://shihokazama-portfolio-miacan2021.vercel.app/",
+        "url":"https://shiho-kazama.com/",
         "slug":"portfolio",
         "description":"This portfolio website. It was used 'React with TypeScript' and 'styled-components' for styling."
+    },
+    {
+        "title": "Weather APP with DARK MODE",
+        "gif":"img/weather/weather.gif",
+        "thumbnail":"img/weather/top.jpg",
+        "skills":["React", "Weather API", "Tailwind CSS"],
+        "category":"Fun",
+        "github":"https://github.com/miacan2021/weather-app.git",
+        "url":"https://happy-hawking-f6969d.netlify.app/",
+        "slug":"weather-app",
+        "description":"A Weather app web page using “Open weather API”, “Unsplash API” and “TailwindCSS”. It is also adapted to dark mode."
     },
     {
         "title": "FIND BLOG POSTS",

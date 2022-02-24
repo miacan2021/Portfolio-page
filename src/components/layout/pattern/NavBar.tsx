@@ -30,7 +30,7 @@ export const NavBar = () => {
                     <NavItem open={open} onClick={handleOpen}><Link to='/work'>WORK</Link></NavItem>
                     <NavItem open={open} onClick={handleOpen}><Link to='/blog'>BLOG</Link></NavItem>
                     <NavItem open={open} onClick={handleOpen}><a href="#contact">CONTACT</a></NavItem>
-                    <NavItem open={open} onClick={handleOpen}><Resume><BsDownload />RESUME</Resume></NavItem>
+                    <NavItem open={open} onClick={handleOpen}><a href="shiho-kazama-resume.pdf" download><Resume><BsDownload />RESUME</Resume></a></NavItem>
                     <LinkUl>
                     <LinkLi><a href="https://github.com/miacan2021" rel="noopener noreferrer" target="_blank"><GoMarkGithub size={'20px'} color={"#594a4e"} /></a></LinkLi>
                     <LinkLi><a href="https://www.linkedin.com/in/shiho-kazama-659782230/" rel="noopener noreferrer" target="_blank"><TiSocialLinkedinCircular size={'30px'} color={"#594a4e"} /></a></LinkLi>
