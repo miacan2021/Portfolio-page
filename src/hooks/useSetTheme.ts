@@ -19,12 +19,10 @@ export const useSetTheme = (): returnValueType => {
     if (current === 'light') {
       localStorage.setItem('mode', 'dark')
       modeLight = localStorage.getItem('mode')
-      console.log(modeLight)
       return setModeTheme(modeLight)
     } else if (current === 'dark') {
       localStorage.setItem('mode', 'light')
       modeDark = localStorage.getItem('mode')
-      console.log(modeDark)
       return setModeTheme(modeDark)
     } else {
       console.log('theme err:', current)

@@ -18,7 +18,7 @@
         "skills":[ "MongoDB", "Express.js", "React", "Node.js", "Firebase"],
         "category":"Featured",
         "github":"https://github.com/miacan2021/VanCafe.git",
-        "url":"https://github.com/miacan2021/MokuMoku-Vancouver.git",
+        "url":"https://mokumoku-van-miacan2021.vercel.app/",
         "slug":"mokumoku",
         "description":"MERN stack event advertisement web application. We can recruit participants for the event."
     },   

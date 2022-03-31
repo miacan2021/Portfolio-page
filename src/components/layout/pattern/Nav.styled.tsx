@@ -19,6 +19,7 @@ export const Nav = styled.nav<{open: boolean}>`
         justify-content: center;
         transition: all ease 1.5s;
         margin: 0;
+        z-index: 1000;
     }
 `
 export const LogoSet = styled.div`
