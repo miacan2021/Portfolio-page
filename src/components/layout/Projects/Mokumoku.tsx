@@ -53,9 +53,9 @@ export const Mokumoku = () => {
             <ModeBtnWrapperAbout>
               <ModeBtn onClick={() => setNextMode(modeTheme)}>
                 {modeTheme === 'light' ? (
-                  <MdModeNight size={width > 768 ? '25px' : '20px'} color={'#594a4e'} />
+                  <MdModeNight size={width > 768 ? '25px' : '18px'} color={'#594a4e'} />
                 ) : (
-                  <MdWbSunny size={width > 768 ? '25px' : '20px'} color={'#fffffe'} />
+                  <MdWbSunny size={width > 768 ? '25px' : '18px'} color={'#fffffe'} />
                 )}
               </ModeBtn>
             </ModeBtnWrapperAbout>
