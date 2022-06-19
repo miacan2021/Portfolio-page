@@ -156,13 +156,17 @@ export const ModeBtnWrapperAbout = styled.div`
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  width: 85%;
-  max-width: 1440px;
+  width: 85vw;
+  max-width: 1300px;
   height: 40px;
   z-index: 100;
+  @media (max-width: 900px) {
+    top: 20%;
+    width: 95vw;
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    top: 10%;
-    width: 94%;
+    top: 15%;
+    width: 95vw;
   }
 `
 export const ModeBtn = styled.button`

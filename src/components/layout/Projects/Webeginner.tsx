@@ -33,7 +33,7 @@ import { GoMarkGithub, GoBrowser } from 'react-icons/go'
 
 export const Webeginner = () => {
   const { modeTheme, setNextMode } = useSetTheme()
-  const data = Data.projects.filter((project) => project.slug === 'weather-app')[0]
+  const data = Data.projects.filter((project) => project.slug === 'webeginner')[0]
   const [hover, setHover] = useState<boolean>(false)
   const width = window.innerWidth
   const handleHover = useCallback(() => {
@@ -84,9 +84,13 @@ export const Webeginner = () => {
               <TextSection>
                 <TextH1>Story</TextH1>
                 <TextP>
-                  I created a weather forecast web application using open weather API. It can use to know current
-                  weather where users search, weekly weather. And You can also know the current time on this app. I
-                  could know how to handle API on React and try to cool styling through this project.
+                  A communication web app for junior/entry-level or people who are aiming to be a developer. I was in a
+                  tutorial hell when I was a college student. There're a lot of learning plat form these days like
+                  youtube videos, Udemy, Corsera, etc... This is good but it made us hard to find good tutorials. I
+                  often start one tutorial but quit to continue and then start another tutorials before I learn how to
+                  study web debelopment. I called this kinds of situation is "tutorial hell". So I created this app. It
+                  can post your reccomendation tutorials and comment on posts. It helps to find good web development
+                  tutorials.
                 </TextP>
               </TextSection>
               <SubImg src="../img/weather/about-1.png" alt="siteimage" />
@@ -119,40 +123,21 @@ export const Webeginner = () => {
             </Section>
             <SectionRev>
               <TextSection>
-                <TextH1>Features - Background Image</TextH1>
+                <TextH1>Features - Serverless application</TextH1>
                 <TextP>
-                  Used Unsplash Source. When users search the city, the background image changed at the same time. The
-                  logic is that add a query for the city name to unsplash URL. I tried to use unsplash API but it takes
-                  a long time to fetch and apply for background image so I use unsplash source directly. It sometimes
-                  takes time to change the background image so I set the default image. It shows when the site is
-                  loading data. To show this loading image, the background might be like flashing but it is better than
-                  a white background.
+                  This is a serverless application. I wanted to learn AWS so I stared to learn from AWS amplify. It can
+                  sign in/login and have basic CRUD functions.
                 </TextP>
               </TextSection>
               <SubImg src="../img/weather/about-4.png" alt="siteimage" />
             </SectionRev>
             <Line />
             <DescSection>
-              <TextH1>Description</TextH1>
-              <TextP>
-                I used two different types of API provided from "Open weather API" to handle typical weather data and
-                the world clock and weekly forecasts. For adapting dark mode, I tried to use "Tailwind CSS" dark-mode
-                function. The styling theme is 'Glassmorphism' which was the trend of web design in 2021. The
-                Glassmorphism feature is like a frosted-glass effect using a background blur. I didn't want to be a
-                boring web app, I made this page's background image will change with every search. Considering user
-                experience, I applied a loading spinner view during fetching data. In addition, when no the city's
-                information, it shows up a sorry comment.
-              </TextP>
-            </DescSection>
-            <DescSection>
               <TextH1>Challenging part</TextH1>
               <TextP>
-                I used 'tailwind css' for styling the whole of this project. They have dark mode classes but it was
-                really hard to apply because of the SVG file. I used SVG icons. First, I imported the SVG icon for the
-                image tag but it can't apply for dark mode. Due to the image tag, I had to import the SVG file as a
-                component using 'React Component' to handle it like using SVG tag instead of an image tag with source
-                attribute. It was a beginner-level stuck. But yet, It is worth it for me since I'm also getting better
-                with my googling skills!
+                I have an experience to use GraphQL but it was hard part for me because AWS amplify is so kind of
+                begginer people since they've already prepared graphQL Query/Mutation. However in my case, it takes time
+                to figire out file structurte and mofdify to code can store comments.
               </TextP>
             </DescSection>
             <BackBtn as={motion.button} whileHover={{ scale: 1.1 }} onClick={() => navigate(-1)}>

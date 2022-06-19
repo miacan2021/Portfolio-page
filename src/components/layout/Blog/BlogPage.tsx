@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme, darkTheme } from '../../styles/Globals.styled'
 import { useSetTheme } from '../../../hooks/useSetTheme'
 import { MdModeNight, MdWbSunny } from 'react-icons/md'
-import { ModeBtn, ModeBtnWrapper } from '../../layout/Home/Hero.styled'
+import { ModeBtn, ModeBtnWrapper, ModeBtnWrapperAbout } from '../../layout/Home/Hero.styled'
 import { BlogWrapper, Articles, ArticleImg, BlogTitle, BlogSub } from './BlogPage.styled'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
@@ -36,7 +36,7 @@ export const BlogPage = () => {
       <ThemeProvider theme={modeTheme === 'light' ? theme : darkTheme}>
         <NavBar />
         <BlogWrapper>
-          <ModeBtnWrapper>
+          <ModeBtnWrapperAbout>
             <ModeBtn onClick={() => setNextMode(modeTheme)}>
               {modeTheme === 'light' ? (
                 <MdModeNight size={width > 768 ? '25px' : '18px'} color={'#594a4e'} />
@@ -44,7 +44,7 @@ export const BlogPage = () => {
                 <MdWbSunny size={width > 768 ? '25px' : '18px'} color={'#fffffe'} />
               )}
             </ModeBtn>
-          </ModeBtnWrapper>
+          </ModeBtnWrapperAbout>
           <BlogTitle>BLOG</BlogTitle>
           <BlogSub>Here are the articles I wrote. I sometimes share what I learned on DEV.to.</BlogSub>
           <Articles>
