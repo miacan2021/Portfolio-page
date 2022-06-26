@@ -19,6 +19,7 @@ import {
 import { MdModeNight, MdWbSunny } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import { useHandleLoading } from './hooks/useHandleLoading'
+import SEO from './components/SEO/SEO'
 
 const App = () => {
   const { loading, sesstionVal } = useHandleLoading()
@@ -27,6 +28,7 @@ const App = () => {
 
   return (
     <>
+      <SEO title={'Shiho Kazama | Portfolio'} />
       <ThemeProvider theme={modeTheme === 'light' ? theme : darkTheme}>
         <GrobalStyles />
         {loading ? (

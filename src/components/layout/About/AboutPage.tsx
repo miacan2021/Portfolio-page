@@ -46,6 +46,7 @@ import { IoArrowBackCircleOutline } from 'react-icons/io5'
 import { motion } from 'framer-motion'
 import { AboutPSpan } from './AboutPage.styled'
 import { AboutLiSpan } from '../Home/About.styled'
+import SEO from '../../SEO/SEO'
 
 export const AboutPage = () => {
   const { modeTheme, setNextMode } = useSetTheme()
@@ -54,6 +55,7 @@ export const AboutPage = () => {
 
   return (
     <>
+      <SEO title={'Shiho Kazama | About | Portfolio'} />
       <GrobalStyles />
       <ThemeProvider theme={modeTheme === 'light' ? theme : darkTheme}>
         <NavBar />
@@ -157,27 +159,23 @@ export const AboutPage = () => {
             <Myself>
               <SectionTitle>My Story - Passionate about creativity!</SectionTitle>
               <AboutP>
-                <AboutPSpan>Why did I decide to aim to be a web developer?</AboutPSpan>
-               I have always liked to learn new things and also liked to develop something using a computer since
-                I was a child. I've learned multi-media at university. I got a scholarship because my school record was
-                top-level.
-             
+                <AboutPSpan>Why did I decide to aim to be a web developer?</AboutPSpan>I have always liked to learn new
+                things and also liked to develop something using a computer since I was a child. I've learned
+                multi-media at university. I got a scholarship because my school record was top-level.
                 <AboutPSpan>The first job made me feel something is out of place.</AboutPSpan>
-               
                 After graduated university, I've worked at a famous car manufacturing company's customer service
                 department. It wasn't related to my interest however it is considered a good thing to join a big company
                 in Japan, so I worked there. I've worked hard so that I got some awards from the customer satisfaction
                 survey. I was pleased to help customers however I also wanted to be someone who could tell people what I
                 am without having to say the name of the company.
-      
                 <AboutPSpan>I am NOW...</AboutPSpan>
-             
                 Therefore, I decided to change my carrier because I like creative things, challenging jobs! I studied
                 web development at Cornerstone International Community College of Canada. I was sure I like learning and
                 developing the web. I like the fact that I can see my skills clearly stepping up. Now, I mostly enjoy
-                working with Javascript. Especially,<AboutLiSpan>ReactJS</AboutLiSpan> . And currently, I'm learning hard <AboutLiSpan>TypeScript</AboutLiSpan> . I used
-                Typescript on this portfolio. I have a solid knowledge of basic front-end development, I continue to
-                learn further skillsets as a professional front-end developer.
+                working with Javascript. Especially,<AboutLiSpan>ReactJS</AboutLiSpan> . And currently, I'm learning
+                hard <AboutLiSpan>TypeScript</AboutLiSpan> . I used Typescript on this portfolio. I have a solid
+                knowledge of basic front-end development, I continue to learn further skillsets as a professional
+                front-end developer.
               </AboutP>
             </Myself>
           </Introduce>

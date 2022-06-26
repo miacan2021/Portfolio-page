@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SEO from '../../SEO/SEO'
 import { Contact } from '../pattern/Contact'
 import { GrobalStyles } from '../../styles/Globals.styled'
 import { NavBar } from '../pattern/NavBar'
@@ -79,6 +80,7 @@ export const WorkPage = () => {
   const navigate = useNavigate()
   return (
     <>
+      <SEO title={'Shiho Kazama | Work | Portfolio'} />
       <GrobalStyles />
       <ThemeProvider theme={modeTheme === 'light' ? theme : darkTheme}>
         <NavBar />
